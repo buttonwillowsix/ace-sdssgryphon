@@ -1,0 +1,78 @@
+project:
+  prefix: gryphon
+  human_name: 'Stanford ACE D8 Projects'
+  profile:
+    name: stanford_profile
+  local: {  }
+git:
+  default_branch: 1.x
+  remotes:
+    - 'stanfordgryphon@svn-23450.prod.hosting.acquia.com:stanfordgryphon.git'
+deploy:
+  tag_source: false
+  exclude_file: '${repo.root}/blt/deploy/rsync-exclude.txt'
+  gitignore_file: '${repo.root}/blt/deploy/.gitignore'
+drush:
+  aliases:
+    ci: self
+  default_alias: '${drush.aliases.local}'
+modules:
+  local:
+    enable:
+      - stanford_ssp
+      - environment_indicator
+    uninstall:
+      - acquia_purge
+      - acquia_connector
+  ci:
+    enable:
+      - nobots
+    uninstall:
+      - simplesamlphp_auth
+      - acquia_purge
+      - acquia_connector
+  dev:
+    enable:
+      - nobots
+      - environment_indicator
+    uninstall: {  }
+  test:
+    enable:
+      - nobots
+      - environment_indicator
+    uninstall:
+      - views_ui
+  prod:
+    enable:
+      - environment_indicator
+    uninstall:
+      - views_ui
+simplesamlphp: true
+cm:
+  strategy: config-split
+  allow-overrides: true
+cloud:
+  appId: 8449683b-500e-4728-b70a-5f69d9e8a61a
+multisites:
+  - cardinalservice
+  - default
+tests:
+  reports:
+    localDir: '${repo.root}/artifacts'
+    coveragePass: 90
+  phpunit:
+    - # Run all tests in the custom modules directory.
+      path: '${docroot}'
+      config: ${docroot}/core/phpunit.xml
+      directory: ${docroot}/modules/custom
+      bootstrap: ${docroot}/core/tests/bootstrap.php
+  codeception:
+    -
+      suite: 'acceptance'
+validate:
+  twig:
+    # Add custom functions from twig tweaks or other modules.
+    functions:
+      - drupal_block
+      - drupal_field
+      - pattern

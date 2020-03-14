@@ -1,0 +1,135 @@
+version: 2
+# CircleCI integration with Drupal 8.
+
+# Reusable steps.
+
+## Add SSH Key
+add_ssh: &add_ssh
+  add_ssh_keys:
+    fingerprints:
+      - "6f:84:bf:38:2c:c5:fe:25:46:14:94:54:f3:22:42:f5"
+
+## Add Known Hosts
+add_known_hosts: &add_known_hosts
+  run:
+    name: Add SSH Known Hosts
+    command: |
+      ssh-keyscan svn-23450.prod.hosting.acquia.com >> ~/.ssh/known_hosts
+      ssh-keyscan stanfordgryphondev.ssh.prod.acquia-sites.com >> ~/.ssh/known_hosts
+      ssh-keyscan stanfordgryphonstg.ssh.prod.acquia-sites.com >> ~/.ssh/known_hosts
+      ssh-keyscan stanfordgryphon.ssh.prod.acquia-sites.com >> ~/.ssh/known_hosts
+      ssh-keyscan -t rsa,dsa github.com >> ~/.ssh/known_hosts
+
+## Defines the cache restoring mechanism.
+restore_caches: &restore_caches
+  restore_cache:
+    # We use the composer.lock as a way to determine if we can cache our build.
+    keys:
+      - v1-vendor-{{ checksum "composer.lock" }}
+      # fallback to using the latest cache if no exact match is found
+      - v1-vendor-
+
+## Defines the cache saving mechanism.
+save_caches: &save_caches
+  save_cache:
+    paths:
+      - ./vendor
+      - ./docroot/modules/contrib
+      - ./docroot/modules/custom
+      - ./docroot/profiles/contrib
+      - ./docroot/profiles/custom
+      - ./docroot/themes/contrib
+      - ./docroot/themes/custom
+      - ./docroot/libraries
+      - ./docroot/core
+    key: v1-vendor-{{ checksum "composer.lock" }}
+
+## Defines images and working directory.
+defaults: &defaults
+  docker:
+    - image: pookmish/drupal8ci:pcov
+    - image: selenium/standalone-chrome:3.141.59-neon
+    - image: mariadb:10.3
+      environment:
+        MYSQL_ALLOW_EMPTY_PASSWORD: 1
+  working_directory: /var/www/html
+
+## Renew the lets encrypt certificates for the three main environments.
+renew_certs: &renew_certs
+  <<: *defaults
+  steps:
+    - *add_ssh
+    - *add_known_hosts
+    - checkout
+    - *restore_caches
+    - run:
+        name: Renew LE Certs
+        command: |
+          composer install --no-interaction
+          vendor/bin/blt blt:telemetry:disable --no-interaction
+          vendor/bin/blt gryphon:renew-cert dev --no-interaction
+          vendor/bin/blt gryphon:renew-cert test --no-interaction
+          vendor/bin/blt gryphon:renew-cert prod --no-interaction
+
+codeception_acceptance: &codeception_acceptance
+  <<: *defaults
+  steps:
+    - checkout
+    - *restore_caches
+    - run:
+        name: Run Codeception Acceptance Tests
+        command: |
+          composer install --no-interaction
+          vendor/bin/blt circleci:drupal:install --no-interaction
+          vendor/bin/blt tests:codeception
+    - *save_caches
+    - store_test_results:
+        path: artifacts
+    - store_artifacts:
+        path: artifacts
+
+phpunit_coverage: &phpunit_coverage
+  <<: *defaults
+  steps:
+    - checkout
+    - *restore_caches
+    - run:
+        name: Run Codeception Acceptance Tests
+        command: |
+          composer install --no-interaction
+          vendor/bin/blt circleci:drupal:setup --no-interaction
+          vendor/bin/blt tests:php:lint
+          vendor/bin/blt tests:twig:lint:all
+          vendor/bin/blt tests:phpunit:coverage
+    - *save_caches
+    - store_test_results:
+        path: artifacts/phpunit
+    - store_artifacts:
+        path: artifacts/phpunit
+
+# Declare all of the jobs we should run.
+jobs:
+  renew-certs:
+    <<: *renew_certs
+  run-codeception-acceptance:
+    <<: *codeception_acceptance
+  run-phpunit-coverage:
+    <<: *phpunit_coverage
+
+# Declare a workflow that runs all of our jobs in parallel.
+workflows:
+  version: 2
+  tests:
+    jobs:
+      - run-codeception-acceptance
+      - run-phpunit-coverage
+  renew_certs:
+    triggers:
+      - schedule:
+          cron: "0 8 * * 0"
+          filters:
+            branches:
+              only:
+                - /1.x/
+    jobs:
+      - renew-certs
