@@ -33,8 +33,9 @@
  * The URL, https://www.drupal.org:8080/mysite/test/, could be a symbolic link
  * or an Apache Alias directive that points to the Drupal root containing
  * index.php. An alias could also be created for a subdomain. See the
- * @link https://www.drupal.org/documentation/install online Drupal installation guide @endlink
- * for more information on setting up domains, subdomains, and subdirectories.
+ * @link https://www.drupal.org/documentation/install online Drupal
+ *   installation guide @endlink for more information on setting up domains,
+ *   subdomains, and subdirectories.
  *
  * The following examples look for a site configuration in sites/example.com:
  * @code
@@ -71,3 +72,6 @@ foreach ($sites_settings as $site_setting) {
   $sites[$site_name] = $site_name;
 }
 
+if (file_exists(__DIR__ . '/local.sites.php')) {
+  require __DIR__ . '/local.sites.php';
+}

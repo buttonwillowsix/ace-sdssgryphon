@@ -1,5 +1,5 @@
 local:
-  uri: cardinalservice.sites-pro.stanford.edu
+  uri: cardinalservice
   root: '${env.cwd}/docroot'
 dev:
   root: /var/www/html/stanfordgryphon.dev/docroot

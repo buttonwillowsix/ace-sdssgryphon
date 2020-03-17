@@ -8,6 +8,7 @@ local.site.yml
 local.services.yml
 local.authsources.php
 local.config.php
+local.sites.php
 tests/behat/local.yml
 box/local.config.yml
 *.local
