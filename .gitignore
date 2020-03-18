@@ -10,6 +10,7 @@ local.authsources.php
 local.config.php
 local.sites.php
 tests/behat/local.yml
+LocalCommands.php
 box/local.config.yml
 *.local
 local.blt.yml
