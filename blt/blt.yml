@@ -29,8 +29,6 @@ modules:
       - nobots
     uninstall:
       - simplesamlphp_auth
-      - acquia_purge
-      - acquia_connector
   dev:
     enable:
       - nobots
@@ -56,6 +54,15 @@ cloud:
 multisites:
   - cardinalservice
   - default
+behat:
+  selenium:
+    url: http://localhost:4444/wd/hub
+  chromedriver:
+    url: http://localhost
+  web-driver: selenium
+  paths:
+    - ${docroot}/profiles/custom
+    - ${repo.root}/tests/behat/features
 tests:
   reports:
     localDir: '${repo.root}/artifacts'

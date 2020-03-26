@@ -32,7 +32,6 @@ class GryphonTestCommands extends BltTasks {
     ]);
   }
 
-
   /**
    * Run all the codeception tests defined in blt.yml.
    *
@@ -42,7 +41,10 @@ class GryphonTestCommands extends BltTasks {
   public function runCodeceptionTests() {
     foreach ($this->getConfigValue('tests.codeception') as $test) {
       // TODO: make this more universal when profiles have codeception tests.
-      $this->runCodeceptionTestSuite($test['suite']);
+      $result = $this->runCodeceptionTestSuite($test['suite']);
+      if (!$result->wasSuccessful()) {
+        return $result;
+      }
     }
   }
 
@@ -51,6 +53,9 @@ class GryphonTestCommands extends BltTasks {
    *
    * @param string $suite
    *   Codeception suite to run.
+   *
+   * @return \Robo\Result
+   *   Result of the test.
    */
   protected function runCodeceptionTestSuite($suite) {
     $root = $this->getConfigValue('repo.root');
@@ -64,6 +69,7 @@ class GryphonTestCommands extends BltTasks {
     $executable = $this->taskExec('vendor/bin/codecept')
       ->arg('run')
       ->arg($suite)
+      ->option('steps')
       ->option('config', 'tests', '=')
       ->option('html')
       ->option('xml');
@@ -73,7 +79,7 @@ class GryphonTestCommands extends BltTasks {
       $executable->option('verbose');
     }
 
-    $executable->run();
+    return $executable->run();
   }
 
   /**
