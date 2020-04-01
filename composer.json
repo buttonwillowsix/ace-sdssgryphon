@@ -53,8 +53,7 @@
         "php": ">=7.2",
         "acquia/blt": "^11.2.0",
         "drupal/acquia_purge": "^1.0@beta",
-        "su-hkku/cardinal_service_profile": "dev-8.x-1.x",
-        "su-sws/stanford_profile": "^8.1.0"
+        "su-hkku/cardinal_service_profile": "dev-8.x-1.x"
     },
     "require-dev": {
         "acquia/blt-require-dev": "11.x-dev",
@@ -73,7 +72,7 @@
         "league/oauth2-client": "^2.4",
         "pcov/clobber": "^2.0",
         "se/selenium-server-standalone": "^3.141",
-        "su-sws/stanford-caravan": "dev-codeception-modules"
+        "su-sws/stanford-caravan": "dev-8.x-1.x"
     },
     "replace": {
         "dealerdirect/phpcodesniffer-composer-installer": "*"
