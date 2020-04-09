@@ -83,7 +83,7 @@
         "php": ">=7.2",
         "acquia/blt": "^11.2.0",
         "drupal/acquia_purge": "^1.0@beta",
-        "su-hkku/cardinal_service_profile": "dev-8.x-1.x",
+        "su-hkku/cardinal_service_profile": "dev-CSD-72-solo-importer",
         "su-sws/stanford_profile": "dev-8.x-1.x"
     },
     "require-dev": {
@@ -197,9 +197,6 @@
             },
             "drupal/fakeobjects": {
                 "https://www.drupal.org/project/fakeobjects/issues/3002953": "https://www.drupal.org/files/issues/2019-02-12/fakeobjects-missing_plugin-3002953.patch"
-            },
-            "drupal/field_formatter_class": {
-                "https://www.drupal.org/project/field_formatter_class/issues/3046372": "https://www.drupal.org/files/issues/2020-02-03/field_formatter_class-3046372-10.patch"
             },
             "drupal/menu_link_weight": {
                 "https://www.drupal.org/project/menu_link_weight/issues/3099139": "https://www.drupal.org/files/issues/2019-12-05/menu_link_weight-target_blank-3099139.patch"
