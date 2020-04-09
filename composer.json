@@ -83,7 +83,7 @@
         "php": ">=7.2",
         "acquia/blt": "^11.2.0",
         "drupal/acquia_purge": "^1.0@beta",
-        "su-hkku/cardinal_service_profile": "dev-CSD-72-solo-importer",
+        "su-hkku/cardinal_service_profile": "dev-8.x-1.x",
         "su-sws/stanford_profile": "dev-8.x-1.x"
     },
     "require-dev": {
