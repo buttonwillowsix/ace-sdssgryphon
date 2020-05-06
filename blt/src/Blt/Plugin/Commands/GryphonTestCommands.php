@@ -36,18 +36,38 @@ class GryphonTestCommands extends BltTasks {
   /**
    * Run all the codeception tests defined in blt.yml.
    *
-   * @command tests:codeception:run
-   * @aliases tests:codeception codeception
-   *
-   * @param string $test_key
-   *   Specify which test to run.
+   * @param array $options
+   *   Keyed array of command options.
    *
    * @return \Robo\Result
    *   Result of the test.
+   *
+   * @command tests:codeception:run
+   * @aliases tests:codeception codeception
+   * @options test The key of the tests to run.
+   * @options suite only run a specific suite instead of all suites.
    */
-  public function runCodeceptionTests($test_key) {
+  public function runCodeceptionTests(array $options = [
+    'test' => NULL,
+    'suite' => NULL,
+  ]) {
     $failed_test = NULL;
-    if ($test = $this->getConfigValue('tests.codeception.' . $test_key)) {
+
+    $tests = $this->getConfigValue('tests.codeception', []);
+
+    // Run only the test that was defined in the options.
+    if (!empty($options['test'])) {
+      $tests = [$options['test'] => $tests[$options['test']]];
+    }
+
+    foreach ($tests as $test) {
+
+      // Filter out the suites that the options doesn't want.
+      $test['suites'] = array_filter($test['suites'], function ($suite) use ($options) {
+        return empty($options['suite']) || strpos($options['suite'], $suite) !== FALSE;
+      });
+
+      // Run each suite of tests.
       foreach ($test['suites'] as $suite) {
         $this->say("Running <comment>$suite</comment> Tests.");
         $test_result = $this->runCodeceptionTestSuite($suite, $test['directory']);
@@ -86,17 +106,14 @@ class GryphonTestCommands extends BltTasks {
     }
 
     $new_test_dir = "$root/tests/codeception/$suite/" . date('Ymd-Hi');
-    $tasks[] = $this->taskFilesystemStack()->mkdir($new_test_dir);
-    $tasks[] = $this->taskRsync()
-      ->recursive()
-      ->fromPath("$test_directory/$suite/")
-      ->toPath($new_test_dir);
+    $tasks[] = $this->taskFilesystemStack()->symlink("$test_directory/$suite/", $new_test_dir);
 
     $test = $this->taskExec('vendor/bin/codecept')
       ->arg('run')
       ->arg($suite)
       ->option('steps')
       ->option('config', 'tests', '=')
+      ->option('fail-fast')
       ->option('override', "paths: output: ../artifacts/$suite", '=')
       ->option('html')
       ->option('xml');

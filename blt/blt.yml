@@ -73,7 +73,7 @@ tests:
       directory: ${docroot}/modules/custom
       bootstrap: ${docroot}/core/tests/bootstrap.php
   codeception:
-    cardinal_service_profile:
+    cardinal_service:
       suites:
         - acceptance
         - functional
