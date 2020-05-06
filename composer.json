@@ -192,6 +192,9 @@
             },
             "drupal/paranoia": {
                 "https://stanfordits.atlassian.net/browse/D8CORE-1351": "patches/contrib/paranoia.patch"
+            },
+            "drupal/ui_patterns": {
+                "https://github.com/nuvoleweb/ui_patterns/pull/182": "patches/contrib/ui_patterns.patch"
             }
         }
     },
