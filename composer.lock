@@ -4341,10 +4341,10 @@
                     }
                 },
                 "patches_applied": {
-                    "https://www.drupal.org/project/drupal/issues/3039185": "https://www.drupal.org/files/issues/2020-04-17/allow-field-blocks-to-display-label-in-layout-builder-3039185-22.patch",
                     "https://www.drupal.org/project/drupal/issues/3015152": "https://www.drupal.org/files/issues/2019-12-05/3015152-tps-26.patch",
                     "https://www.drupal.org/project/drupal/issues/2577923": "https://www.drupal.org/files/issues/2020-06-11/2577923-128.patch",
                     "https://www.drupal.org/project/drupal/issues/2353611": "https://www.drupal.org/files/issues/2019-10-15/drupal-link_uuid-2353611-262.patch",
+                    "https://www.drupal.org/project/drupal/issues/3039185": "https://www.drupal.org/files/issues/2020-04-17/allow-field-blocks-to-display-label-in-layout-builder-3039185-22.patch",
                     "https://www.drupal.org/project/drupal/issues/3064751": "https://www.drupal.org/files/issues/2019-07-02/3064751-5.patch"
                 }
             },
@@ -6942,8 +6942,8 @@
                 },
                 "patches_applied": {
                     "https://www.drupal.org/project/menu_link_weight/issues/3099139": "https://www.drupal.org/files/issues/2019-12-05/menu_link_weight-target_blank-3099139.patch",
-                    "https://www.drupal.org/project/menu_link_weight/issues/2956341": "https://www.drupal.org/files/issues/2018-03-27/menu_link_weight-js_error_on_title_field-2956341-2.patch",
-                    "https://www.drupal.org/project/menu_link_weight/issues/2995896": "https://www.drupal.org/files/issues/2018-08-29/2995896-menu-admin-per-menu-support-fixes.patch"
+                    "https://www.drupal.org/project/menu_link_weight/issues/2995896": "https://www.drupal.org/files/issues/2018-08-29/2995896-menu-admin-per-menu-support-fixes.patch",
+                    "https://www.drupal.org/project/menu_link_weight/issues/2956341": "https://www.drupal.org/files/issues/2018-03-27/menu_link_weight-js_error_on_title_field-2956341-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -14396,12 +14396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-HKKU/cardinal_service_profile.git",
-                "reference": "e3f17a820a4cecdd075be4944144e7bc18d6f202"
+                "reference": "83a0346ca35370d6c20280b136b13a0307e216a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/e3f17a820a4cecdd075be4944144e7bc18d6f202",
-                "reference": "e3f17a820a4cecdd075be4944144e7bc18d6f202",
+                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/83a0346ca35370d6c20280b136b13a0307e216a2",
+                "reference": "83a0346ca35370d6c20280b136b13a0307e216a2",
                 "shasum": ""
             },
             "require": {
@@ -14530,7 +14530,7 @@
                 "GPL-2.0+"
             ],
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
-            "time": "2020-06-18T19:40:35+00:00"
+            "time": "2020-06-18T21:55:58+00:00"
         },
         {
             "name": "su-sws/jumpstart_ui",

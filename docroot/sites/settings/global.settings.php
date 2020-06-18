@@ -7,6 +7,12 @@
 
 use Acquia\Blt\Robo\Common\EnvironmentDetector;
 
+// When the encryption environment variable is not provided (local/ci/etc),
+// fake the encryption string so that the site doesn't break.
+if (!getenv('STANFORD_ENCRYPT')) {
+  putenv("STANFORD_ENCRYPT=" . substr(file_get_contents("$repo_root/salt.txt"), 0, 32));
+}
+
 /**
  * An example global include file.
  *
