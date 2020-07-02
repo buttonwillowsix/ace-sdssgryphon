@@ -45,7 +45,7 @@ test:
   ac-site: stanfordgryphon
   ac-env: test
   ac-realm: prod
-  uri: cardinalservice.sites-pro.stanford.edu
+  uri: cardinalservice-test.sites-pro.stanford.edu
   test.livedev:
     parent: '@stanfordgryphon.test'
     root: /mnt/gfs/stanfordgryphon.test/livedev/docroot

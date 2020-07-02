@@ -182,7 +182,7 @@
                 "https://www.drupal.org/project/config_ignore/issues/2857247": "https://www.drupal.org/files/issues/2018-10-14/support-for-export-2857247-24.patch"
             },
             "drupal/fakeobjects": {
-                "https://www.drupal.org/project/fakeobjects/issues/3002953": "https://www.drupal.org/files/issues/2019-02-12/fakeobjects-missing_plugin-3002953.patch"
+                "https://www.drupal.org/project/fakeobjects/issues/3002953": "https://www.drupal.org/files/issues/2020-06-22/fakeobjects-missing_plugin-3002953-5.patch"
             },
             "drupal/menu_link_weight": {
                 "https://www.drupal.org/project/menu_link_weight/issues/3099139": "https://www.drupal.org/files/issues/2019-12-05/menu_link_weight-target_blank-3099139.patch"
