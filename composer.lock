@@ -6194,6 +6194,55 @@
             }
         },
         {
+            "name": "drupal/hotjar",
+            "version": "2.0.0-rc4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/hotjar.git",
+                "reference": "8.x-2.0-rc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/hotjar-8.x-2.0-rc4.zip",
+                "reference": "8.x-2.0-rc4",
+                "shasum": "dc30c78c0e7e5a000fe1ad60f6c9b2f54b32cf2a"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "ext-json": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0-rc4",
+                    "datestamp": "1593497030",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "csakiistvan",
+                    "homepage": "https://www.drupal.org/user/491514"
+                },
+                {
+                    "name": "tikaszvince",
+                    "homepage": "https://www.drupal.org/user/337178"
+                }
+            ],
+            "description": "Allows your site to be tracked by Hotjar by adding a Javascript tracking code to every page",
+            "homepage": "https://www.drupal.org/project/hotjar",
+            "support": {
+                "source": "https://git.drupalcode.org/project/hotjar"
+            }
+        },
+        {
             "name": "drupal/image_effects",
             "version": "3.0.0",
             "source": {
@@ -9164,6 +9213,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "https://www.drupal.org/project/views_taxonomy_term_name_depth/issues/2877249": "https://www.drupal.org/files/issues/2019-12-02/views_taxonomy_term_name_depth-allow_multiple-2877249-17.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -14215,12 +14267,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-HKKU/cardinal_service_profile.git",
-                "reference": "7c7e0d169bff7059ba7bbea9aead36547a3e1208"
+                "reference": "1f3a7571c8cc9e037086df3fbc5fa8217ed49b80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/7c7e0d169bff7059ba7bbea9aead36547a3e1208",
-                "reference": "7c7e0d169bff7059ba7bbea9aead36547a3e1208",
+                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/1f3a7571c8cc9e037086df3fbc5fa8217ed49b80",
+                "reference": "1f3a7571c8cc9e037086df3fbc5fa8217ed49b80",
                 "shasum": ""
             },
             "require": {
@@ -14229,6 +14281,7 @@
                 "drupal/csv_importer": "^1.9",
                 "drupal/field_delimiter": "^1.1",
                 "drupal/flag": "^4.0@beta",
+                "drupal/hotjar": "^2.0",
                 "drupal/pdb": "^1.0@alpha",
                 "drupal/scheduler": "^1.3",
                 "drupal/search_api": "^1.17",
@@ -14262,7 +14315,7 @@
                 "GPL-2.0+"
             ],
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
-            "time": "2020-07-24T00:18:24+00:00"
+            "time": "2020-07-28T17:50:14+00:00"
         },
         {
             "name": "su-sws/jumpstart_ui",
