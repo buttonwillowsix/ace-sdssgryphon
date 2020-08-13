@@ -14462,12 +14462,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/jumpstart_ui.git",
-                "reference": "341465f3348a54b03b00b534c1380e0a08bb8007"
+                "reference": "d781974e9bbf21ed570d32d870efb5b920ca7e89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/jumpstart_ui/zipball/341465f3348a54b03b00b534c1380e0a08bb8007",
-                "reference": "341465f3348a54b03b00b534c1380e0a08bb8007",
+                "url": "https://api.github.com/repos/SU-SWS/jumpstart_ui/zipball/d781974e9bbf21ed570d32d870efb5b920ca7e89",
+                "reference": "d781974e9bbf21ed570d32d870efb5b920ca7e89",
                 "shasum": ""
             },
             "require": {
@@ -14483,7 +14483,7 @@
             ],
             "description": "Stanford Module Example",
             "homepage": "https://github.com/SU-SWS/jumpstart_ui",
-            "time": "2020-08-07T18:09:30+00:00"
+            "time": "2020-08-13T17:46:10+00:00"
         },
         {
             "name": "su-sws/nobots",
@@ -21776,6 +21776,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
