@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0134043b1909ad33c971741487e75a78",
+    "content-hash": "7ffb3801de00ccb1dc3d9f742d395195",
     "packages": [
         {
             "name": "acquia/blt",
-            "version": "11.4.2",
+            "version": "11.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/blt.git",
-                "reference": "63fbbddf5ac24b045e997f3835f2ad74a12c2a2f"
+                "reference": "ab2a48b58543c6fc1b825d3a354b9d5c48cb6347"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/blt/zipball/63fbbddf5ac24b045e997f3835f2ad74a12c2a2f",
-                "reference": "63fbbddf5ac24b045e997f3835f2ad74a12c2a2f",
+                "url": "https://api.github.com/repos/acquia/blt/zipball/ab2a48b58543c6fc1b825d3a354b9d5c48cb6347",
+                "reference": "ab2a48b58543c6fc1b825d3a354b9d5c48cb6347",
                 "shasum": ""
             },
             "require": {
@@ -39,7 +39,7 @@
                 "grasmash/drupal-security-warning": "^1.0.0",
                 "grasmash/yaml-cli": "^1.0.0",
                 "grasmash/yaml-expander": "^1.2.0",
-                "mglaman/drupal-check": ">=1.0.10 <1.1.0 || 1.1.1",
+                "mglaman/drupal-check": ">=1.0.10 <1.1.0 || >1.1.1",
                 "oomphinc/composer-installers-extender": "^1.1",
                 "php": ">=7.2",
                 "sensiolabs/security-checker": "^5.0.0",
@@ -113,7 +113,7 @@
                 "template",
                 "testing"
             ],
-            "time": "2020-06-17T20:16:55+00:00"
+            "time": "2020-09-04T21:56:41+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -318,16 +318,16 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v1.0.8",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "cf202c913c10d85085ab5ed9ec88607e312839ce"
+                "reference": "7f6b8780ae20862529a0ceaaf102a3f7ff740b91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/cf202c913c10d85085ab5ed9ec88607e312839ce",
-                "reference": "cf202c913c10d85085ab5ed9ec88607e312839ce",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/7f6b8780ae20862529a0ceaaf102a3f7ff740b91",
+                "reference": "7f6b8780ae20862529a0ceaaf102a3f7ff740b91",
                 "shasum": ""
             },
             "require": {
@@ -373,7 +373,7 @@
                 "localization",
                 "postal"
             ],
-            "time": "2020-05-26T11:04:04+00:00"
+            "time": "2020-09-12T12:15:49+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -583,17 +583,86 @@
             "time": "2020-04-07T06:57:05+00:00"
         },
         {
-            "name": "composer/semver",
-            "version": "1.5.1",
+            "name": "composer/package-versions-deprecated",
+            "version": "1.11.99",
             "source": {
                 "type": "git",
-                "url": "https://github.com/composer/semver.git",
-                "reference": "c6bea70230ef4dd483e6bbcab6005f682ed3a8de"
+                "url": "https://github.com/composer/package-versions-deprecated.git",
+                "reference": "c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/c6bea70230ef4dd483e6bbcab6005f682ed3a8de",
-                "reference": "c6bea70230ef4dd483e6bbcab6005f682ed3a8de",
+                "url": "https://api.github.com/repos/composer/package-versions-deprecated/zipball/c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855",
+                "reference": "c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1.0 || ^2.0",
+                "php": "^7 || ^8"
+            },
+            "replace": {
+                "ocramius/package-versions": "1.11.99"
+            },
+            "require-dev": {
+                "composer/composer": "^1.9.3 || ^2.0@dev",
+                "ext-zip": "^1.13",
+                "phpunit/phpunit": "^6.5 || ^7"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PackageVersions\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PackageVersions\\": "src/PackageVersions"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be"
+                }
+            ],
+            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-08-25T05:50:16+00:00"
+        },
+        {
+            "name": "composer/semver",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/semver.git",
+                "reference": "114f819054a2ea7db03287f5efb757e2af6e4079"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/semver/zipball/114f819054a2ea7db03287f5efb757e2af6e4079",
+                "reference": "114f819054a2ea7db03287f5efb757e2af6e4079",
                 "shasum": ""
             },
             "require": {
@@ -641,7 +710,21 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2020-01-13T12:06:48+00:00"
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-09-09T09:34:06+00:00"
         },
         {
             "name": "composer/xdebug-handler",
@@ -2516,33 +2599,35 @@
         },
         {
             "name": "dompdf/dompdf",
-            "version": "v0.8.5",
+            "version": "v0.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dompdf/dompdf.git",
-                "reference": "6782abfc090b132134cd6cea0ec6d76f0fce2c56"
+                "reference": "db91d81866c69a42dad1d2926f61515a1e3f42c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/6782abfc090b132134cd6cea0ec6d76f0fce2c56",
-                "reference": "6782abfc090b132134cd6cea0ec6d76f0fce2c56",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/db91d81866c69a42dad1d2926f61515a1e3f42c5",
+                "reference": "db91d81866c69a42dad1d2926f61515a1e3f42c5",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-mbstring": "*",
-                "phenx/php-font-lib": "^0.5.1",
+                "phenx/php-font-lib": "^0.5.2",
                 "phenx/php-svg-lib": "^0.3.3",
                 "php": "^7.1"
             },
             "require-dev": {
+                "mockery/mockery": "^1.3",
                 "phpunit/phpunit": "^7.5",
                 "squizlabs/php_codesniffer": "^3.5"
             },
             "suggest": {
                 "ext-gd": "Needed to process images",
                 "ext-gmagick": "Improves image processing performance",
-                "ext-imagick": "Improves image processing performance"
+                "ext-imagick": "Improves image processing performance",
+                "ext-zlib": "Needed for pdf stream compression"
             },
             "type": "library",
             "extra": {
@@ -2578,7 +2663,7 @@
             ],
             "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
             "homepage": "https://github.com/dompdf/dompdf",
-            "time": "2020-02-20T03:52:51+00:00"
+            "time": "2020-08-30T22:54:22+00:00"
         },
         {
             "name": "drupal/acquia_purge",
@@ -3319,20 +3404,21 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.9",
+            "version": "8.3.10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/coder.git",
-                "reference": "d51e0b8c6561e21c0545d04b5410a7bed7ee7c6b"
+                "reference": "e1d71c6bb75b94f9ed00dceb2f4f6cb7e044723d"
             },
             "require": {
                 "ext-mbstring": "*",
                 "php": ">=7.0.8",
-                "squizlabs/php_codesniffer": "^3.5.5",
+                "sirbrillig/phpcs-variable-analysis": "^2.8",
+                "squizlabs/php_codesniffer": "^3.5.6",
                 "symfony/yaml": ">=2.0.5"
             },
             "require-dev": {
-                "phpstan/phpstan": "^0.12.5",
+                "phpstan/phpstan": "^0.12.31",
                 "phpunit/phpunit": "^6.0 || ^7.0"
             },
             "type": "phpcodesniffer-standard",
@@ -3344,7 +3430,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "description": "Coder is a library to review Drupal code.",
             "homepage": "https://www.drupal.org/project/coder",
@@ -3353,7 +3439,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2020-05-08T10:20:59+00:00"
+            "time": "2020-09-03T19:59:53+00:00"
         },
         {
             "name": "drupal/color_field",
@@ -3361,7 +3447,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/color_field.git",
-                "reference": "98bf32eac0da2ab80f7b7b553ec0fe938446e2b7"
+                "reference": "00aaee0413b786bf7ecc2570fd7e43d045b90443"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -3410,7 +3496,7 @@
                 "source": "https://git.drupalcode.org/project/color_field",
                 "issues": "https://www.drupal.org/project/issues/color_field?version=8.x"
             },
-            "time": "2020-08-03T17:57:27+00:00"
+            "time": "2020-09-05T15:49:08+00:00"
         },
         {
             "name": "drupal/components",
@@ -3623,7 +3709,7 @@
                     }
                 },
                 "patches_applied": {
-                    "https://www.drupal.org/project/config_ignore/issues/2857247": "https://www.drupal.org/files/issues/2018-10-14/support-for-export-2857247-24.patch",
+                    "https://www.drupal.org/project/config_ignore/issues/2857247": "https://www.drupal.org/files/issues/2020-08-18/support-for-export-2857247-54.patch",
                     "https://www.drupal.org/project/config_ignore/issues/2865419": "https://www.drupal.org/files/issues/2020-06-21/config_ignore-wildcard_force-14.patch"
                 }
             },
@@ -3895,30 +3981,34 @@
         },
         {
             "name": "drupal/config_split",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_split.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_split-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "938ea6c88834aa88bb310740758e56c1800e535b"
+                "url": "https://ftp.drupal.org/files/projects/config_split-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "ea727dbe5cb4586bbc21afad61db26c65fe5ce49"
             },
             "require": {
-                "drupal/config_filter": "*",
-                "drupal/core": "~8.0"
+                "drupal/config_filter": "^1||^2",
+                "drupal/core": "^8.8 || ^9"
+            },
+            "conflict": {
+                "drupal/console": "<1.3.2"
+            },
+            "suggest": {
+                "drupal/chosen": "Chosen uses the Chosen jQuery plugin to make the <select> elements more user-friendly.",
+                "drupal/select2_all": "Applies the Select2 library to all select fields on the site similar to the Chosen module."
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1537971780",
+                    "version": "8.x-1.5",
+                    "datestamp": "1599549544",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3926,13 +4016,13 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9"
+                        "drush.services.yml": "^9 || ^10"
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3960,9 +4050,9 @@
                 "configuration management"
             ],
             "support": {
-                "source": "http://cgit.drupalcode.org/config_split",
+                "source": "https://git.drupalcode.org/project/config_split",
                 "issues": "https://www.drupal.org/project/issues/config_split",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
+                "slack": "https://drupal.slack.com/archives/C45342CDD"
             }
         },
         {
@@ -4065,16 +4155,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.9.4",
+            "version": "8.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "1de88703485c755d0db7420156432306a0acad8f"
+                "reference": "c9b9643663b80f02c038f9dea15b8717a22c3339"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/1de88703485c755d0db7420156432306a0acad8f",
-                "reference": "1de88703485c755d0db7420156432306a0acad8f",
+                "url": "https://api.github.com/repos/drupal/core/zipball/c9b9643663b80f02c038f9dea15b8717a22c3339",
+                "reference": "c9b9643663b80f02c038f9dea15b8717a22c3339",
                 "shasum": ""
             },
             "require": {
@@ -4273,6 +4363,7 @@
                 "patches_applied": {
                     "https://www.drupal.org/project/drupal/issues/3015152": "https://www.drupal.org/files/issues/2019-12-05/3015152-tps-26.patch",
                     "https://www.drupal.org/project/drupal/issues/2577923": "https://www.drupal.org/files/issues/2020-06-11/2577923-128.patch",
+                    "https://www.drupal.org/project/drupal/issues/3104980": "https://www.drupal.org/files/issues/2020-01-08/3104980-2.patch",
                     "https://www.drupal.org/project/drupal/issues/3039185": "https://www.drupal.org/files/issues/2020-04-17/allow-field-blocks-to-display-label-in-layout-builder-3039185-22.patch",
                     "https://www.drupal.org/project/drupal/issues/3064751": "https://www.drupal.org/files/issues/2019-07-02/3064751-5.patch",
                     "https://www.drupal.org/project/drupal/issues/2353611": "https://www.drupal.org/files/issues/2019-10-15/drupal-link_uuid-2353611-262.patch"
@@ -4299,7 +4390,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2020-09-02T11:37:12+00:00"
+            "time": "2020-09-03T21:07:45+00:00"
         },
         {
             "name": "drupal/crop",
@@ -5255,9 +5346,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.8",
                     "datestamp": "1583961846",
@@ -7028,6 +7116,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "https://www.drupal.org/project/menu_block/issues/3082445": "https://www.drupal.org/files/issues/2020-05-06/menu_block-render-parent-3082445-17.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7504,6 +7595,61 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/node_revision_delete",
                 "issues": "https://www.drupal.org/project/issues/node_revision_delete"
+            }
+        },
+        {
+            "name": "drupal/node_title_help_text",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/node_title_help_text.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/node_title_help_text-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "7e1dd939eaec5d996e463654aafae9eb055f515c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1592935557",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Devendra Jadhav",
+                    "homepage": "https://www.drupal.org/u/jadhavdevendra",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "makbul_khan8",
+                    "homepage": "https://www.drupal.org/user/991152"
+                },
+                {
+                    "name": "vinmassaro",
+                    "homepage": "https://www.drupal.org/user/525104"
+                }
+            ],
+            "description": "Allows you to add help text to node title.",
+            "homepage": "https://www.drupal.org/project/node_title_help_text",
+            "support": {
+                "source": "https://cgit.drupalcode.org/node_title_help_text",
+                "issues": "https://drupal.org/project/issues/node_title_help_text",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -9467,6 +9613,10 @@
             ],
             "authors": [
                 {
+                    "name": "JayKandari",
+                    "homepage": "https://www.drupal.org/user/2876519"
+                },
+                {
                     "name": "baikho",
                     "homepage": "https://www.drupal.org/user/2727459"
                 },
@@ -9827,16 +9977,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.19",
+            "version": "2.1.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "840d5603eb84cc81a6a0382adac3293e57c1c64c"
+                "reference": "f46887bc48db66c7f38f668eb7d6ae54583617ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/840d5603eb84cc81a6a0382adac3293e57c1c64c",
-                "reference": "840d5603eb84cc81a6a0382adac3293e57c1c64c",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/f46887bc48db66c7f38f668eb7d6ae54583617ff",
+                "reference": "f46887bc48db66c7f38f668eb7d6ae54583617ff",
                 "shasum": ""
             },
             "require": {
@@ -9881,7 +10031,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2020-08-08T21:28:19+00:00"
+            "time": "2020-09-06T13:44:32+00:00"
         },
         {
             "name": "enyo/dropzone",
@@ -10645,20 +10795,20 @@
         },
         {
             "name": "jean85/pretty-package-versions",
-            "version": "1.2",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jean85/pretty-package-versions.git",
-                "reference": "75c7effcf3f77501d0e0caa75111aff4daa0dd48"
+                "reference": "e3517fb11b67e798239354fe8213927d012ad8f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jean85/pretty-package-versions/zipball/75c7effcf3f77501d0e0caa75111aff4daa0dd48",
-                "reference": "75c7effcf3f77501d0e0caa75111aff4daa0dd48",
+                "url": "https://api.github.com/repos/Jean85/pretty-package-versions/zipball/e3517fb11b67e798239354fe8213927d012ad8f9",
+                "reference": "e3517fb11b67e798239354fe8213927d012ad8f9",
                 "shasum": ""
             },
             "require": {
-                "ocramius/package-versions": "^1.2.0",
+                "composer/package-versions-deprecated": "^1.8.0",
                 "php": "^7.0"
             },
             "require-dev": {
@@ -10692,7 +10842,7 @@
                 "release",
                 "versions"
             ],
-            "time": "2018-06-13T13:22:40+00:00"
+            "time": "2020-04-24T14:19:45+00:00"
         },
         {
             "name": "kub-at/php-simple-html-dom-parser",
@@ -10989,16 +11139,16 @@
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "4939c81f63a8a4968c108c440275c94955753b19"
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/4939c81f63a8a4968c108c440275c94955753b19",
-                "reference": "4939c81f63a8a4968c108c440275c94955753b19",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6ede70583e101030bcace4dcddd648f760ddf642",
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642",
                 "shasum": ""
             },
             "require": {
@@ -11010,10 +11160,6 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev",
-                    "dev-develop": "1.1.x-dev"
-                },
                 "laminas": {
                     "module": "Laminas\\ZendFrameworkBridge"
                 }
@@ -11043,7 +11189,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-08-18T16:34:51+00:00"
+            "time": "2020-09-14T14:23:00+00:00"
         },
         {
             "name": "league/container",
@@ -11303,32 +11449,29 @@
         },
         {
             "name": "mglaman/drupal-check",
-            "version": "1.1.1",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/drupal-check.git",
-                "reference": "3ec4b60f86caa6fabd8067726908afd66ee3ec01"
+                "reference": "42ef2d602f2c97c6bdb794aa891094554ec7f520"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/drupal-check/zipball/3ec4b60f86caa6fabd8067726908afd66ee3ec01",
-                "reference": "3ec4b60f86caa6fabd8067726908afd66ee3ec01",
+                "url": "https://api.github.com/repos/mglaman/drupal-check/zipball/42ef2d602f2c97c6bdb794aa891094554ec7f520",
+                "reference": "42ef2d602f2c97c6bdb794aa891094554ec7f520",
                 "shasum": ""
             },
             "require": {
                 "composer/xdebug-handler": "^1.3",
-                "jean85/pretty-package-versions": "^1.2",
-                "mglaman/phpstan-drupal": "^0.12",
+                "jean85/pretty-package-versions": "~1.3.0",
+                "mglaman/phpstan-drupal": "^0.12.4",
                 "nette/neon": "^3.1",
                 "php": "~7.2",
-                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan": "^0.12.26",
                 "phpstan/phpstan-deprecation-rules": "^0.12",
                 "symfony/console": "~3.2 || ~4.0",
                 "symfony/process": "~3.2 || ~4.0",
                 "webflo/drupal-finder": "^1.1"
-            },
-            "conflict": {
-                "ocramius/package-versions": ">=1.5"
             },
             "require-dev": {
                 "squizlabs/php_codesniffer": "^3.4"
@@ -11344,7 +11487,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -11357,9 +11500,17 @@
                 {
                     "url": "https://github.com/mglaman",
                     "type": "github"
+                },
+                {
+                    "url": "https://ko-fi.com/mglaman",
+                    "type": "ko_fi"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/mglaman/drupal-check",
+                    "type": "tidelift"
                 }
             ],
-            "time": "2020-02-27T03:18:28+00:00"
+            "time": "2020-07-29T21:21:10+00:00"
         },
         {
             "name": "mglaman/phpstan-drupal",
@@ -11796,56 +11947,6 @@
             "time": "2020-08-30T16:15:20+00:00"
         },
         {
-            "name": "ocramius/package-versions",
-            "version": "1.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Ocramius/PackageVersions.git",
-                "reference": "44af6f3a2e2e04f2af46bcb302ad9600cba41c7d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/44af6f3a2e2e04f2af46bcb302ad9600cba41c7d",
-                "reference": "44af6f3a2e2e04f2af46bcb302ad9600cba41c7d",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0.0",
-                "php": "^7.1.0"
-            },
-            "require-dev": {
-                "composer/composer": "^1.6.3",
-                "doctrine/coding-standard": "^5.0.1",
-                "ext-zip": "*",
-                "infection/infection": "^0.7.1",
-                "phpunit/phpunit": "^7.5.17"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "PackageVersions\\Installer",
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "PackageVersions\\": "src/PackageVersions"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com"
-                }
-            ],
-            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
-            "time": "2019-11-15T16:17:10+00:00"
-        },
-        {
             "name": "oomphinc/composer-installers-extender",
             "version": "v1.1.2",
             "source": {
@@ -11934,16 +12035,16 @@
         },
         {
             "name": "pear/archive_tar",
-            "version": "1.4.9",
+            "version": "1.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Archive_Tar.git",
-                "reference": "c5b00053770e1d72128252c62c2c1a12c26639f0"
+                "reference": "bbb4f10f71a1da2715ec6d9a683f4f23c507a49b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/c5b00053770e1d72128252c62c2c1a12c26639f0",
-                "reference": "c5b00053770e1d72128252c62c2c1a12c26639f0",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/bbb4f10f71a1da2715ec6d9a683f4f23c507a49b",
+                "reference": "bbb4f10f71a1da2715ec6d9a683f4f23c507a49b",
                 "shasum": ""
             },
             "require": {
@@ -11996,7 +12097,7 @@
                 "archive",
                 "tar"
             ],
-            "time": "2019-12-04T10:17:28+00:00"
+            "time": "2020-09-15T14:13:23+00:00"
         },
         {
             "name": "pear/console_getopt",
@@ -12728,16 +12829,16 @@
         },
         {
             "name": "robrichards/xmlseclibs",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robrichards/xmlseclibs.git",
-                "reference": "8d8e56ca7914440a8c60caff1a865e7dff1d9a5a"
+                "reference": "f8f19e58f26cdb42c54b214ff8a820760292f8df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robrichards/xmlseclibs/zipball/8d8e56ca7914440a8c60caff1a865e7dff1d9a5a",
-                "reference": "8d8e56ca7914440a8c60caff1a865e7dff1d9a5a",
+                "url": "https://api.github.com/repos/robrichards/xmlseclibs/zipball/f8f19e58f26cdb42c54b214ff8a820760292f8df",
+                "reference": "f8f19e58f26cdb42c54b214ff8a820760292f8df",
                 "shasum": ""
             },
             "require": {
@@ -12762,7 +12863,7 @@
                 "xml",
                 "xmldsig"
             ],
-            "time": "2020-04-22T17:19:51+00:00"
+            "time": "2020-09-05T13:00:25+00:00"
         },
         {
             "name": "sabberworm/php-css-parser",
@@ -12940,16 +13041,16 @@
         },
         {
             "name": "simplesamlphp/saml2",
-            "version": "v4.1.9",
+            "version": "v4.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/saml2.git",
-                "reference": "ff19d04d3af0689a13c1f75859e13f4a511343cb"
+                "reference": "1f0c32fca12a625ba24eb55fe3c08f6565bc6e6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/saml2/zipball/ff19d04d3af0689a13c1f75859e13f4a511343cb",
-                "reference": "ff19d04d3af0689a13c1f75859e13f4a511343cb",
+                "url": "https://api.github.com/repos/simplesamlphp/saml2/zipball/1f0c32fca12a625ba24eb55fe3c08f6565bc6e6a",
+                "reference": "1f0c32fca12a625ba24eb55fe3c08f6565bc6e6a",
                 "shasum": ""
             },
             "require": {
@@ -12991,7 +13092,7 @@
                 }
             ],
             "description": "SAML2 PHP library from SimpleSAMLphp",
-            "time": "2020-08-19T06:10:17+00:00"
+            "time": "2020-09-04T22:31:58+00:00"
         },
         {
             "name": "simplesamlphp/simplesamlphp",
@@ -14553,6 +14654,54 @@
             "time": "2019-11-18T17:48:08+00:00"
         },
         {
+            "name": "sirbrillig/phpcs-variable-analysis",
+            "version": "v2.8.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sirbrillig/phpcs-variable-analysis.git",
+                "reference": "00b4fa3130faa26762c929989e3d958086c627f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/00b4fa3130faa26762c929989e3d958086c627f1",
+                "reference": "00b4fa3130faa26762c929989e3d958086c627f1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "squizlabs/php_codesniffer": "^3.1"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4 || ^0.5 || ^0.6",
+                "limedeck/phpunit-detailed-printer": "^3.1 || ^4.0 || ^5.0",
+                "phpstan/phpstan": "^0.11.8",
+                "phpunit/phpunit": "^5.0 || ^6.5 || ^7.0 || ^8.0",
+                "sirbrillig/phpcs-import-detection": "^1.1"
+            },
+            "type": "phpcodesniffer-standard",
+            "autoload": {
+                "psr-4": {
+                    "VariableAnalysis\\": "VariableAnalysis/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Graham",
+                    "email": "php-codesniffer-variableanalysis@illusori.co.uk"
+                },
+                {
+                    "name": "Payton Swick",
+                    "email": "payton@foolord.com"
+                }
+            ],
+            "description": "A PHPCS sniff to detect problems with variables.",
+            "time": "2020-07-11T23:32:06+00:00"
+        },
+        {
             "name": "squizlabs/php_codesniffer",
             "version": "3.5.6",
             "source": {
@@ -14655,16 +14804,16 @@
         },
         {
             "name": "su-hkku/cardinal_service_profile",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-HKKU/cardinal_service_profile.git",
-                "reference": "8cc1e2887df5115a6dc6dbcdc3c58042336725b5"
+                "reference": "53b43308be2c9ded2d6b980f20cc6ab48a7a9640"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/8cc1e2887df5115a6dc6dbcdc3c58042336725b5",
-                "reference": "8cc1e2887df5115a6dc6dbcdc3c58042336725b5",
+                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/53b43308be2c9ded2d6b980f20cc6ab48a7a9640",
+                "reference": "53b43308be2c9ded2d6b980f20cc6ab48a7a9640",
                 "shasum": ""
             },
             "require": {
@@ -14676,6 +14825,7 @@
                 "drupal/flag": "^4.0@beta",
                 "drupal/hotjar": "^2.0",
                 "drupal/migrate_source_csv": "^3.4",
+                "drupal/node_title_help_text": "^1.2",
                 "drupal/pdb": "^1.0@alpha",
                 "drupal/scheduler": "^1.3",
                 "drupal/search_api": "^1.17",
@@ -14684,23 +14834,27 @@
                 "drupal/views_field_view": "^1.0@beta",
                 "drupal/views_taxonomy_term_name_depth": "^7.0",
                 "michelf/php-markdown": "^1.9",
-                "su-sws/stanford_profile": "dev-8.x-1.x"
+                "su-sws/stanford_profile": "^8.1.4"
             },
             "type": "drupal-custom-profile",
             "extra": {
                 "patches": {
                     "drupal/core": {
                         "https://www.drupal.org/project/drupal/issues/3015152": "https://www.drupal.org/files/issues/2019-12-05/3015152-tps-26.patch",
-                        "https://www.drupal.org/project/drupal/issues/2577923": "https://www.drupal.org/files/issues/2019-10-14/2577923-125.patch"
+                        "https://www.drupal.org/project/drupal/issues/2577923": "https://www.drupal.org/files/issues/2019-10-14/2577923-125.patch",
+                        "https://www.drupal.org/project/drupal/issues/3104980": "https://www.drupal.org/files/issues/2020-01-08/3104980-2.patch"
                     },
                     "drupal/entity_reference_revisions": {
                         "https://www.drupal.org/project/entity_reference_revisions/issues/3004210": "https://www.drupal.org/files/issues/2019-10-14/3004210-14.patch"
                     },
-                    "drupal/views_taxonomy_term_name_depth": {
-                        "https://www.drupal.org/project/views_taxonomy_term_name_depth/issues/2877249": "https://www.drupal.org/files/issues/2019-12-02/views_taxonomy_term_name_depth-allow_multiple-2877249-17.patch"
-                    },
                     "drupal/field_delimiter": {
                         "https://www.drupal.org/project/field_delimiter/issues/3099580": "https://www.drupal.org/files/issues/2020-04-08/field_delimiter-3099580-7.patch"
+                    },
+                    "drupal/menu_block": {
+                        "https://www.drupal.org/project/menu_block/issues/3082445": "https://www.drupal.org/files/issues/2020-05-06/menu_block-render-parent-3082445-17.patch"
+                    },
+                    "drupal/views_taxonomy_term_name_depth": {
+                        "https://www.drupal.org/project/views_taxonomy_term_name_depth/issues/2877249": "https://www.drupal.org/files/issues/2019-12-02/views_taxonomy_term_name_depth-allow_multiple-2877249-17.patch"
                     }
                 }
             },
@@ -14714,20 +14868,20 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
-            "time": "2020-09-03T17:46:41+00:00"
+            "time": "2020-09-15T17:49:13+00:00"
         },
         {
             "name": "su-sws/jumpstart_ui",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/jumpstart_ui.git",
-                "reference": "9abc078df3966067ef6e9cf4d7d0b3bf53b1a7ae"
+                "reference": "a44081ac1b993493c346930a0698bd19ac6e2ccf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/jumpstart_ui/zipball/9abc078df3966067ef6e9cf4d7d0b3bf53b1a7ae",
-                "reference": "9abc078df3966067ef6e9cf4d7d0b3bf53b1a7ae",
+                "url": "https://api.github.com/repos/SU-SWS/jumpstart_ui/zipball/a44081ac1b993493c346930a0698bd19ac6e2ccf",
+                "reference": "a44081ac1b993493c346930a0698bd19ac6e2ccf",
                 "shasum": ""
             },
             "require": {
@@ -14743,20 +14897,20 @@
             ],
             "description": "Stanford Module Example",
             "homepage": "https://github.com/SU-SWS/jumpstart_ui",
-            "time": "2020-09-02T23:35:06+00:00"
+            "time": "2020-09-09T22:04:36+00:00"
         },
         {
             "name": "su-sws/nobots",
-            "version": "dev-8.x-2.x",
+            "version": "8.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/nobots.git",
-                "reference": "fbc6f8374c45a5924ef4e9e5269ea6e3657c89b6"
+                "reference": "eaf519eb08478a6a8a1b1c54f3ec9d5d0a99c7f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/nobots/zipball/fbc6f8374c45a5924ef4e9e5269ea6e3657c89b6",
-                "reference": "fbc6f8374c45a5924ef4e9e5269ea6e3657c89b6",
+                "url": "https://api.github.com/repos/SU-SWS/nobots/zipball/eaf519eb08478a6a8a1b1c54f3ec9d5d0a99c7f2",
+                "reference": "eaf519eb08478a6a8a1b1c54f3ec9d5d0a99c7f2",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -14765,20 +14919,20 @@
                 "GPL-2.0+"
             ],
             "description": "This module blocks (well-behaved) search engine robots from crawling, indexing, or archiving your site by setting a \"X-Robots-Tag: noindex,nofollow,noarchive\" HTTP header.",
-            "time": "2020-04-06T20:07:52+00:00"
+            "time": "2020-05-15T17:57:32+00:00"
         },
         {
             "name": "su-sws/react_paragraphs",
-            "version": "dev-8.x-2.x",
+            "version": "8.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/react_paragraphs.git",
-                "reference": "e988359b61b1c97b5007cfea759baa1fa902f6cd"
+                "reference": "aef9af432e417cefcdd2d60bc62a4c3db8af014f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/react_paragraphs/zipball/e988359b61b1c97b5007cfea759baa1fa902f6cd",
-                "reference": "e988359b61b1c97b5007cfea759baa1fa902f6cd",
+                "url": "https://api.github.com/repos/SU-SWS/react_paragraphs/zipball/aef9af432e417cefcdd2d60bc62a4c3db8af014f",
+                "reference": "aef9af432e417cefcdd2d60bc62a4c3db8af014f",
                 "shasum": ""
             },
             "require": {
@@ -14797,20 +14951,20 @@
                 }
             ],
             "description": "An advanced UI for editing paragraphs in Drupal.",
-            "time": "2020-09-02T04:03:28+00:00"
+            "time": "2020-09-10T21:35:16+00:00"
         },
         {
             "name": "su-sws/stanford_basic",
-            "version": "dev-8.x-4.x",
+            "version": "8.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_basic.git",
-                "reference": "3c5bb6a3a15fcc16051e449c73ff9fbaeaf1b132"
+                "reference": "7c1cde4c910726e7775639d0e4e9fb9f9d5245bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_basic/zipball/3c5bb6a3a15fcc16051e449c73ff9fbaeaf1b132",
-                "reference": "3c5bb6a3a15fcc16051e449c73ff9fbaeaf1b132",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_basic/zipball/7c1cde4c910726e7775639d0e4e9fb9f9d5245bd",
+                "reference": "7c1cde4c910726e7775639d0e4e9fb9f9d5245bd",
                 "shasum": ""
             },
             "type": "drupal-custom-theme",
@@ -14820,20 +14974,20 @@
             ],
             "description": "Stanford Basic Branding Theme.",
             "homepage": "https://github.com/SU-SWS/stanford_basic",
-            "time": "2020-09-02T23:12:47+00:00"
+            "time": "2020-09-09T22:07:59+00:00"
         },
         {
             "name": "su-sws/stanford_date_formats",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_date_formats.git",
-                "reference": "b697b1135841c02959a385d6cbc1fbdba3191a53"
+                "reference": "aaed04bac1a0e068ecb426cfe190721ce4ed6a15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_date_formats/zipball/b697b1135841c02959a385d6cbc1fbdba3191a53",
-                "reference": "b697b1135841c02959a385d6cbc1fbdba3191a53",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_date_formats/zipball/aaed04bac1a0e068ecb426cfe190721ce4ed6a15",
+                "reference": "aaed04bac1a0e068ecb426cfe190721ce4ed6a15",
                 "shasum": ""
             },
             "require": {
@@ -14842,23 +14996,23 @@
             "type": "drupal-custom-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "description": "A collection of date formats.",
-            "time": "2020-08-27T20:11:50+00:00"
+            "time": "2020-04-16T21:02:16+00:00"
         },
         {
             "name": "su-sws/stanford_events",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_events.git",
-                "reference": "124293fc6598c480cb758b1017261995d0647a2c"
+                "reference": "d40218adfa8c0314398caffa5c679878bde26990"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_events/zipball/124293fc6598c480cb758b1017261995d0647a2c",
-                "reference": "124293fc6598c480cb758b1017261995d0647a2c",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_events/zipball/d40218adfa8c0314398caffa5c679878bde26990",
+                "reference": "d40218adfa8c0314398caffa5c679878bde26990",
                 "shasum": ""
             },
             "require": {
@@ -14885,11 +15039,11 @@
                 "drupal/taxonomy_menu": "dev-3.x",
                 "drupal/views_block_filter_block": "^1.0",
                 "drupal/views_infinite_scroll": "^1.6",
-                "su-sws/jumpstart_ui": "dev-8.x-1.x",
-                "su-sws/stanford_date_formats": "dev-8.x-1.x",
-                "su-sws/stanford_fields": "dev-8.x-1.x",
-                "su-sws/stanford_migrate": "dev-8.x-1.x",
-                "su-sws/stanford_text_editor": "dev-8.x-1.x"
+                "su-sws/jumpstart_ui": "^8.1.0",
+                "su-sws/stanford_date_formats": "^8.1.0",
+                "su-sws/stanford_fields": "^8.1.0",
+                "su-sws/stanford_migrate": "^8.1.0",
+                "su-sws/stanford_text_editor": "^8.1.0"
             },
             "type": "drupal-custom-module",
             "extra": {
@@ -14922,20 +15076,20 @@
             ],
             "description": "Stanford Events",
             "homepage": "https://github.com/SU-SWS/stanford_events",
-            "time": "2020-08-21T19:26:37+00:00"
+            "time": "2020-09-14T17:55:15+00:00"
         },
         {
             "name": "su-sws/stanford_fields",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_fields.git",
-                "reference": "3e444519f495b5bc8b6aecacab19ffe55f13c6ba"
+                "reference": "2b0efafed671a4364c77698efdf8e480d52e8e57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_fields/zipball/3e444519f495b5bc8b6aecacab19ffe55f13c6ba",
-                "reference": "3e444519f495b5bc8b6aecacab19ffe55f13c6ba",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_fields/zipball/2b0efafed671a4364c77698efdf8e480d52e8e57",
+                "reference": "2b0efafed671a4364c77698efdf8e480d52e8e57",
                 "shasum": ""
             },
             "require": {
@@ -14944,24 +15098,24 @@
             "type": "drupal-custom-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "description": "Stanford Fields",
             "homepage": "https://github.com/SU-SWS/stanford_fields",
-            "time": "2020-08-27T20:08:53+00:00"
+            "time": "2020-04-24T15:46:59+00:00"
         },
         {
             "name": "su-sws/stanford_image_styles",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_image_styles.git",
-                "reference": "3c06789536f528c567f3bc85821c2d86d2dab100"
+                "reference": "223e8b91d2b295acee7a3f6c4f15aba6dff20ff0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_image_styles/zipball/3c06789536f528c567f3bc85821c2d86d2dab100",
-                "reference": "3c06789536f528c567f3bc85821c2d86d2dab100",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_image_styles/zipball/223e8b91d2b295acee7a3f6c4f15aba6dff20ff0",
+                "reference": "223e8b91d2b295acee7a3f6c4f15aba6dff20ff0",
                 "shasum": ""
             },
             "require": {
@@ -14971,24 +15125,24 @@
             "type": "drupal-custom-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "description": "Stanford Image Styles for Drupal 8",
             "homepage": "https://github.com/SU-SWS/stanford_image_styles",
-            "time": "2020-08-21T19:26:48+00:00"
+            "time": "2020-06-18T06:25:51+00:00"
         },
         {
             "name": "su-sws/stanford_media",
-            "version": "dev-8.x-2.x",
+            "version": "8.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_media.git",
-                "reference": "384a274c37411ca2c16742e4104fb757bbcd42a7"
+                "reference": "02247c380340768947b6f7b38dd4dabfcc08b3a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_media/zipball/384a274c37411ca2c16742e4104fb757bbcd42a7",
-                "reference": "384a274c37411ca2c16742e4104fb757bbcd42a7",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_media/zipball/02247c380340768947b6f7b38dd4dabfcc08b3a7",
+                "reference": "02247c380340768947b6f7b38dd4dabfcc08b3a7",
                 "shasum": ""
             },
             "require": {
@@ -15036,20 +15190,20 @@
             ],
             "description": "Stanford Media module for Drupal 8 Media management",
             "homepage": "https://github.com/SU-SWS/stanford_media",
-            "time": "2020-08-27T22:19:30+00:00"
+            "time": "2020-09-14T17:07:53+00:00"
         },
         {
             "name": "su-sws/stanford_migrate",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_migrate.git",
-                "reference": "1843069beb84c3bcfb18854edc5b147a79f0434f"
+                "reference": "e004005f7732fbb17f3b8ad4c22d5b728a646603"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_migrate/zipball/1843069beb84c3bcfb18854edc5b147a79f0434f",
-                "reference": "1843069beb84c3bcfb18854edc5b147a79f0434f",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_migrate/zipball/e004005f7732fbb17f3b8ad4c22d5b728a646603",
+                "reference": "e004005f7732fbb17f3b8ad4c22d5b728a646603",
                 "shasum": ""
             },
             "require": {
@@ -15081,20 +15235,20 @@
             ],
             "description": "Stanford Migrate Helper functions",
             "homepage": "https://github.com/SU-SWS/stanford_migrate",
-            "time": "2020-09-02T19:17:24+00:00"
+            "time": "2020-09-09T23:09:04+00:00"
         },
         {
             "name": "su-sws/stanford_news",
-            "version": "dev-8.x-2.x",
+            "version": "8.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_news.git",
-                "reference": "5da2871f65392c2c756ea4f208b4de3ebc9573ba"
+                "reference": "74dba8913cd4535ea04e514fce22be77146e00b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_news/zipball/5da2871f65392c2c756ea4f208b4de3ebc9573ba",
-                "reference": "5da2871f65392c2c756ea4f208b4de3ebc9573ba",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_news/zipball/74dba8913cd4535ea04e514fce22be77146e00b7",
+                "reference": "74dba8913cd4535ea04e514fce22be77146e00b7",
                 "shasum": ""
             },
             "require": {
@@ -15116,8 +15270,8 @@
                 "drupal/taxonomy_menu": "dev-3.x#c0892fa9b428ceb784876554c9b80f49d72a246f",
                 "drupal/views_block_filter_block": "^1.0",
                 "drupal/views_infinite_scroll": "^1.6",
-                "su-sws/jumpstart_ui": "dev-8.x-1.x",
-                "su-sws/stanford_text_editor": "dev-8.x-1.x"
+                "su-sws/jumpstart_ui": "^8.1.0",
+                "su-sws/stanford_text_editor": "^8.1.0"
             },
             "type": "drupal-custom-module",
             "extra": {
@@ -15140,20 +15294,20 @@
             ],
             "description": "Stanford News",
             "homepage": "https://github.com/SU-SWS/stanford_news",
-            "time": "2020-08-21T19:25:53+00:00"
+            "time": "2020-09-14T18:12:20+00:00"
         },
         {
             "name": "su-sws/stanford_notifications",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_notifications.git",
-                "reference": "4b29abc094824ee24d9130b564e1976194693fc0"
+                "reference": "6f3e06daba78658ccf92a127986b7719bbf46f9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_notifications/zipball/4b29abc094824ee24d9130b564e1976194693fc0",
-                "reference": "4b29abc094824ee24d9130b564e1976194693fc0",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_notifications/zipball/6f3e06daba78658ccf92a127986b7719bbf46f9a",
+                "reference": "6f3e06daba78658ccf92a127986b7719bbf46f9a",
                 "shasum": ""
             },
             "type": "drupal-custom-module",
@@ -15170,20 +15324,20 @@
             ],
             "description": "Stanford Notifications",
             "homepage": "https://github.com/SU-SWS/stanford_notifications",
-            "time": "2020-08-27T20:06:26+00:00"
+            "time": "2020-09-09T22:06:57+00:00"
         },
         {
             "name": "su-sws/stanford_person",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_person.git",
-                "reference": "b28346761014cc602ced327557b3723f9a43d15f"
+                "reference": "e3d4af097f6fb9f93da613bbaf7f507a5b810257"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_person/zipball/b28346761014cc602ced327557b3723f9a43d15f",
-                "reference": "b28346761014cc602ced327557b3723f9a43d15f",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_person/zipball/e3d4af097f6fb9f93da613bbaf7f507a5b810257",
+                "reference": "e3d4af097f6fb9f93da613bbaf7f507a5b810257",
                 "shasum": ""
             },
             "require": {
@@ -15207,9 +15361,9 @@
                 "drupal/views_contextual_filters_or": "^1.1",
                 "drupal/views_infinite_scroll": "^1.6",
                 "sainsburys/guzzle-oauth2-plugin": "^3.0",
-                "su-sws/jumpstart_ui": "dev-8.x-1.x",
-                "su-sws/stanford_migrate": "dev-8.x-1.x",
-                "su-sws/stanford_text_editor": "dev-8.x-1.x"
+                "su-sws/jumpstart_ui": "^8.1.0",
+                "su-sws/stanford_migrate": "^8.1.0",
+                "su-sws/stanford_text_editor": "^8.1.0"
             },
             "type": "drupal-custom-module",
             "extra": {
@@ -15232,20 +15386,20 @@
             ],
             "description": "Stanford Module Example",
             "homepage": "https://github.com/SU-SWS/stanford_person",
-            "time": "2020-09-02T18:33:50+00:00"
+            "time": "2020-09-14T17:57:47+00:00"
         },
         {
             "name": "su-sws/stanford_profile",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile.git",
-                "reference": "196675c4143c1782da2116d45ae112f4b3c0c304"
+                "reference": "41386a32ea54d87e7dff75c79354518ba8deb0c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/196675c4143c1782da2116d45ae112f4b3c0c304",
-                "reference": "196675c4143c1782da2116d45ae112f4b3c0c304",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/41386a32ea54d87e7dff75c79354518ba8deb0c5",
+                "reference": "41386a32ea54d87e7dff75c79354518ba8deb0c5",
                 "shasum": ""
             },
             "require": {
@@ -15303,20 +15457,20 @@
                 "drupal/views_bulk_operations": "^3.6",
                 "drupal/xmlsitemap": "~1.0",
                 "ext-imagick": "*",
-                "su-sws/jumpstart_ui": "dev-8.x-1.x",
-                "su-sws/nobots": "dev-8.x-2.x",
-                "su-sws/react_paragraphs": "dev-8.x-2.x",
-                "su-sws/stanford_basic": "dev-8.x-4.x",
-                "su-sws/stanford_date_formats": "dev-8.x-1.x",
-                "su-sws/stanford_events": "dev-8.x-1.x",
-                "su-sws/stanford_fields": "dev-8.x-1.x",
-                "su-sws/stanford_image_styles": "dev-8.x-1.x",
-                "su-sws/stanford_news": "dev-8.x-2.x",
-                "su-sws/stanford_notifications": "dev-8.x-1.x",
-                "su-sws/stanford_person": "dev-8.x-1.x",
-                "su-sws/stanford_profile_helper": "dev-8.x-1.x",
-                "su-sws/stanford_ssp": "dev-8.x-1.x",
-                "su-sws/stanford_text_editor": "dev-8.x-1.x"
+                "su-sws/jumpstart_ui": "^8.1.0",
+                "su-sws/nobots": "^8.2.0",
+                "su-sws/react_paragraphs": "^8.2.0",
+                "su-sws/stanford_basic": "^8.4.0",
+                "su-sws/stanford_date_formats": "^8.1.0",
+                "su-sws/stanford_events": "^8.1.0",
+                "su-sws/stanford_fields": "^8.1.0",
+                "su-sws/stanford_image_styles": "^8.1.0",
+                "su-sws/stanford_news": "^8.2.0",
+                "su-sws/stanford_notifications": "^8.1.0",
+                "su-sws/stanford_person": "^8.1.0",
+                "su-sws/stanford_profile_helper": "^8.1.0",
+                "su-sws/stanford_ssp": "^8.1.0",
+                "su-sws/stanford_text_editor": "^8.1.0"
             },
             "type": "drupal-custom-profile",
             "extra": {
@@ -15327,7 +15481,7 @@
                 },
                 "patches": {
                     "drupal/config_ignore": {
-                        "https://www.drupal.org/project/config_ignore/issues/2857247": "https://www.drupal.org/files/issues/2018-10-14/support-for-export-2857247-24.patch",
+                        "https://www.drupal.org/project/config_ignore/issues/2857247": "https://www.drupal.org/files/issues/2020-08-18/support-for-export-2857247-54.patch",
                         "https://www.drupal.org/project/config_ignore/issues/2865419": "https://www.drupal.org/files/issues/2020-06-21/config_ignore-wildcard_force-14.patch"
                     },
                     "drupal/config_readonly": {
@@ -15358,20 +15512,20 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
-            "time": "2020-09-02T18:33:28+00:00"
+            "time": "2020-09-14T18:27:36+00:00"
         },
         {
             "name": "su-sws/stanford_profile_helper",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile_helper.git",
-                "reference": "7e22801975223a3e0a06afaec9646652691d6354"
+                "reference": "08ffea5cc3a9e1838e7f1059c45b57cf24cdf067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile_helper/zipball/7e22801975223a3e0a06afaec9646652691d6354",
-                "reference": "7e22801975223a3e0a06afaec9646652691d6354",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile_helper/zipball/08ffea5cc3a9e1838e7f1059c45b57cf24cdf067",
+                "reference": "08ffea5cc3a9e1838e7f1059c45b57cf24cdf067",
                 "shasum": ""
             },
             "require": {
@@ -15386,12 +15540,12 @@
                 "drupal/paragraphs": "^1.11",
                 "drupal/ui_patterns": "~1.0",
                 "drupal/xmlsitemap": "~1.0",
-                "su-sws/jumpstart_ui": "dev-8.x-1.x",
-                "su-sws/react_paragraphs": "dev-8.x-2.x",
-                "su-sws/stanford_date_formats": "dev-8.x-1.x",
-                "su-sws/stanford_fields": "dev-8.x-1.x",
-                "su-sws/stanford_image_styles": "dev-8.x-1.x",
-                "su-sws/stanford_text_editor": "dev-8.x-1.x"
+                "su-sws/jumpstart_ui": "^8.1.0",
+                "su-sws/react_paragraphs": "^8.2.0",
+                "su-sws/stanford_date_formats": "^8.1.0",
+                "su-sws/stanford_fields": "^8.1.0",
+                "su-sws/stanford_image_styles": "^8.1.0",
+                "su-sws/stanford_text_editor": "^8.1.0"
             },
             "type": "drupal-custom-module",
             "extra": {
@@ -15414,20 +15568,20 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Helper Module For Stanford Profile",
-            "time": "2020-09-03T16:16:20+00:00"
+            "time": "2020-09-14T17:56:33+00:00"
         },
         {
             "name": "su-sws/stanford_ssp",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_ssp.git",
-                "reference": "beda642dd87ae823a709078db2b26e02c39fed6f"
+                "reference": "5f80a240c7c583e823ec2b63a00557eebabc9eea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_ssp/zipball/beda642dd87ae823a709078db2b26e02c39fed6f",
-                "reference": "beda642dd87ae823a709078db2b26e02c39fed6f",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_ssp/zipball/5f80a240c7c583e823ec2b63a00557eebabc9eea",
+                "reference": "5f80a240c7c583e823ec2b63a00557eebabc9eea",
                 "shasum": ""
             },
             "require": {
@@ -15448,20 +15602,20 @@
                 "GPL-2.0-or-later"
             ],
             "description": "A Drupal Authentication Module.",
-            "time": "2020-08-25T23:38:35+00:00"
+            "time": "2020-09-09T23:09:51+00:00"
         },
         {
             "name": "su-sws/stanford_text_editor",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_text_editor.git",
-                "reference": "d1ad34ff11a941ede53e1c358a57c97b2412d26d"
+                "reference": "6bd7abbbd336d44a5334f7e2c0793a2041a7c894"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_text_editor/zipball/d1ad34ff11a941ede53e1c358a57c97b2412d26d",
-                "reference": "d1ad34ff11a941ede53e1c358a57c97b2412d26d",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_text_editor/zipball/6bd7abbbd336d44a5334f7e2c0793a2041a7c894",
+                "reference": "6bd7abbbd336d44a5334f7e2c0793a2041a7c894",
                 "shasum": ""
             },
             "require": {
@@ -15476,7 +15630,7 @@
                 "drupal/editor_advanced_link": "^1.4",
                 "drupal/embed": "~1.0",
                 "drupal/linkit": "~5.0@beta",
-                "su-sws/stanford_media": "dev-8.x-2.x"
+                "su-sws/stanford_media": "^8.2.0"
             },
             "type": "drupal-custom-module",
             "extra": {
@@ -15491,7 +15645,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Input format and WYSIWYG settings for Drupal.",
-            "time": "2020-08-21T19:27:32+00:00"
+            "time": "2020-09-14T18:06:16+00:00"
         },
         {
             "name": "symfony-cmf/routing",
@@ -19444,16 +19598,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.10.10",
+            "version": "1.10.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "32966a3b1d48bc01472a8321fd6472b44fad033a"
+                "reference": "47c841ba3b2d3fc0b4b13282cf029ea18b66d78b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/32966a3b1d48bc01472a8321fd6472b44fad033a",
-                "reference": "32966a3b1d48bc01472a8321fd6472b44fad033a",
+                "url": "https://api.github.com/repos/composer/composer/zipball/47c841ba3b2d3fc0b4b13282cf029ea18b66d78b",
+                "reference": "47c841ba3b2d3fc0b4b13282cf029ea18b66d78b",
                 "shasum": ""
             },
             "require": {
@@ -19534,7 +19688,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-03T09:35:19+00:00"
+            "time": "2020-09-09T09:46:34+00:00"
         },
         {
             "name": "composer/spdx-licenses",
@@ -20264,7 +20418,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "8.9.4",
+            "version": "8.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -23327,9 +23481,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/acquia_purge": 10,
-        "su-hkku/cardinal_service_profile": 20,
-        "su-sws/stanford_profile": 20
+        "drupal/acquia_purge": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
