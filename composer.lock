@@ -4155,16 +4155,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.9.5",
+            "version": "8.9.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "c9b9643663b80f02c038f9dea15b8717a22c3339"
+                "reference": "caf4e756d31dfb0c2e52cd0748e900efe4b57766"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/c9b9643663b80f02c038f9dea15b8717a22c3339",
-                "reference": "c9b9643663b80f02c038f9dea15b8717a22c3339",
+                "url": "https://api.github.com/repos/drupal/core/zipball/caf4e756d31dfb0c2e52cd0748e900efe4b57766",
+                "reference": "caf4e756d31dfb0c2e52cd0748e900efe4b57766",
                 "shasum": ""
             },
             "require": {
@@ -4390,7 +4390,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2020-09-03T21:07:45+00:00"
+            "time": "2020-09-16T11:22:21+00:00"
         },
         {
             "name": "drupal/crop",
@@ -4882,32 +4882,32 @@
         },
         {
             "name": "drupal/dropzonejs",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/dropzonejs.git",
-                "reference": "8.x-2.1"
+                "reference": "8.x-2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/dropzonejs-8.x-2.1.zip",
-                "reference": "8.x-2.1",
-                "shasum": "a165b70070c320933fdce0c02be3577abce5e938"
+                "url": "https://ftp.drupal.org/files/projects/dropzonejs-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "5853f57293823c71cee6f53a01c94807529c3732"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
             },
             "require-dev": {
-                "drupal/entity_browser": "*"
+                "drupal/entity_browser": "^2.5"
             },
             "suggest": {
-                "enyo/dropzone": "Required to user drupal/dropzonejs. Dropzone is an easy to use drag'n'drop library."
+                "enyo/dropzone": "Required to use drupal/dropzonejs. DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews."
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.1",
-                    "datestamp": "1585662324",
+                    "version": "8.x-2.2",
+                    "datestamp": "1600192553",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4916,7 +4916,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4935,13 +4935,14 @@
                     "role": "Maintainer"
                 },
                 {
+                    "name": "Qiangjun Ran",
+                    "homepage": "https://drupal.org/u/jungle",
+                    "role": "Maintainer"
+                },
+                {
                     "name": "See other contributors",
                     "homepage": "https://www.drupal.org/node/1998478/committers",
                     "role": "contributor"
-                },
-                {
-                    "name": "jungle",
-                    "homepage": "https://www.drupal.org/user/2919723"
                 },
                 {
                     "name": "slashrsm",
@@ -4965,7 +4966,7 @@
             "support": {
                 "source": "https://www.drupal.org/project/dropzonejs",
                 "issues": "https://www.drupal.org/project/issues/dropzonejs",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
+                "#media": "http://drupal.slack.com"
             }
         },
         {
@@ -13938,16 +13939,16 @@
         },
         {
             "name": "simplesamlphp/simplesamlphp-module-ldap",
-            "version": "v0.9.9",
+            "version": "v0.9.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/simplesamlphp-module-ldap.git",
-                "reference": "27f0ef60482ff6a063dac5b7d59e8d3d407b52ac"
+                "reference": "78f04cbe41bfb9dcbcdeff4b5f12e67c060e1a77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp-module-ldap/zipball/27f0ef60482ff6a063dac5b7d59e8d3d407b52ac",
-                "reference": "27f0ef60482ff6a063dac5b7d59e8d3d407b52ac",
+                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp-module-ldap/zipball/78f04cbe41bfb9dcbcdeff4b5f12e67c060e1a77",
+                "reference": "78f04cbe41bfb9dcbcdeff4b5f12e67c060e1a77",
                 "shasum": ""
             },
             "require": {
@@ -13986,7 +13987,7 @@
                 "ldap",
                 "simplesamlphp"
             ],
-            "time": "2020-07-14T16:33:01+00:00"
+            "time": "2020-09-16T21:09:07+00:00"
         },
         {
             "name": "simplesamlphp/simplesamlphp-module-memcachemonitor",
@@ -14804,16 +14805,16 @@
         },
         {
             "name": "su-hkku/cardinal_service_profile",
-            "version": "8.1.4",
+            "version": "8.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-HKKU/cardinal_service_profile.git",
-                "reference": "53b43308be2c9ded2d6b980f20cc6ab48a7a9640"
+                "reference": "94238a79651e9b81c779cd8cb8f41f1543bed8dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/53b43308be2c9ded2d6b980f20cc6ab48a7a9640",
-                "reference": "53b43308be2c9ded2d6b980f20cc6ab48a7a9640",
+                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/94238a79651e9b81c779cd8cb8f41f1543bed8dd",
+                "reference": "94238a79651e9b81c779cd8cb8f41f1543bed8dd",
                 "shasum": ""
             },
             "require": {
@@ -14868,7 +14869,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
-            "time": "2020-09-15T17:49:13+00:00"
+            "time": "2020-09-17T00:06:25+00:00"
         },
         {
             "name": "su-sws/jumpstart_ui",
@@ -14923,16 +14924,16 @@
         },
         {
             "name": "su-sws/react_paragraphs",
-            "version": "8.2.0",
+            "version": "8.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/react_paragraphs.git",
-                "reference": "aef9af432e417cefcdd2d60bc62a4c3db8af014f"
+                "reference": "9ef91cd4af5afa560a537b96e491592fab7040b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/react_paragraphs/zipball/aef9af432e417cefcdd2d60bc62a4c3db8af014f",
-                "reference": "aef9af432e417cefcdd2d60bc62a4c3db8af014f",
+                "url": "https://api.github.com/repos/SU-SWS/react_paragraphs/zipball/9ef91cd4af5afa560a537b96e491592fab7040b9",
+                "reference": "9ef91cd4af5afa560a537b96e491592fab7040b9",
                 "shasum": ""
             },
             "require": {
@@ -14951,7 +14952,7 @@
                 }
             ],
             "description": "An advanced UI for editing paragraphs in Drupal.",
-            "time": "2020-09-10T21:35:16+00:00"
+            "time": "2020-09-15T21:25:54+00:00"
         },
         {
             "name": "su-sws/stanford_basic",
@@ -15390,16 +15391,16 @@
         },
         {
             "name": "su-sws/stanford_profile",
-            "version": "8.1.16",
+            "version": "8.1.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile.git",
-                "reference": "41386a32ea54d87e7dff75c79354518ba8deb0c5"
+                "reference": "b1f6f81dfe02b07bf737a9d9a2ba2f2f1ab7e248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/41386a32ea54d87e7dff75c79354518ba8deb0c5",
-                "reference": "41386a32ea54d87e7dff75c79354518ba8deb0c5",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/b1f6f81dfe02b07bf737a9d9a2ba2f2f1ab7e248",
+                "reference": "b1f6f81dfe02b07bf737a9d9a2ba2f2f1ab7e248",
                 "shasum": ""
             },
             "require": {
@@ -15512,7 +15513,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
-            "time": "2020-09-14T18:27:36+00:00"
+            "time": "2020-09-15T23:51:12+00:00"
         },
         {
             "name": "su-sws/stanford_profile_helper",
@@ -20418,7 +20419,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "8.9.5",
+            "version": "8.9.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
