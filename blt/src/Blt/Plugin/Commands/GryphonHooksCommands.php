@@ -207,9 +207,25 @@ class GryphonHooksCommands extends BltTasks {
 
       foreach ($this->getConfigValue('multisites') as $multisite) {
         $this->switchSiteContext($multisite);
-        $this->taskDrush()->drush('state:set nobots 1')->run();
+        $this->taskDrush()
+          ->drush('state:set nobots 1')
+          ->drush('sqlq')
+          ->arg('truncate config_pages__su_site_url')
+          ->run();
       }
     }
+  }
+
+  /**
+   * Perform actions after a site has been synced locally.
+   *
+   * @hook post-command drupal:sync:default:site
+   */
+  public function postDrupalSync(){
+    $this->taskDrush()
+      ->drush('sqlq')
+      ->arg('truncate config_pages__su_site_url')
+      ->run();
   }
 
 }
