@@ -3981,20 +3981,20 @@
         },
         {
             "name": "drupal/config_split",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_split.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_split-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "ea727dbe5cb4586bbc21afad61db26c65fe5ce49"
+                "url": "https://ftp.drupal.org/files/projects/config_split-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "e623e21c344181861e9042c19e288f721163078a"
             },
             "require": {
-                "drupal/config_filter": "^1||^2",
+                "drupal/config_filter": "^1",
                 "drupal/core": "^8.8 || ^9"
             },
             "conflict": {
@@ -4007,8 +4007,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1599549544",
+                    "version": "8.x-1.6",
+                    "datestamp": "1600935570",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4451,17 +4451,17 @@
         },
         {
             "name": "drupal/csv_importer",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/csv_importer.git",
-                "reference": "8.x-1.10"
+                "reference": "8.x-1.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/csv_importer-8.x-1.10.zip",
-                "reference": "8.x-1.10",
-                "shasum": "cf20c84b1bde94ebe8acc0b0855f30009d177475"
+                "url": "https://ftp.drupal.org/files/projects/csv_importer-8.x-1.11.zip",
+                "reference": "8.x-1.11",
+                "shasum": "f7ea0f4771ae16ce45f15bb6f21290ad46341705"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -4469,8 +4469,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.10",
-                    "datestamp": "1597907539",
+                    "version": "8.x-1.11",
+                    "datestamp": "1600687087",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4882,17 +4882,17 @@
         },
         {
             "name": "drupal/dropzonejs",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/dropzonejs.git",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/dropzonejs-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "5853f57293823c71cee6f53a01c94807529c3732"
+                "url": "https://ftp.drupal.org/files/projects/dropzonejs-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "c145f2560ed31de32ea8938b0c0378765f70e36a"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -4906,8 +4906,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1600192553",
+                    "version": "8.x-2.3",
+                    "datestamp": "1600310561",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7527,17 +7527,17 @@
         },
         {
             "name": "drupal/node_revision_delete",
-            "version": "1.0.0-rc2",
+            "version": "1.0.0-rc3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/node_revision_delete.git",
-                "reference": "8.x-1.0-rc2"
+                "reference": "8.x-1.0-rc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/node_revision_delete-8.x-1.0-rc2.zip",
-                "reference": "8.x-1.0-rc2",
-                "shasum": "cff3b7ee635ccd9d7615e640eee6b9e40c215402"
+                "url": "https://ftp.drupal.org/files/projects/node_revision_delete-8.x-1.0-rc3.zip",
+                "reference": "8.x-1.0-rc3",
+                "shasum": "5c539e9ac8e4af276cc558a33f1da2a5ad57ac79"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9.0"
@@ -7545,8 +7545,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc2",
-                    "datestamp": "1583947401",
+                    "version": "8.x-1.0-rc3",
+                    "datestamp": "1600878567",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -7560,7 +7560,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -9056,35 +9056,40 @@
         },
         {
             "name": "drupal/ultimate_cron",
-            "version": "2.0.0-alpha4",
+            "version": "2.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ultimate_cron.git",
-                "reference": "8.x-2.0-alpha4"
+                "reference": "8.x-2.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ultimate_cron-8.x-2.0-alpha4.zip",
-                "reference": "8.x-2.0-alpha4",
-                "shasum": "50cdadd061f1f6fadb961b04ed04348bcc4719d3"
+                "url": "https://ftp.drupal.org/files/projects/ultimate_cron-8.x-2.0-alpha5.zip",
+                "reference": "8.x-2.0-alpha5",
+                "shasum": "0f10464fff29eca89024e7afa5b6d8d07bd52f75"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.7.7 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0-alpha4",
-                    "datestamp": "1527925385",
+                    "version": "8.x-2.0-alpha5",
+                    "datestamp": "1600928948",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -9112,7 +9117,7 @@
                     "homepage": "https://www.drupal.org/user/227761"
                 }
             ],
-            "description": "Cron",
+            "description": "Ultimate cron",
             "homepage": "https://www.drupal.org/project/ultimate_cron",
             "support": {
                 "source": "https://git.drupalcode.org/project/ultimate_cron"
@@ -9978,16 +9983,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.20",
+            "version": "2.1.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "f46887bc48db66c7f38f668eb7d6ae54583617ff"
+                "reference": "563d0cdde5d862235ffe24a158497f4d490191b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/f46887bc48db66c7f38f668eb7d6ae54583617ff",
-                "reference": "f46887bc48db66c7f38f668eb7d6ae54583617ff",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/563d0cdde5d862235ffe24a158497f4d490191b5",
+                "reference": "563d0cdde5d862235ffe24a158497f4d490191b5",
                 "shasum": ""
             },
             "require": {
@@ -10032,7 +10037,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2020-09-06T13:44:32+00:00"
+            "time": "2020-09-19T14:37:56+00:00"
         },
         {
             "name": "enyo/dropzone",
@@ -11897,16 +11902,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.9.1",
+            "version": "v4.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "88e519766fc58bd46b8265561fb79b54e2e00b28"
+                "reference": "1b479e7592812411c20c34d9ed33db3957bde66e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/88e519766fc58bd46b8265561fb79b54e2e00b28",
-                "reference": "88e519766fc58bd46b8265561fb79b54e2e00b28",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1b479e7592812411c20c34d9ed33db3957bde66e",
+                "reference": "1b479e7592812411c20c34d9ed33db3957bde66e",
                 "shasum": ""
             },
             "require": {
@@ -11945,7 +11950,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-08-30T16:15:20+00:00"
+            "time": "2020-09-23T18:23:49+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -12465,16 +12470,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.42",
+            "version": "0.12.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "7c43b7c2d5ca6554f6231e82e342a710163ac5f4"
+                "reference": "330b45776ea77f167b150e24787412414a8fa469"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/7c43b7c2d5ca6554f6231e82e342a710163ac5f4",
-                "reference": "7c43b7c2d5ca6554f6231e82e342a710163ac5f4",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/330b45776ea77f167b150e24787412414a8fa469",
+                "reference": "330b45776ea77f167b150e24787412414a8fa469",
                 "shasum": ""
             },
             "require": {
@@ -12517,7 +12522,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-02T13:14:53+00:00"
+            "time": "2020-09-24T15:28:47+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -14805,16 +14810,16 @@
         },
         {
             "name": "su-hkku/cardinal_service_profile",
-            "version": "8.1.5",
+            "version": "8.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-HKKU/cardinal_service_profile.git",
-                "reference": "94238a79651e9b81c779cd8cb8f41f1543bed8dd"
+                "reference": "903511c15d111d78a6a43f16980d5fe6fba7f6d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/94238a79651e9b81c779cd8cb8f41f1543bed8dd",
-                "reference": "94238a79651e9b81c779cd8cb8f41f1543bed8dd",
+                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/903511c15d111d78a6a43f16980d5fe6fba7f6d7",
+                "reference": "903511c15d111d78a6a43f16980d5fe6fba7f6d7",
                 "shasum": ""
             },
             "require": {
@@ -14869,20 +14874,20 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
-            "time": "2020-09-17T00:06:25+00:00"
+            "time": "2020-09-24T23:04:52+00:00"
         },
         {
             "name": "su-sws/jumpstart_ui",
-            "version": "8.1.11",
+            "version": "8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/jumpstart_ui.git",
-                "reference": "a44081ac1b993493c346930a0698bd19ac6e2ccf"
+                "reference": "b8c43cc183af02fe1d80359b17cdbb3dc7d4f524"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/jumpstart_ui/zipball/a44081ac1b993493c346930a0698bd19ac6e2ccf",
-                "reference": "a44081ac1b993493c346930a0698bd19ac6e2ccf",
+                "url": "https://api.github.com/repos/SU-SWS/jumpstart_ui/zipball/b8c43cc183af02fe1d80359b17cdbb3dc7d4f524",
+                "reference": "b8c43cc183af02fe1d80359b17cdbb3dc7d4f524",
                 "shasum": ""
             },
             "require": {
@@ -14898,7 +14903,7 @@
             ],
             "description": "Stanford Module Example",
             "homepage": "https://github.com/SU-SWS/jumpstart_ui",
-            "time": "2020-09-09T22:04:36+00:00"
+            "time": "2020-09-24T20:31:27+00:00"
         },
         {
             "name": "su-sws/nobots",
@@ -20085,6 +20090,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
+            "abandoned": "drupal/core-composer-scaffold",
             "time": "2019-03-30T10:41:38+00:00"
         },
         {
@@ -20465,17 +20471,17 @@
         },
         {
             "name": "drupal/devel",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/devel.git",
-                "reference": "4.0.0"
+                "reference": "4.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/devel-4.0.0.zip",
-                "reference": "4.0.0",
-                "shasum": "6c01ef8dd4e926e63b08fe28dea5357c7caa49c9"
+                "url": "https://ftp.drupal.org/files/projects/devel-4.0.1.zip",
+                "reference": "4.0.1",
+                "shasum": "cf2458de1cbac00a88ed26ae3da2cf331e1bc047"
             },
             "require": {
                 "doctrine/common": "^2.7",
@@ -20503,8 +20509,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.0",
-                    "datestamp": "1592918748",
+                    "version": "4.0.1",
+                    "datestamp": "1600300079",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -21686,16 +21692,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.2.1",
+            "version": "5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44"
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/d870572532cd70bc3fab58f2e23ad423c8404c44",
-                "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/069a785b2141f5bcf49f3e353548dc1cce6df556",
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556",
                 "shasum": ""
             },
             "require": {
@@ -21734,20 +21740,20 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2020-08-15T11:14:08+00:00"
+            "time": "2020-09-03T19:13:55+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651"
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/e878a14a65245fbe78f8080eba03b47c3b705651",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
                 "shasum": ""
             },
             "require": {
@@ -21779,7 +21785,7 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "time": "2020-06-27T10:12:23+00:00"
+            "time": "2020-09-17T18:55:26+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -22991,12 +22997,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford-caravan.git",
-                "reference": "1d4cc2ae6c040b8a73f95c9e3391215b802b6d98"
+                "reference": "807ce628a38459d02eb0d8099247b977604b89a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford-caravan/zipball/1d4cc2ae6c040b8a73f95c9e3391215b802b6d98",
-                "reference": "1d4cc2ae6c040b8a73f95c9e3391215b802b6d98",
+                "url": "https://api.github.com/repos/SU-SWS/stanford-caravan/zipball/807ce628a38459d02eb0d8099247b977604b89a8",
+                "reference": "807ce628a38459d02eb0d8099247b977604b89a8",
                 "shasum": ""
             },
             "require": {
@@ -23021,7 +23027,7 @@
                 }
             ],
             "description": "Tools for testing Drupal 8 on CI/CD",
-            "time": "2020-08-13T19:54:38+00:00"
+            "time": "2020-09-22T17:39:37+00:00"
         },
         {
             "name": "symfony/browser-kit",
