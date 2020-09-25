@@ -14810,16 +14810,16 @@
         },
         {
             "name": "su-hkku/cardinal_service_profile",
-            "version": "8.1.6",
+            "version": "8.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-HKKU/cardinal_service_profile.git",
-                "reference": "903511c15d111d78a6a43f16980d5fe6fba7f6d7"
+                "reference": "3255a319073fe8654036ab3a1e13e900c3cecbcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/903511c15d111d78a6a43f16980d5fe6fba7f6d7",
-                "reference": "903511c15d111d78a6a43f16980d5fe6fba7f6d7",
+                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/3255a319073fe8654036ab3a1e13e900c3cecbcf",
+                "reference": "3255a319073fe8654036ab3a1e13e900c3cecbcf",
                 "shasum": ""
             },
             "require": {
@@ -14874,7 +14874,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
-            "time": "2020-09-24T23:04:52+00:00"
+            "time": "2020-09-25T16:19:12+00:00"
         },
         {
             "name": "su-sws/jumpstart_ui",
