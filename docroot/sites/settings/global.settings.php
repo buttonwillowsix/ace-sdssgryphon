@@ -53,6 +53,7 @@ $settings['config_sync_directory'] = DRUPAL_ROOT . '/profiles/custom/stanford_pr
  * file in docroot/sites/{site-name}/settings/default.includes.settings.php.
  */
 $additionalSettingsFiles = [
+  __DIR__ . '/config.settings.php',
   __DIR__ . '/environment_indicator.settings.php',
   __DIR__ . '/google_analytics.settings.php',
   __DIR__ . '/simplesamlphp.settings.php',
