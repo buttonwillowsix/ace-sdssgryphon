@@ -11480,16 +11480,16 @@
         },
         {
             "name": "mglaman/drupal-check",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/drupal-check.git",
-                "reference": "42d28c8a96cc5cffdf6bbf2c283a9141bcf21a8a"
+                "reference": "21156fb807ce61fd3dbc0a5f8d5f0e1f1bba6f62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/drupal-check/zipball/42d28c8a96cc5cffdf6bbf2c283a9141bcf21a8a",
-                "reference": "42d28c8a96cc5cffdf6bbf2c283a9141bcf21a8a",
+                "url": "https://api.github.com/repos/mglaman/drupal-check/zipball/21156fb807ce61fd3dbc0a5f8d5f0e1f1bba6f62",
+                "reference": "21156fb807ce61fd3dbc0a5f8d5f0e1f1bba6f62",
                 "shasum": ""
             },
             "require": {
@@ -11541,7 +11541,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-12T17:14:26+00:00"
+            "time": "2020-10-19T19:40:13+00:00"
         },
         {
             "name": "mglaman/phpstan-drupal",
@@ -14994,12 +14994,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_basic.git",
-                "reference": "0aa96702abbd58d6e2a0e03e86009f1e6ac80517"
+                "reference": "b2fe939e22b5899686a791b1f42d390e8f4a0ccf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_basic/zipball/0aa96702abbd58d6e2a0e03e86009f1e6ac80517",
-                "reference": "0aa96702abbd58d6e2a0e03e86009f1e6ac80517",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_basic/zipball/b2fe939e22b5899686a791b1f42d390e8f4a0ccf",
+                "reference": "b2fe939e22b5899686a791b1f42d390e8f4a0ccf",
                 "shasum": ""
             },
             "type": "drupal-custom-theme",
@@ -15009,7 +15009,7 @@
             ],
             "description": "Stanford Basic Branding Theme.",
             "homepage": "https://github.com/SU-SWS/stanford_basic",
-            "time": "2020-10-05T22:05:11+00:00"
+            "time": "2020-10-16T14:45:20+00:00"
         },
         {
             "name": "su-sws/stanford_date_formats",
@@ -15233,12 +15233,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_migrate.git",
-                "reference": "80aa365641f46bcf037fde34877b692ef802ed2c"
+                "reference": "4c2ba74db9b26f1dea7669f09b700ddf64d706f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_migrate/zipball/80aa365641f46bcf037fde34877b692ef802ed2c",
-                "reference": "80aa365641f46bcf037fde34877b692ef802ed2c",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_migrate/zipball/4c2ba74db9b26f1dea7669f09b700ddf64d706f9",
+                "reference": "4c2ba74db9b26f1dea7669f09b700ddf64d706f9",
                 "shasum": ""
             },
             "require": {
@@ -15270,7 +15270,7 @@
             ],
             "description": "Stanford Migrate Helper functions",
             "homepage": "https://github.com/SU-SWS/stanford_migrate",
-            "time": "2020-10-09T17:23:18+00:00"
+            "time": "2020-10-19T20:31:56+00:00"
         },
         {
             "name": "su-sws/stanford_news",
@@ -15367,12 +15367,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_person.git",
-                "reference": "72232a49050f62a1e78408d52b0b58d8644357ac"
+                "reference": "e3bdb53f08537904b4f5311a86c7d3b87371ee23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_person/zipball/72232a49050f62a1e78408d52b0b58d8644357ac",
-                "reference": "72232a49050f62a1e78408d52b0b58d8644357ac",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_person/zipball/e3bdb53f08537904b4f5311a86c7d3b87371ee23",
+                "reference": "e3bdb53f08537904b4f5311a86c7d3b87371ee23",
                 "shasum": ""
             },
             "require": {
@@ -15421,7 +15421,7 @@
             ],
             "description": "Stanford Module Example",
             "homepage": "https://github.com/SU-SWS/stanford_person",
-            "time": "2020-10-15T21:53:39+00:00"
+            "time": "2020-10-16T17:14:58+00:00"
         },
         {
             "name": "su-sws/stanford_profile",
@@ -15429,12 +15429,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile.git",
-                "reference": "6b9b7eb71511315b26c5a20c32ef00a62a1e8add"
+                "reference": "2780d18ed40bc80d7635a6ed9bb7fabec8d3fcde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/6b9b7eb71511315b26c5a20c32ef00a62a1e8add",
-                "reference": "6b9b7eb71511315b26c5a20c32ef00a62a1e8add",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/2780d18ed40bc80d7635a6ed9bb7fabec8d3fcde",
+                "reference": "2780d18ed40bc80d7635a6ed9bb7fabec8d3fcde",
                 "shasum": ""
             },
             "require": {
@@ -15488,6 +15488,7 @@
                 "drupal/role_delegation": "^1.0@beta",
                 "drupal/seckit": "^1.0@alpha",
                 "drupal/ui_patterns": "~1.0",
+                "drupal/viewfield": "^3.0@beta",
                 "drupal/views_block_filter_block": "^1.0@beta",
                 "drupal/views_bulk_operations": "^3.6",
                 "drupal/xmlsitemap": "~1.0",
@@ -15547,7 +15548,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
-            "time": "2020-10-13T20:21:34+00:00"
+            "time": "2020-10-19T18:08:18+00:00"
         },
         {
             "name": "su-sws/stanford_profile_helper",
@@ -15555,12 +15556,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile_helper.git",
-                "reference": "ba7d3b8c8941a666ebb92e0c5b26c45b7514fb2d"
+                "reference": "96203a3e062b466ffa1a27636d08cb08f0f07e99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile_helper/zipball/ba7d3b8c8941a666ebb92e0c5b26c45b7514fb2d",
-                "reference": "ba7d3b8c8941a666ebb92e0c5b26c45b7514fb2d",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile_helper/zipball/96203a3e062b466ffa1a27636d08cb08f0f07e99",
+                "reference": "96203a3e062b466ffa1a27636d08cb08f0f07e99",
                 "shasum": ""
             },
             "require": {
@@ -15603,7 +15604,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Helper Module For Stanford Profile",
-            "time": "2020-10-14T18:50:03+00:00"
+            "time": "2020-10-19T15:50:16+00:00"
         },
         {
             "name": "su-sws/stanford_ssp",
