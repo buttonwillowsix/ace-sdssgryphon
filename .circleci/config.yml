@@ -25,9 +25,9 @@ restore_caches: &restore_caches
   restore_cache:
     # We use the composer.lock as a way to determine if we can cache our build.
     keys:
-      - v1-vendor-{{ checksum "composer.lock" }}
+      - v2-vendor-{{ checksum "composer.lock" }}
       # fallback to using the latest cache if no exact match is found
-      - v1-vendor-
+      - v2-vendor-
 
 ## Defines the cache saving mechanism.
 save_caches: &save_caches
@@ -42,7 +42,7 @@ save_caches: &save_caches
       - ./docroot/themes/custom
       - ./docroot/libraries
       - ./docroot/core
-    key: v1-vendor-{{ checksum "composer.lock" }}
+    key: v2-vendor-{{ checksum "composer.lock" }}
 
 ## Defines images and working directory.
 defaults: &defaults
