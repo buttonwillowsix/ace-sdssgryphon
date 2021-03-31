@@ -118,7 +118,7 @@
         "acquia/blt-simplesamlphp": "dev-master",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.6",
-        "drupal/acquia_connector": "^1.22",
+        "drupal/acquia_connector": "^3.0",
         "drupal/acquia_purge": "^1.1",
         "drupal/core": "^9.0",
         "drupal/core-composer-scaffold": "^9",
@@ -130,8 +130,8 @@
         "drupal/paranoia": "dev-3148370-d9-ready as 1.9.0",
         "drupal/response_code_condition": "dev-3141520-d9-ready as 1.0.0",
         "drush/drush": "^10.3",
-        "su-sws/stanford_profile": "dev-8.x-2.x",
-        "su-hkku/cardinal_service_profile": "dev-8.x-2.x"
+        "su-hkku/cardinal_service_profile": "dev-8.x-2.x",
+        "su-sws/stanford_profile": "dev-8.x-2.x"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
