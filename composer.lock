@@ -22843,12 +22843,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/blt-sws.git",
-                "reference": "bc0f345aaa373a0caa5915af79176e23e8582832"
+                "reference": "4dcd02d4cb0ef98bb44493d205cfcbfb6e73c417"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/blt-sws/zipball/bc0f345aaa373a0caa5915af79176e23e8582832",
-                "reference": "bc0f345aaa373a0caa5915af79176e23e8582832",
+                "url": "https://api.github.com/repos/SU-SWS/blt-sws/zipball/4dcd02d4cb0ef98bb44493d205cfcbfb6e73c417",
+                "reference": "4dcd02d4cb0ef98bb44493d205cfcbfb6e73c417",
                 "shasum": ""
             },
             "require": {
@@ -22871,7 +22871,7 @@
                 "acquia",
                 "blt"
             ],
-            "time": "2021-05-20T00:10:34+00:00"
+            "time": "2021-05-26T22:48:59+00:00"
         },
         {
             "name": "su-sws/drupal-dev",
