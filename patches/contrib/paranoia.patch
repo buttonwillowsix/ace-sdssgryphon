@@ -1,13 +1,12 @@
 diff --git a/paranoia.module b/paranoia.module
-index 1b825cc..ddf11c8 100644
+index 0d541c6..40614ae 100644
 --- a/paranoia.module
 +++ b/paranoia.module
-@@ -33,8 +33,23 @@ function paranoia_system_info_alter(array &$info, Extension $file, $type) {
+@@ -33,9 +33,22 @@ function paranoia_system_info_alter(array &$info, Extension $file, $type) {
   * Implements hook_ENTITY_TYPE_presave() for user_role entities.
   */
  function paranoia_user_role_presave(RoleInterface $role) {
--  $role->setIsAdmin(FALSE);
--  \Drupal::service('logger.channel.paranoia')->alert('An attempt to elevate the role %role_label to admin was detected and blocked.', ['%role_label' => $role->label()]);
+-  if ($role->isAdmin() || (isset($role->original) && $role->original->isAdmin())) {
 +  // SWS modification.
 +  // We don't want to unset the admin role, we want to set it to the
 +  // "administrator" role.
@@ -15,7 +14,8 @@ index 1b825cc..ddf11c8 100644
 +  // Only operate on roles that are not "administrator".
 +  if ($rid !== "administrator") {
 +    // Set the Boolean of "is_admin" to false.
-+    $role->setIsAdmin(FALSE);
+     $role->setIsAdmin(FALSE);
+-    \Drupal::service('logger.channel.paranoia')->alert('An attempt to elevate the role %role_label to admin was detected and blocked.', ['%role_label' => $role->label()]);
 +    // Now we need to load the administrator role and set "is_admin" to TRUE.
 +    $adminrole = Role::load("administrator");
 +    if (isset($adminrole)) {
@@ -24,17 +24,16 @@ index 1b825cc..ddf11c8 100644
 +    }
 +    // See https://www.drupal.org/project/paranoia/issues/2940603.
 +    \Drupal::service('logger.channel.paranoia')->info('An attempt to elevate the role %role_label to admin was detected and blocked.', ['%role_label' => $role->label()]);
-+  }
+   }
  }
-
- /**
+ 
 diff --git a/src/ParanoiaDefanger.php b/src/ParanoiaDefanger.php
 index d9a91f9..8fb9238 100644
 --- a/src/ParanoiaDefanger.php
 +++ b/src/ParanoiaDefanger.php
 @@ -50,6 +50,11 @@ class ParanoiaDefanger {
        ->execute();
-
+ 
      foreach ($admin_roles as $rid) {
 +      // SWS modification.
 +      // Do not do this for the "administrator" role.
