@@ -293,6 +293,8 @@ class GryphonAcquiaApiCommands extends GryphonCommands {
       if ($cert->label == $label) {
         $this->say($this->acquiaCertificates->enable($environment_uuid, $cert->id)->message);
         continue;
+      } elseif ($cert->flags->active) {
+        $this->say($this->acquiaCertificates->disable($environment_uuid, $cert->id)->message);
       }
 
       if(strtotime($cert->expires_at) < time()){
