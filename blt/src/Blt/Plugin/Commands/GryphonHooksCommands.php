@@ -87,7 +87,7 @@ class GryphonHooksCommands extends BltTasks {
         ->expandFileProperties("$docroot/sites/settings/local.settings.php");
     }
     if (EnvironmentDetector::isLocalEnv()) {
-      $this->invokeCommand('gryphon:keys');
+      $this->invokeCommand('sws:keys');
     }
   }
 
