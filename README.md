@@ -60,7 +60,7 @@ After you have the `local.blt.yml` file configured, set up the settings.php for 
 5. Get secret keys and settings
 SAML and other certificate files will be download for local use.
      ```
-    $ blt gryphon:keys
+    $ blt sws:keys
     ```
 
 Optional:

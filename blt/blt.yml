@@ -48,42 +48,48 @@ simplesamlphp: true
 cm:
   strategy: config-split
   allow-overrides: true
-cloud:
-  appId: 8449683b-500e-4728-b70a-5f69d9e8a61a
 multisites:
+  - cardinalatwork
   - cardinalservice
   - default
 behat:
   selenium:
-    url: http://localhost:4444/wd/hub
+    url: 'http://localhost:4444/wd/hub'
   chromedriver:
-    url: http://localhost
+    url: 'http://localhost'
   web-driver: selenium
   paths:
-    - ${docroot}/profiles/custom
-    - ${repo.root}/tests/behat/features
+    - '${docroot}/profiles/custom'
+    - '${repo.root}/tests/behat/features'
 tests:
   reports:
     localDir: '${repo.root}/artifacts'
     coveragePass: 90
   phpunit:
-    - # Run all tests in the custom modules directory.
+    -
       path: '${docroot}'
-      config: ${docroot}/core/phpunit.xml
-      directory: ${docroot}/modules/custom
-      bootstrap: ${docroot}/core/tests/bootstrap.php
+      config: '${docroot}/core/phpunit.xml'
+      directory: '${docroot}/modules/custom'
+      bootstrap: '${docroot}/core/tests/bootstrap.php'
+      filter: /(Unit|Kernel)/
   codeception:
     cardinal_service:
       suites:
         - acceptance
         - functional
-      directory: ${docroot}/profiles/custom/cardinal_service_profile/tests/codeception
+      directory: '${docroot}/profiles/custom/cardinal_service_profile/tests/codeception'
 validate:
   twig:
-    # Add custom functions from twig tweaks or other modules.
     functions:
       - drupal_block
       - drupal_field
       - pattern
     filters:
       - render_clean
+cloud:
+  appId: 8449683b-500e-4728-b70a-5f69d9e8a61a
+keys_rsync:
+  ssh: stanfordgryphon.prod@web-25384.prod.hosting.acquia.com
+  files:
+    - /mnt/gfs/stanfordgryphon.prod/nobackup/simplesamlphp/
+    - /mnt/gfs/stanfordgryphon.prod/secrets.settings.php
