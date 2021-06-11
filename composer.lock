@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc69d06b07e96256e2b6a30c65ed6ce1",
+    "content-hash": "9d351b7c6d49d08043669a4d4c89ba61",
     "packages": [
         {
             "name": "acquia/blt",
@@ -14328,16 +14328,16 @@
         },
         {
             "name": "su-hkku/cardinal_service_profile",
-            "version": "8.2.1",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-HKKU/cardinal_service_profile.git",
-                "reference": "15b79aecddc49ce738b06e9598e92e3ac8e4f4ea"
+                "reference": "9b6d9608a4b200a84cc5a747abec12399de7c9b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/15b79aecddc49ce738b06e9598e92e3ac8e4f4ea",
-                "reference": "15b79aecddc49ce738b06e9598e92e3ac8e4f4ea",
+                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/9b6d9608a4b200a84cc5a747abec12399de7c9b6",
+                "reference": "9b6d9608a4b200a84cc5a747abec12399de7c9b6",
                 "shasum": ""
             },
             "require": {
@@ -14359,6 +14359,7 @@
                 "michelf/php-markdown": "^1.9",
                 "su-sws/stanford_profile": "^8.2.0"
             },
+            "default-branch": true,
             "type": "drupal-custom-profile",
             "extra": {
                 "patches": {
@@ -14391,27 +14392,28 @@
             ],
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
             "support": {
-                "source": "https://github.com/SU-HKKU/cardinal_service_profile/tree/8.2.1"
+                "source": "https://github.com/SU-HKKU/cardinal_service_profile/tree/8.x-2.x"
             },
-            "time": "2021-06-11T23:14:49+00:00"
+            "time": "2021-06-11T23:21:58+00:00"
         },
         {
             "name": "su-sws/caw_profile",
-            "version": "8.2.0",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/caw_profile.git",
-                "reference": "f9f929223b09e988e88b3c15bb86856aba2e10b5"
+                "reference": "9b2bac66eb9b46875131338aae823e73d7d9fc3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/caw_profile/zipball/f9f929223b09e988e88b3c15bb86856aba2e10b5",
-                "reference": "f9f929223b09e988e88b3c15bb86856aba2e10b5",
+                "url": "https://api.github.com/repos/SU-SWS/caw_profile/zipball/9b2bac66eb9b46875131338aae823e73d7d9fc3a",
+                "reference": "9b2bac66eb9b46875131338aae823e73d7d9fc3a",
                 "shasum": ""
             },
             "require": {
-                "su-sws/stanford_profile": "^8.2.0"
+                "su-sws/stanford_profile": "dev-8.x-2.x"
             },
+            "default-branch": true,
             "type": "drupal-custom-profile",
             "extra": {
                 "drush": {
@@ -14431,9 +14433,9 @@
             ],
             "description": "Installation Profile for Cardinal at Work",
             "support": {
-                "source": "https://github.com/SU-SWS/caw_profile/tree/8.2.0"
+                "source": "https://github.com/SU-SWS/caw_profile/tree/8.x-2.x"
             },
-            "time": "2021-06-08T20:00:24+00:00"
+            "time": "2021-06-08T20:07:40+00:00"
         },
         {
             "name": "su-sws/drupal-patches",
@@ -14516,16 +14518,16 @@
         },
         {
             "name": "su-sws/jumpstart_ui",
-            "version": "8.1.17",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/jumpstart_ui.git",
-                "reference": "893ffb253d1b1ce9918afb40c452d06aa671cc74"
+                "reference": "e52140da7f740128c8c2a985e2b59e02fc7b8b67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/jumpstart_ui/zipball/893ffb253d1b1ce9918afb40c452d06aa671cc74",
-                "reference": "893ffb253d1b1ce9918afb40c452d06aa671cc74",
+                "url": "https://api.github.com/repos/SU-SWS/jumpstart_ui/zipball/e52140da7f740128c8c2a985e2b59e02fc7b8b67",
+                "reference": "e52140da7f740128c8c2a985e2b59e02fc7b8b67",
                 "shasum": ""
             },
             "require": {
@@ -14537,6 +14539,7 @@
             "require-dev": {
                 "drupal/paragraphs": "^1.12"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -14546,24 +14549,25 @@
             "homepage": "https://github.com/SU-SWS/jumpstart_ui",
             "support": {
                 "issues": "https://github.com/SU-SWS/jumpstart_ui/issues",
-                "source": "https://github.com/SU-SWS/jumpstart_ui/tree/8.1.17"
+                "source": "https://github.com/SU-SWS/jumpstart_ui/tree/8.x-1.x"
             },
-            "time": "2021-06-11T18:16:35+00:00"
+            "time": "2021-06-11T18:21:54+00:00"
         },
         {
             "name": "su-sws/nobots",
-            "version": "8.2.1",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/nobots.git",
-                "reference": "351102c6af0c1645710d78eee697ad3102ed7973"
+                "reference": "1990e0b9bba3386800c1b6596a2fdf6da0f30b92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/nobots/zipball/351102c6af0c1645710d78eee697ad3102ed7973",
-                "reference": "351102c6af0c1645710d78eee697ad3102ed7973",
+                "url": "https://api.github.com/repos/SU-SWS/nobots/zipball/1990e0b9bba3386800c1b6596a2fdf6da0f30b92",
+                "reference": "1990e0b9bba3386800c1b6596a2fdf6da0f30b92",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -14572,28 +14576,29 @@
             "description": "This module blocks (well-behaved) search engine robots from crawling, indexing, or archiving your site by setting a \"X-Robots-Tag: noindex,nofollow,noarchive\" HTTP header.",
             "support": {
                 "issues": "https://github.com/SU-SWS/nobots/issues",
-                "source": "https://github.com/SU-SWS/nobots/tree/8.2.1"
+                "source": "https://github.com/SU-SWS/nobots/tree/8.x-2.x"
             },
-            "time": "2021-06-11T18:27:41+00:00"
+            "time": "2021-06-11T18:29:21+00:00"
         },
         {
             "name": "su-sws/react_paragraphs",
-            "version": "8.2.8",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/react_paragraphs.git",
-                "reference": "a28324a9d004f2b561142a79878667d83970f3f8"
+                "reference": "fc78dbdc4ae1c6915fa61dc1f876744042356808"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/react_paragraphs/zipball/a28324a9d004f2b561142a79878667d83970f3f8",
-                "reference": "a28324a9d004f2b561142a79878667d83970f3f8",
+                "url": "https://api.github.com/repos/SU-SWS/react_paragraphs/zipball/fc78dbdc4ae1c6915fa61dc1f876744042356808",
+                "reference": "fc78dbdc4ae1c6915fa61dc1f876744042356808",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "^8.8 || ^9.0",
                 "drupal/paragraphs": "^1.1"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "patches": {
@@ -14614,28 +14619,29 @@
             ],
             "description": "An advanced UI for editing paragraphs in Drupal.",
             "support": {
-                "source": "https://github.com/SU-SWS/react_paragraphs/tree/8.2.8"
+                "source": "https://github.com/SU-SWS/react_paragraphs/tree/8.x-2.x"
             },
-            "time": "2021-06-11T18:16:15+00:00"
+            "time": "2021-06-11T18:21:45+00:00"
         },
         {
             "name": "su-sws/stanford_basic",
-            "version": "8.5.6",
+            "version": "dev-8.x-5.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_basic.git",
-                "reference": "b0f3b054feb9be1d8659731a945969dbd92be0a2"
+                "reference": "ce5e5667f8e5d591afd6a700a1d0f8acbbfe99b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_basic/zipball/b0f3b054feb9be1d8659731a945969dbd92be0a2",
-                "reference": "b0f3b054feb9be1d8659731a945969dbd92be0a2",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_basic/zipball/ce5e5667f8e5d591afd6a700a1d0f8acbbfe99b5",
+                "reference": "ce5e5667f8e5d591afd6a700a1d0f8acbbfe99b5",
                 "shasum": ""
             },
             "require": {
                 "drupal/components": "^2.0",
                 "drupal/core": "^9.0"
             },
+            "default-branch": true,
             "type": "drupal-custom-theme",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -14645,27 +14651,28 @@
             "homepage": "https://github.com/SU-SWS/stanford_basic",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_basic/issues",
-                "source": "https://github.com/SU-SWS/stanford_basic/tree/8.5.6"
+                "source": "https://github.com/SU-SWS/stanford_basic/tree/8.x-5.x"
             },
-            "time": "2021-06-11T18:00:15+00:00"
+            "time": "2021-06-11T18:01:25+00:00"
         },
         {
             "name": "su-sws/stanford_date_formats",
-            "version": "8.1.2",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_date_formats.git",
-                "reference": "bb1b77a55b547b8327dd3601dac44ac0c0de4eed"
+                "reference": "626edd7c509e6af92e1b3fa5165dae8764e518f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_date_formats/zipball/bb1b77a55b547b8327dd3601dac44ac0c0de4eed",
-                "reference": "bb1b77a55b547b8327dd3601dac44ac0c0de4eed",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_date_formats/zipball/626edd7c509e6af92e1b3fa5165dae8764e518f6",
+                "reference": "626edd7c509e6af92e1b3fa5165dae8764e518f6",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -14674,22 +14681,22 @@
             "description": "A collection of date formats.",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_date_formats/issues",
-                "source": "https://github.com/SU-SWS/stanford_date_formats/tree/8.1.2"
+                "source": "https://github.com/SU-SWS/stanford_date_formats/tree/8.x-1.x"
             },
-            "time": "2021-06-11T18:07:44+00:00"
+            "time": "2021-06-11T18:15:52+00:00"
         },
         {
             "name": "su-sws/stanford_events",
-            "version": "8.1.14",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_events.git",
-                "reference": "9e965237cd38002f056befcdd4ed40a2d0e94952"
+                "reference": "2d59b9e3d4473e50a8698d61dd88a6efd94cb575"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_events/zipball/9e965237cd38002f056befcdd4ed40a2d0e94952",
-                "reference": "9e965237cd38002f056befcdd4ed40a2d0e94952",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_events/zipball/2d59b9e3d4473e50a8698d61dd88a6efd94cb575",
+                "reference": "2d59b9e3d4473e50a8698d61dd88a6efd94cb575",
                 "shasum": ""
             },
             "require": {
@@ -14720,12 +14727,13 @@
                 "drupal/views_infinite_scroll": "^1.6",
                 "drupal/views_taxonomy_term_name_depth": "^7.0",
                 "su-sws/drupal-patches": "^8.0",
-                "su-sws/jumpstart_ui": "^8.1",
-                "su-sws/stanford_date_formats": "^8.1",
-                "su-sws/stanford_fields": "^8.1",
-                "su-sws/stanford_migrate": "^8.1",
-                "su-sws/stanford_text_editor": "^8.1"
+                "su-sws/jumpstart_ui": "dev-8.x-1.x",
+                "su-sws/stanford_date_formats": "dev-8.x-1.x",
+                "su-sws/stanford_fields": "dev-8.x-1.x",
+                "su-sws/stanford_migrate": "dev-8.x-1.x",
+                "su-sws/stanford_text_editor": "dev-8.x-1.x"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "autoload": {
                 "psr-4": {
@@ -14741,27 +14749,28 @@
             "description": "Stanford Events",
             "homepage": "https://github.com/SU-SWS/stanford_events",
             "support": {
-                "source": "https://github.com/SU-SWS/stanford_events/tree/8.1.14"
+                "source": "https://github.com/SU-SWS/stanford_events/tree/8.x-1.x"
             },
-            "time": "2021-06-11T18:23:21+00:00"
+            "time": "2021-06-11T18:25:17+00:00"
         },
         {
             "name": "su-sws/stanford_fields",
-            "version": "8.1.6",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_fields.git",
-                "reference": "202876d85e933abd9e4aaf022ccec7d5d6ba3d1a"
+                "reference": "635a1aa5b98ba8772d381c48774d4d7ebf82da28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_fields/zipball/202876d85e933abd9e4aaf022ccec7d5d6ba3d1a",
-                "reference": "202876d85e933abd9e4aaf022ccec7d5d6ba3d1a",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_fields/zipball/635a1aa5b98ba8772d381c48774d4d7ebf82da28",
+                "reference": "635a1aa5b98ba8772d381c48774d4d7ebf82da28",
                 "shasum": ""
             },
             "require": {
                 "drupal/ds": "~3.3"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -14771,28 +14780,29 @@
             "homepage": "https://github.com/SU-SWS/stanford_fields",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_fields/issues",
-                "source": "https://github.com/SU-SWS/stanford_fields/tree/8.1.6"
+                "source": "https://github.com/SU-SWS/stanford_fields/tree/8.x-1.x"
             },
-            "time": "2021-06-11T18:05:13+00:00"
+            "time": "2021-06-11T18:12:15+00:00"
         },
         {
             "name": "su-sws/stanford_image_styles",
-            "version": "8.1.3",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_image_styles.git",
-                "reference": "fc6cad2e5d404b0287ca31a01a7cb11571a1f769"
+                "reference": "876f0bb3ff35ba94bb1420fb9b814bce977366f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_image_styles/zipball/fc6cad2e5d404b0287ca31a01a7cb11571a1f769",
-                "reference": "fc6cad2e5d404b0287ca31a01a7cb11571a1f769",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_image_styles/zipball/876f0bb3ff35ba94bb1420fb9b814bce977366f0",
+                "reference": "876f0bb3ff35ba94bb1420fb9b814bce977366f0",
                 "shasum": ""
             },
             "require": {
                 "drupal/focal_point": "^1.1",
                 "drupal/image_effects": "^3.0"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -14802,22 +14812,22 @@
             "homepage": "https://github.com/SU-SWS/stanford_image_styles",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_image_styles/issues",
-                "source": "https://github.com/SU-SWS/stanford_image_styles/tree/8.1.3"
+                "source": "https://github.com/SU-SWS/stanford_image_styles/tree/8.x-1.x"
             },
-            "time": "2021-06-11T18:04:55+00:00"
+            "time": "2021-06-11T18:14:53+00:00"
         },
         {
             "name": "su-sws/stanford_media",
-            "version": "8.2.16",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_media.git",
-                "reference": "3d0d67261ebda6815439bc1382e828856d9707c9"
+                "reference": "203360e77c2181357cdcaf80874bfe9735dd6f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_media/zipball/3d0d67261ebda6815439bc1382e828856d9707c9",
-                "reference": "3d0d67261ebda6815439bc1382e828856d9707c9",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_media/zipball/203360e77c2181357cdcaf80874bfe9735dd6f2f",
+                "reference": "203360e77c2181357cdcaf80874bfe9735dd6f2f",
                 "shasum": ""
             },
             "require": {
@@ -14830,6 +14840,7 @@
                 "drupal/linkit": "^6.0",
                 "enyo/dropzone": "^5.1"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "custom-installer": {
@@ -14869,22 +14880,22 @@
             "homepage": "https://github.com/SU-SWS/stanford_media",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_media/issues",
-                "source": "https://github.com/SU-SWS/stanford_media/tree/8.2.16"
+                "source": "https://github.com/SU-SWS/stanford_media/tree/8.x-2.x"
             },
-            "time": "2021-06-11T18:04:36+00:00"
+            "time": "2021-06-11T18:10:23+00:00"
         },
         {
             "name": "su-sws/stanford_migrate",
-            "version": "8.1.15",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_migrate.git",
-                "reference": "786066c683a90378dd631d53e110a2b0de61aa2a"
+                "reference": "0a81663562d0186f0b6a1d33e2ebf0787a25a90b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_migrate/zipball/786066c683a90378dd631d53e110a2b0de61aa2a",
-                "reference": "786066c683a90378dd631d53e110a2b0de61aa2a",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_migrate/zipball/0a81663562d0186f0b6a1d33e2ebf0787a25a90b",
+                "reference": "0a81663562d0186f0b6a1d33e2ebf0787a25a90b",
                 "shasum": ""
             },
             "require": {
@@ -14894,6 +14905,7 @@
                 "drupal/migrate_tools": "^5.0",
                 "drupal/ultimate_cron": "^2.0@alpha"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "patches": {
@@ -14919,22 +14931,22 @@
             "homepage": "https://github.com/SU-SWS/stanford_migrate",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_migrate/issues",
-                "source": "https://github.com/SU-SWS/stanford_migrate/tree/8.1.15"
+                "source": "https://github.com/SU-SWS/stanford_migrate/tree/8.x-1.x"
             },
-            "time": "2021-06-11T18:04:06+00:00"
+            "time": "2021-06-11T18:09:31+00:00"
         },
         {
             "name": "su-sws/stanford_news",
-            "version": "8.2.13",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_news.git",
-                "reference": "fd26664e5c955f8cdb124f8eb4b8b54651c26d47"
+                "reference": "27e00e5bcef7bcf403c59ca7cf5005ae157266f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_news/zipball/fd26664e5c955f8cdb124f8eb4b8b54651c26d47",
-                "reference": "fd26664e5c955f8cdb124f8eb4b8b54651c26d47",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_news/zipball/27e00e5bcef7bcf403c59ca7cf5005ae157266f6",
+                "reference": "27e00e5bcef7bcf403c59ca7cf5005ae157266f6",
                 "shasum": ""
             },
             "require": {
@@ -14960,9 +14972,10 @@
                 "drupal/views_infinite_scroll": "^1.6",
                 "drupal/views_taxonomy_term_name_depth": "^7.0",
                 "su-sws/drupal-patches": "^8.0",
-                "su-sws/jumpstart_ui": "^8.1",
-                "su-sws/stanford_text_editor": "^8.1"
+                "su-sws/jumpstart_ui": "dev-8.x-1.x",
+                "su-sws/stanford_text_editor": "dev-8.x-1.x"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -14971,24 +14984,25 @@
             "description": "Stanford News",
             "homepage": "https://github.com/SU-SWS/stanford_news",
             "support": {
-                "source": "https://github.com/SU-SWS/stanford_news/tree/8.2.13"
+                "source": "https://github.com/SU-SWS/stanford_news/tree/8.x-2.x"
             },
-            "time": "2021-06-11T18:03:45+00:00"
+            "time": "2021-06-11T18:07:56+00:00"
         },
         {
             "name": "su-sws/stanford_notifications",
-            "version": "8.1.3",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_notifications.git",
-                "reference": "958a5018df68651ce72671c520d974f40a6c6894"
+                "reference": "79e2640a3bdd406f5aa4038c15f8198a9ce22ec3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_notifications/zipball/958a5018df68651ce72671c520d974f40a6c6894",
-                "reference": "958a5018df68651ce72671c520d974f40a6c6894",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_notifications/zipball/79e2640a3bdd406f5aa4038c15f8198a9ce22ec3",
+                "reference": "79e2640a3bdd406f5aa4038c15f8198a9ce22ec3",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "drush": {
@@ -15005,22 +15019,22 @@
             "homepage": "https://github.com/SU-SWS/stanford_notifications",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_notifications/issues",
-                "source": "https://github.com/SU-SWS/stanford_notifications/tree/8.1.3"
+                "source": "https://github.com/SU-SWS/stanford_notifications/tree/8.x-1.x"
             },
-            "time": "2021-06-11T18:03:20+00:00"
+            "time": "2021-06-11T18:07:15+00:00"
         },
         {
             "name": "su-sws/stanford_person",
-            "version": "8.1.14",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_person.git",
-                "reference": "034bdc14c267ffa195e7a00382bd1ec706f76d68"
+                "reference": "4cca8e891ed0d2d61b817d528fa53ac002ac9ef4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_person/zipball/034bdc14c267ffa195e7a00382bd1ec706f76d68",
-                "reference": "034bdc14c267ffa195e7a00382bd1ec706f76d68",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_person/zipball/4cca8e891ed0d2d61b817d528fa53ac002ac9ef4",
+                "reference": "4cca8e891ed0d2d61b817d528fa53ac002ac9ef4",
                 "shasum": ""
             },
             "require": {
@@ -15044,10 +15058,11 @@
                 "drupal/views_contextual_filters_or": "^1.1",
                 "drupal/views_infinite_scroll": "^1.6",
                 "sainsburys/guzzle-oauth2-plugin": "^3.0",
-                "su-sws/jumpstart_ui": "^8.1",
-                "su-sws/stanford_migrate": "^8.1",
-                "su-sws/stanford_text_editor": "^8.1"
+                "su-sws/jumpstart_ui": "dev-8.x-1.x",
+                "su-sws/stanford_migrate": "dev-8.x-1.x",
+                "su-sws/stanford_text_editor": "dev-8.x-1.x"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "enable-patching": true,
@@ -15071,22 +15086,22 @@
             "homepage": "https://github.com/SU-SWS/stanford_person",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_person/issues",
-                "source": "https://github.com/SU-SWS/stanford_person/tree/8.1.14"
+                "source": "https://github.com/SU-SWS/stanford_person/tree/8.x-1.x"
             },
-            "time": "2021-06-11T18:02:50+00:00"
+            "time": "2021-06-11T18:05:34+00:00"
         },
         {
             "name": "su-sws/stanford_profile",
-            "version": "8.2.8",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile.git",
-                "reference": "843c6e8a71317ccaf7f888c9759040573c8358f2"
+                "reference": "30c2d2556f4d811922cac918f691060b67b3a14b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/843c6e8a71317ccaf7f888c9759040573c8358f2",
-                "reference": "843c6e8a71317ccaf7f888c9759040573c8358f2",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/30c2d2556f4d811922cac918f691060b67b3a14b",
+                "reference": "30c2d2556f4d811922cac918f691060b67b3a14b",
                 "shasum": ""
             },
             "require": {
@@ -15146,22 +15161,23 @@
                 "ext-imagick": "*",
                 "onlyextart/colorbox": "dev-master#e58476becbc89dc671093d1bcd9f99b2167fa8f7",
                 "su-sws/drupal-patches": "^8.0",
-                "su-sws/jumpstart_ui": "^8.1",
-                "su-sws/nobots": "^8.2",
-                "su-sws/react_paragraphs": "^8.2",
-                "su-sws/stanford_basic": "^8.5",
-                "su-sws/stanford_date_formats": "^8.1",
-                "su-sws/stanford_events": "^8.1",
-                "su-sws/stanford_fields": "^8.1",
-                "su-sws/stanford_image_styles": "^8.1",
-                "su-sws/stanford_news": "^8.2",
-                "su-sws/stanford_notifications": "^8.1",
-                "su-sws/stanford_person": "^8.1",
-                "su-sws/stanford_profile_helper": "^8.1",
-                "su-sws/stanford_publication": "^8.1",
-                "su-sws/stanford_ssp": "^8.1",
-                "su-sws/stanford_text_editor": "^8.1"
+                "su-sws/jumpstart_ui": "dev-8.x-1.x",
+                "su-sws/nobots": "dev-8.x-2.x",
+                "su-sws/react_paragraphs": "dev-8.x-2.x",
+                "su-sws/stanford_basic": "dev-8.x-5.x",
+                "su-sws/stanford_date_formats": "dev-8.x-1.x",
+                "su-sws/stanford_events": "dev-8.x-1.x",
+                "su-sws/stanford_fields": "dev-8.x-1.x",
+                "su-sws/stanford_image_styles": "dev-8.x-1.x",
+                "su-sws/stanford_news": "dev-8.x-2.x",
+                "su-sws/stanford_notifications": "dev-8.x-1.x",
+                "su-sws/stanford_person": "dev-8.x-1.x",
+                "su-sws/stanford_profile_helper": "dev-8.x-1.x",
+                "su-sws/stanford_publication": "dev-8.x-1.x",
+                "su-sws/stanford_ssp": "dev-8.x-2.x",
+                "su-sws/stanford_text_editor": "dev-8.x-1.x"
             },
+            "default-branch": true,
             "type": "drupal-custom-profile",
             "extra": {
                 "drush": {
@@ -15182,22 +15198,22 @@
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_profile/issues",
-                "source": "https://github.com/SU-SWS/stanford_profile/tree/8.2.8"
+                "source": "https://github.com/SU-SWS/stanford_profile/tree/8.x-2.x"
             },
-            "time": "2021-05-18T18:29:42+00:00"
+            "time": "2021-06-09T23:52:53+00:00"
         },
         {
             "name": "su-sws/stanford_profile_helper",
-            "version": "8.1.16",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile_helper.git",
-                "reference": "3a10d2d2ecb98e67de08570322007dd2fcfc809e"
+                "reference": "6a1d25daf473b0655fa1acd3dedade8f13226b71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile_helper/zipball/3a10d2d2ecb98e67de08570322007dd2fcfc809e",
-                "reference": "3a10d2d2ecb98e67de08570322007dd2fcfc809e",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile_helper/zipball/6a1d25daf473b0655fa1acd3dedade8f13226b71",
+                "reference": "6a1d25daf473b0655fa1acd3dedade8f13226b71",
                 "shasum": ""
             },
             "require": {
@@ -15212,13 +15228,14 @@
                 "drupal/paragraphs": "^1.11",
                 "drupal/ui_patterns": "~1.0",
                 "drupal/xmlsitemap": "~1.0",
-                "su-sws/jumpstart_ui": "^8.1.0",
-                "su-sws/react_paragraphs": "^8.2.0",
-                "su-sws/stanford_date_formats": "^8.1.0",
-                "su-sws/stanford_fields": "^8.1.0",
-                "su-sws/stanford_image_styles": "^8.1.0",
-                "su-sws/stanford_text_editor": "^8.1.0"
+                "su-sws/jumpstart_ui": "dev-8.x-1.x",
+                "su-sws/react_paragraphs": "dev-8.x-2.x",
+                "su-sws/stanford_date_formats": "dev-8.x-1.x",
+                "su-sws/stanford_fields": "dev-8.x-1.x",
+                "su-sws/stanford_image_styles": "dev-8.x-1.x",
+                "su-sws/stanford_text_editor": "dev-8.x-1.x"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "drush": {
@@ -15243,22 +15260,22 @@
             ],
             "description": "Helper Module For Stanford Profile",
             "support": {
-                "source": "https://github.com/SU-SWS/stanford_profile_helper/tree/8.1.16"
+                "source": "https://github.com/SU-SWS/stanford_profile_helper/tree/8.x-1.x"
             },
-            "time": "2021-06-11T18:02:30+00:00"
+            "time": "2021-06-11T18:04:26+00:00"
         },
         {
             "name": "su-sws/stanford_publication",
-            "version": "8.1.7",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_publication.git",
-                "reference": "9feaf0c8151dd06549cbfe9fa4e24810e4876983"
+                "reference": "9e2c4380174113e74f931f59bb614efa1cbdf7fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_publication/zipball/9feaf0c8151dd06549cbfe9fa4e24810e4876983",
-                "reference": "9feaf0c8151dd06549cbfe9fa4e24810e4876983",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_publication/zipball/9e2c4380174113e74f931f59bb614efa1cbdf7fc",
+                "reference": "9e2c4380174113e74f931f59bb614efa1cbdf7fc",
                 "shasum": ""
             },
             "require": {
@@ -15280,9 +15297,10 @@
                 "drupal/views_taxonomy_term_name_depth": "^7.0",
                 "seboettg/citeproc-php": "dev-master#c1df840d897b938431130445927d48a4b6cf464b",
                 "su-sws/drupal-patches": "^8.0",
-                "su-sws/jumpstart_ui": "^8.1",
-                "su-sws/react_paragraphs": "^8.2"
+                "su-sws/jumpstart_ui": "dev-8.x-1.x",
+                "su-sws/react_paragraphs": "dev-8.x-2.x"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "autoload": {
                 "psr-4": {
@@ -15296,22 +15314,22 @@
             "description": "A Drupal publication content type and views.",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_publication/issues",
-                "source": "https://github.com/SU-SWS/stanford_publication/tree/8.1.7"
+                "source": "https://github.com/SU-SWS/stanford_publication/tree/8.x-1.x"
             },
-            "time": "2021-06-11T18:01:35+00:00"
+            "time": "2021-06-11T18:04:03+00:00"
         },
         {
             "name": "su-sws/stanford_ssp",
-            "version": "8.2.1",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_ssp.git",
-                "reference": "c43222e3e61983dd2213e8bbf3ec329ec01ef076"
+                "reference": "0702474f64d02beb1ed5d5c054c28995e1092c0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_ssp/zipball/c43222e3e61983dd2213e8bbf3ec329ec01ef076",
-                "reference": "c43222e3e61983dd2213e8bbf3ec329ec01ef076",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_ssp/zipball/0702474f64d02beb1ed5d5c054c28995e1092c0c",
+                "reference": "0702474f64d02beb1ed5d5c054c28995e1092c0c",
                 "shasum": ""
             },
             "require": {
@@ -15319,6 +15337,7 @@
                 "drupal/simplesamlphp_auth": "~3.1",
                 "php": ">=7.0.0"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "drush": {
@@ -15334,22 +15353,22 @@
             "description": "A Drupal Authentication Module.",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_ssp/issues",
-                "source": "https://github.com/SU-SWS/stanford_ssp/tree/8.2.1"
+                "source": "https://github.com/SU-SWS/stanford_ssp/tree/8.x-2.x"
             },
-            "time": "2021-06-11T16:51:01+00:00"
+            "time": "2021-06-11T17:20:21+00:00"
         },
         {
             "name": "su-sws/stanford_text_editor",
-            "version": "8.1.13",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_text_editor.git",
-                "reference": "749914b3da618546b5635c25cf9e9eece23b353d"
+                "reference": "ec5c0b6094d4cbfe865de6f9dfc17cb971b12e00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_text_editor/zipball/749914b3da618546b5635c25cf9e9eece23b353d",
-                "reference": "749914b3da618546b5635c25cf9e9eece23b353d",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_text_editor/zipball/ec5c0b6094d4cbfe865de6f9dfc17cb971b12e00",
+                "reference": "ec5c0b6094d4cbfe865de6f9dfc17cb971b12e00",
                 "shasum": ""
             },
             "require": {
@@ -15361,8 +15380,9 @@
                 "drupal/anchor_link": "^2.2",
                 "drupal/ckeditor_a11ychecker": "^1.0",
                 "drupal/core": "^8.8 || ^9.0",
-                "su-sws/stanford_media": "^8.2"
+                "su-sws/stanford_media": "dev-8.x-2.x"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "patches": {
@@ -15378,9 +15398,9 @@
             "description": "Input format and WYSIWYG settings for Drupal.",
             "support": {
                 "issues": "https://github.com/SU-SWS/stanford_text_editor/issues",
-                "source": "https://github.com/SU-SWS/stanford_text_editor/tree/8.1.13"
+                "source": "https://github.com/SU-SWS/stanford_text_editor/tree/8.x-1.x"
             },
-            "time": "2021-06-11T18:01:01+00:00"
+            "time": "2021-06-11T18:02:16+00:00"
         },
         {
             "name": "symfony-cmf/routing",
@@ -24900,6 +24920,24 @@
             "version": "dev-3141520-d9-ready",
             "alias": "1.0.0",
             "alias_normalized": "1.0.0.0"
+        },
+        {
+            "package": "su-hkku/cardinal_service_profile",
+            "version": "dev-8.x-2.x",
+            "alias": "8.2.1",
+            "alias_normalized": "8.2.1.0"
+        },
+        {
+            "package": "su-sws/caw_profile",
+            "version": "dev-8.x-2.x",
+            "alias": "8.2.0",
+            "alias_normalized": "8.2.0.0"
+        },
+        {
+            "package": "su-sws/stanford_profile",
+            "version": "dev-8.x-2.x",
+            "alias": "8.2.8",
+            "alias_normalized": "8.2.8.0"
         }
     ],
     "minimum-stability": "dev",
@@ -24908,6 +24946,9 @@
         "drupal/domain_301_redirect": 20,
         "drupal/link_title_formatter": 20,
         "drupal/response_code_condition": 20,
+        "su-hkku/cardinal_service_profile": 20,
+        "su-sws/caw_profile": 20,
+        "su-sws/stanford_profile": 20,
         "su-sws/blt-sws": 20
     },
     "prefer-stable": true,
