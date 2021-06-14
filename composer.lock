@@ -14328,16 +14328,16 @@
         },
         {
             "name": "su-hkku/cardinal_service_profile",
-            "version": "8.2.1",
+            "version": "8.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-HKKU/cardinal_service_profile.git",
-                "reference": "15b79aecddc49ce738b06e9598e92e3ac8e4f4ea"
+                "reference": "c80a008d8c97beab395a4cb5673b644d268409e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/15b79aecddc49ce738b06e9598e92e3ac8e4f4ea",
-                "reference": "15b79aecddc49ce738b06e9598e92e3ac8e4f4ea",
+                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/c80a008d8c97beab395a4cb5673b644d268409e6",
+                "reference": "c80a008d8c97beab395a4cb5673b644d268409e6",
                 "shasum": ""
             },
             "require": {
@@ -14391,9 +14391,9 @@
             ],
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
             "support": {
-                "source": "https://github.com/SU-HKKU/cardinal_service_profile/tree/8.2.1"
+                "source": "https://github.com/SU-HKKU/cardinal_service_profile/tree/8.2.2"
             },
-            "time": "2021-06-11T23:14:49+00:00"
+            "time": "2021-06-14T17:14:31+00:00"
         },
         {
             "name": "su-sws/caw_profile",
@@ -23955,12 +23955,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/blt-sws.git",
-                "reference": "4dcd02d4cb0ef98bb44493d205cfcbfb6e73c417"
+                "reference": "0551c1ba4360f75075ffdad1f4f3a73467fe5ddf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/blt-sws/zipball/4dcd02d4cb0ef98bb44493d205cfcbfb6e73c417",
-                "reference": "4dcd02d4cb0ef98bb44493d205cfcbfb6e73c417",
+                "url": "https://api.github.com/repos/SU-SWS/blt-sws/zipball/0551c1ba4360f75075ffdad1f4f3a73467fe5ddf",
+                "reference": "0551c1ba4360f75075ffdad1f4f3a73467fe5ddf",
                 "shasum": ""
             },
             "require": {
@@ -23988,7 +23988,7 @@
                 "issues": "https://github.com/SU-SWS/blt-sws/issues",
                 "source": "https://github.com/SU-SWS/blt-sws/tree/main"
             },
-            "time": "2021-05-26T22:48:59+00:00"
+            "time": "2021-06-14T16:06:07+00:00"
         },
         {
             "name": "su-sws/drupal-dev",
