@@ -1,12 +1,12 @@
 local:
-  uri: cardinalatwork.sites-pro.stanford.edu
+  uri: cardinalatwork
   root: '${env.cwd}/docroot'
 dev:
   root: /var/www/html/stanfordgryphon.dev/docroot
   ac-site: stanfordgryphon
   ac-env: dev
   ac-realm: prod
-  uri: cardinalatwork.sites-pro.stanford.edu
+  uri: cardinalatwork-dev.sites-pro.stanford.edu
   dev.livedev:
     parent: '@stanfordgryphon.dev'
     root: /mnt/gfs/stanfordgryphon.dev/livedev/docroot
@@ -45,7 +45,7 @@ test:
   ac-site: stanfordgryphon
   ac-env: test
   ac-realm: prod
-  uri: cardinalatwork.sites-pro.stanford.edu
+  uri: cardinalatwork-test.sites-pro.stanford.edu
   test.livedev:
     parent: '@stanfordgryphon.test'
     root: /mnt/gfs/stanfordgryphon.test/livedev/docroot
