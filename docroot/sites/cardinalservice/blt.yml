@@ -1,4 +1,6 @@
 project:
+  profile:
+    name: cardinal_service_profile
   local:
     hostname: local.cardinalservice.com
     protocol: http
