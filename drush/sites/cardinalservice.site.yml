@@ -6,7 +6,7 @@ dev:
   ac-site: stanfordgryphon
   ac-env: dev
   ac-realm: prod
-  uri: cardinalservice.sites-pro.stanford.edu
+  uri: cardinalservice-dev.sites-pro.stanford.edu
   dev.livedev:
     parent: '@stanfordgryphon.dev'
     root: /mnt/gfs/stanfordgryphon.dev/livedev/docroot
