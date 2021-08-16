@@ -17,7 +17,9 @@ if (!trait_exists('Sws\BltSws\Blt\Plugin\Commands\SwsCommandTrait')) {
  */
 class GryphonAcquiaApiCommands extends GryphonCommands {
 
-  use SwsCommandTrait;
+  use SwsCommandTrait {
+    connectAcquiaApi as traitConnectAcquiaApi;
+  }
 
   /**
    * Create the scheduled job within Acquia to call drush cron.
@@ -310,6 +312,24 @@ class GryphonAcquiaApiCommands extends GryphonCommands {
 
     // Cleanup the local certs files.
     $this->taskDeleteDir($local_cert_dir)->run();
+  }
+
+  /**
+   * Create the Acquia cloud conf file that holds the key and secret creds.
+   *
+   * @throws \Acquia\Blt\Robo\Exceptions\BltException
+   */
+  protected function connectAcquiaApi() {
+    $config_file = $_SERVER['HOME'] . '/.acquia/cloud_api.conf';
+    if (!file_exists($config_file)) {
+      mkdir(dirname($config_file), 0777, TRUE);
+      $conf = [
+        'key' => getenv('ACE_KEY'),
+        'secret' => getenv('ACE_SECRET'),
+      ];
+      file_put_contents($config_file, json_encode($conf));
+    }
+    self::traitConnectAcquiaApi();
   }
 
   /**
