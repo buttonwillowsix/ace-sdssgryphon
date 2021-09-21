@@ -57,23 +57,6 @@ defaults: &defaults
         MYSQL_ALLOW_EMPTY_PASSWORD: 1
   working_directory: /var/www/html
 
-## Renew the lets encrypt certificates for the three main environments.
-renew_certs: &renew_certs
-  <<: *defaults
-  steps:
-    - *add_ssh
-    - *add_known_hosts
-    - checkout
-    - *restore_caches
-    - run:
-        name: Renew LE Certs
-        command: |
-          composer install --no-interaction
-          vendor/bin/blt blt:telemetry:disable --no-interaction
-          vendor/bin/blt gryphon:renew-cert prod --no-interaction
-          vendor/bin/blt gryphon:renew-cert test --no-interaction
-          vendor/bin/blt gryphon:renew-cert dev --no-interaction
-
 cardinal_service_codeception_acceptance: &cardinal_service_codeception_acceptance
   <<: *defaults
   steps:
@@ -115,8 +98,6 @@ phpunit_coverage: &phpunit_coverage
 
 # Declare all of the jobs we should run.
 jobs:
-  renew-certs:
-    <<: *renew_certs
   run-cardinal-service-codeception-acceptance:
     <<: *cardinal_service_codeception_acceptance
   run-phpunit-coverage:
@@ -129,13 +110,3 @@ workflows:
     jobs:
       - run-cardinal-service-codeception-acceptance
       - run-phpunit-coverage
-  renew_certs:
-    triggers:
-      - schedule:
-          cron: "0 8 * * 0"
-          filters:
-            branches:
-              only:
-                - /2.x/
-    jobs:
-      - renew-certs
