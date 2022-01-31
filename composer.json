@@ -133,6 +133,9 @@
         "su-sws/blt-sws": "dev-main",
         "su-sws/drupal-dev": "^8.2"
     },
+    "replace": {
+        "drupal/coder": "*"
+    },
     "conflict": {
         "drupal/drupal": "*"
     },
