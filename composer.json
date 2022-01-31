@@ -125,7 +125,7 @@
         "drupal/mysql56": "^1.1",
         "drupal/paranoia": "^1.9",
         "drush/drush": "^10.3",
-        "su-hkku/cardinal_service_profile": "^8.2"
+        "su-hkku/cardinal_service_profile": "dev-8.x-2.x"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
