@@ -122,10 +122,11 @@
         "drupal/domain_301_redirect": "dev-2954889-d9-ready as 1.0.0",
         "drupal/editor_advanced_link": "^1.8",
         "drupal/link_title_formatter": "dev-3174382-d9-ready as 1.1.0",
+        "drupal/menu_block": "dev-1.x#17bc5a2094dec85a921fdac6aff0030bfe004744",
         "drupal/mysql56": "^1.1",
         "drupal/paranoia": "^1.9",
         "drush/drush": "^10.3",
-        "su-hkku/cardinal_service_profile": "dev-8.x-2.x"
+        "su-hkku/cardinal_service_profile": "^8.2"
     },
     "require-dev": {
         "acquia/blt-drupal-test": "^1.0",
