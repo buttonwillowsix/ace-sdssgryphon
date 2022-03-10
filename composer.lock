@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d6751be52cf8c7c540ac46916b21b2f1",
+    "content-hash": "ce9c4d81619bbae7dfd93954c4a8d6d8",
     "packages": [
         {
             "name": "acquia/blt",
@@ -6781,7 +6781,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/menu_block.git",
-                "reference": "4aa56f8c8a0361eedd2319bb45044e9017ecbde4"
+                "reference": "17bc5a2094dec85a921fdac6aff0030bfe004744"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -25246,6 +25246,7 @@
         "acquia/blt-simplesamlphp": 20,
         "drupal/domain_301_redirect": 20,
         "drupal/link_title_formatter": 20,
+        "drupal/menu_block": 20,
         "su-sws/blt-sws": 20
     },
     "prefer-stable": true,
