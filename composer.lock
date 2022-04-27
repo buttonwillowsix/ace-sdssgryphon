@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf0cc71215d6c777228a0019e81bbe48",
+    "content-hash": "62e89d9254244308e501b26edabc387d",
     "packages": [
         {
             "name": "acquia/blt",
@@ -732,16 +732,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.5.4",
+            "version": "4.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "93398c3166d9026ab93219ce23b2092b4d7b7904"
+                "reference": "67cea8e8e7656b74da651ea6f49321853996c0fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/93398c3166d9026ab93219ce23b2092b4d7b7904",
-                "reference": "93398c3166d9026ab93219ce23b2092b4d7b7904",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/67cea8e8e7656b74da651ea6f49321853996c0fd",
+                "reference": "67cea8e8e7656b74da651ea6f49321853996c0fd",
                 "shasum": ""
             },
             "require": {
@@ -782,9 +782,9 @@
             "description": "Initialize Symfony Console commands from annotated command class methods.",
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
-                "source": "https://github.com/consolidation/annotated-command/tree/4.5.4"
+                "source": "https://github.com/consolidation/annotated-command/tree/4.5.5"
             },
-            "time": "2022-04-05T17:58:10+00:00"
+            "time": "2022-04-26T16:18:25+00:00"
         },
         {
             "name": "consolidation/comments",
@@ -8157,17 +8157,17 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/pathauto.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "f075ebff595c9b8b62333d65ad29020330e0ea9d"
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "f49d5fbcd7a2c1b4de1da07194fe01d9012237ec"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -8180,8 +8180,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1644822949",
+                    "version": "8.x-1.10",
+                    "datestamp": "1650806739",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15542,16 +15542,16 @@
         },
         {
             "name": "su-hkku/cardinal_service_profile",
-            "version": "8.x-dev",
+            "version": "8.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-HKKU/cardinal_service_profile.git",
-                "reference": "879d66872aa1451d27c69669f6aea8755dd2ca30"
+                "reference": "1456e4dc7ca37ed7ee4600fdd18f3e91c785821b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/879d66872aa1451d27c69669f6aea8755dd2ca30",
-                "reference": "879d66872aa1451d27c69669f6aea8755dd2ca30",
+                "url": "https://api.github.com/repos/SU-HKKU/cardinal_service_profile/zipball/1456e4dc7ca37ed7ee4600fdd18f3e91c785821b",
+                "reference": "1456e4dc7ca37ed7ee4600fdd18f3e91c785821b",
                 "shasum": ""
             },
             "require": {
@@ -15567,9 +15567,8 @@
                 "drupal/views_field_view": "^1.0@beta",
                 "ext-imagick": "*",
                 "michelf/php-markdown": "^1.9",
-                "su-sws/stanford_profile": "8.x-dev"
+                "su-sws/stanford_profile": "8.x-dev#0c5219fd07e28107c27bd521c04b60b73e2672e8"
             },
-            "default-branch": true,
             "type": "drupal-custom-profile",
             "extra": {
                 "patches": {
@@ -15595,9 +15594,9 @@
             ],
             "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
             "support": {
-                "source": "https://github.com/SU-HKKU/cardinal_service_profile/tree/8.x"
+                "source": "https://github.com/SU-HKKU/cardinal_service_profile/tree/8.3.1"
             },
-            "time": "2022-04-22T20:48:10+00:00"
+            "time": "2022-04-27T15:33:56+00:00"
         },
         {
             "name": "su-sws/drupal-patches",
@@ -15899,12 +15898,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_courses.git",
-                "reference": "4f5f36822e9ef19a2348d467e9a5228bc096a5a8"
+                "reference": "09825930a3f2bbc7d5bcd2f964947b6aa5b32b85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_courses/zipball/4f5f36822e9ef19a2348d467e9a5228bc096a5a8",
-                "reference": "4f5f36822e9ef19a2348d467e9a5228bc096a5a8",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_courses/zipball/09825930a3f2bbc7d5bcd2f964947b6aa5b32b85",
+                "reference": "09825930a3f2bbc7d5bcd2f964947b6aa5b32b85",
                 "shasum": ""
             },
             "require": {
@@ -15958,7 +15957,7 @@
                 "issues": "https://github.com/SU-SWS/stanford_courses/issues",
                 "source": "https://github.com/SU-SWS/stanford_courses/tree/8.x"
             },
-            "time": "2022-04-20T22:04:17+00:00"
+            "time": "2022-04-27T16:09:13+00:00"
         },
         {
             "name": "su-sws/stanford_date_formats",
@@ -15996,12 +15995,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_events.git",
-                "reference": "5327d6e05e1de30a691ff6a535cfd27d8b611b78"
+                "reference": "2a2930b8782b076821cde00b84251442e9d68e56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_events/zipball/5327d6e05e1de30a691ff6a535cfd27d8b611b78",
-                "reference": "5327d6e05e1de30a691ff6a535cfd27d8b611b78",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_events/zipball/2a2930b8782b076821cde00b84251442e9d68e56",
+                "reference": "2a2930b8782b076821cde00b84251442e9d68e56",
                 "shasum": ""
             },
             "require": {
@@ -16056,7 +16055,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/stanford_events/tree/8.x-1.x"
             },
-            "time": "2022-04-11T21:51:36+00:00"
+            "time": "2022-04-26T16:29:34+00:00"
         },
         {
             "name": "su-sws/stanford_fields",
@@ -16196,17 +16195,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_migrate.git",
-                "reference": "4d97326f7cc8da884f01aa2c811d9fc3f49891c7"
+                "reference": "a7095592033b2d32b765b82ed8aa77be9ef8fae7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_migrate/zipball/4d97326f7cc8da884f01aa2c811d9fc3f49891c7",
-                "reference": "4d97326f7cc8da884f01aa2c811d9fc3f49891c7",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_migrate/zipball/a7095592033b2d32b765b82ed8aa77be9ef8fae7",
+                "reference": "a7095592033b2d32b765b82ed8aa77be9ef8fae7",
                 "shasum": ""
             },
             "require": {
                 "drupal/migrate_file": "^2.0",
-                "drupal/migrate_plus": "^5.0",
+                "drupal/migrate_plus": "5.2",
                 "drupal/migrate_source_csv": "^3.4",
                 "drupal/migrate_tools": "^5.0",
                 "drupal/readonly_field_widget": "^1.4",
@@ -16241,7 +16240,7 @@
                 "issues": "https://github.com/SU-SWS/stanford_migrate/issues",
                 "source": "https://github.com/SU-SWS/stanford_migrate/tree/8.x-1.x"
             },
-            "time": "2022-04-05T22:18:14+00:00"
+            "time": "2022-04-26T16:10:51+00:00"
         },
         {
             "name": "su-sws/stanford_news",
@@ -16405,12 +16404,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile.git",
-                "reference": "0c5219fd07e28107c27bd521c04b60b73e2672e8"
+                "reference": "ff2bb1a944c660a81e3d3ab024704e0590296d03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/0c5219fd07e28107c27bd521c04b60b73e2672e8",
-                "reference": "0c5219fd07e28107c27bd521c04b60b73e2672e8",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile/zipball/ff2bb1a944c660a81e3d3ab024704e0590296d03",
+                "reference": "ff2bb1a944c660a81e3d3ab024704e0590296d03",
                 "shasum": ""
             },
             "require": {
@@ -16524,7 +16523,7 @@
                 "issues": "https://github.com/SU-SWS/stanford_profile/issues",
                 "source": "https://github.com/SU-SWS/stanford_profile/tree/8.x"
             },
-            "time": "2022-04-21T19:11:50+00:00"
+            "time": "2022-04-27T16:10:54+00:00"
         },
         {
             "name": "su-sws/stanford_profile_helper",
@@ -16532,12 +16531,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile_helper.git",
-                "reference": "48d15654702b9ad87bd42f1064e9af25d75946fc"
+                "reference": "8786b574fdf4a1db736e030d2544458aa3c34b8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile_helper/zipball/48d15654702b9ad87bd42f1064e9af25d75946fc",
-                "reference": "48d15654702b9ad87bd42f1064e9af25d75946fc",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile_helper/zipball/8786b574fdf4a1db736e030d2544458aa3c34b8e",
+                "reference": "8786b574fdf4a1db736e030d2544458aa3c34b8e",
                 "shasum": ""
             },
             "require": {
@@ -16592,7 +16591,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/stanford_profile_helper/tree/8.x-1.x"
             },
-            "time": "2022-04-21T22:45:08+00:00"
+            "time": "2022-04-27T16:15:58+00:00"
         },
         {
             "name": "su-sws/stanford_publication",
@@ -25948,7 +25947,6 @@
     "stability-flags": {
         "acquia/blt-simplesamlphp": 20,
         "drupal/menu_block": 20,
-        "su-hkku/cardinal_service_profile": 20,
         "su-sws/blt-sws": 20
     },
     "prefer-stable": true,
