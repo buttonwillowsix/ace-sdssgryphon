@@ -1,5 +1,12 @@
 # ACE Gryphon
 
+2.0.8
+--------------------------------------------------------------------------------
+_Release Date: 2022-04-27_
+
+- Updated cardinal service profile & dependencies.
+- Dropped outdated workarounds.
+
 2.0.7
 --------------------------------------------------------------------------------
 _Release Date: 2022-03-04_
