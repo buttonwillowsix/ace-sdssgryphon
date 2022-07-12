@@ -75,14 +75,18 @@ foreach ($sites_settings as $settings_file) {
 
   // Get the site name to use for domains from the directory.
   // Replace underscores "_" in the directory to dashes "-" in the site name.
-  $site_name = str_replace('_', '-', $site_dir);
+  $sitename = str_replace('_', '-', str_replace('__', '.', $site_dir));
+  $sites[$sitename] = $site_dir;
+  $sites["$sitename.stanford.edu"] = $site_dir;
+
+  $sitename = explode('.', $sitename);
 
   // Use the sitename to point all possible domains to the site directory.
-  $sites["$site_name-dev.sites-pro.stanford.edu"] = $site_dir;
-  $sites["$site_name-test.sites-pro.stanford.edu"] = $site_dir;
-  $sites["$site_name.sites-pro.stanford.edu"] = $site_dir;
-  $sites["$site_name.stanford.edu"] = $site_dir;
-  $sites[$site_name] = $site_dir;
+  foreach (['-dev', '-stage', '-prod'] as $environment) {
+    $environment_sitename = $sitename;
+    $environment_sitename[0] .= $environment;
+    $sites[implode('.', $environment_sitename) . '.stanford.edu'] = $site_dir;
+  }
 }
 
 // Manually point domains that don't fit naming conventions here.
@@ -91,4 +95,10 @@ foreach ($sites_settings as $settings_file) {
 
 if (file_exists(__DIR__ . '/local.sites.php')) {
   require __DIR__ . '/local.sites.php';
+}
+
+// Include fallback option for site specification.
+$file = '/mnt/files/' . getenv('AH_SITE_GROUP') . '.' . getenv('AH_SITE_ENVIRONMENT') . '/sdssgryphon-sites.php';
+if (file_exists($file)) {
+  require $file;
 }
