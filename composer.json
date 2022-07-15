@@ -126,7 +126,8 @@
         "drupal/coder": "*"
     },
     "conflict": {
-        "drupal/drupal": "*"
+        "drupal/drupal": "*",
+        "symfony/string": ">=6.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
