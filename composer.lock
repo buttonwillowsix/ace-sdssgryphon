@@ -3357,12 +3357,12 @@
             ],
             "authors": [
                 {
-                    "name": "Qwaygon",
-                    "homepage": "https://www.drupal.org/user/636624"
-                },
-                {
                     "name": "claymor",
                     "homepage": "https://www.drupal.org/user/3193903"
+                },
+                {
+                    "name": "Qwaygon",
+                    "homepage": "https://www.drupal.org/user/636624"
                 },
                 {
                     "name": "shumer",
@@ -6323,20 +6323,20 @@
         },
         {
             "name": "drupal/inline_entity_form",
-            "version": "1.0.0-rc11",
+            "version": "1.0.0-rc12",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/inline_entity_form.git",
-                "reference": "8.x-1.0-rc11"
+                "reference": "8.x-1.0-rc12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc11.zip",
-                "reference": "8.x-1.0-rc11",
-                "shasum": "67a92ec1482be19b2f2091ca9498f585e34072b9"
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc12.zip",
+                "reference": "8.x-1.0-rc12",
+                "shasum": "eddee2964823b7da2ec7032ddb871f247ba7ed7a"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
+                "drupal/core": "^8.8 || ^9 || ^10",
                 "php": ">=7.1"
             },
             "require-dev": {
@@ -6345,8 +6345,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc11",
-                    "datestamp": "1648748863",
+                    "version": "8.x-1.0-rc12",
+                    "datestamp": "1658308069",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -6359,12 +6359,12 @@
             ],
             "authors": [
                 {
-                    "name": "Centarro",
-                    "homepage": "https://www.drupal.org/user/3661446"
-                },
-                {
                     "name": "bojanz",
                     "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
                 },
                 {
                     "name": "dawehner",
@@ -6605,17 +6605,17 @@
         },
         {
             "name": "drupal/layout_builder_restrictions",
-            "version": "2.13.0",
+            "version": "2.14.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/layout_builder_restrictions.git",
-                "reference": "8.x-2.13"
+                "reference": "8.x-2.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/layout_builder_restrictions-8.x-2.13.zip",
-                "reference": "8.x-2.13",
-                "shasum": "2ff1a74d533cd785d3f3e8dae5ebc9d499771090"
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_restrictions-8.x-2.14.zip",
+                "reference": "8.x-2.14",
+                "shasum": "708002260ebe9e6b82c73712633ef6610e710769"
             },
             "require": {
                 "drupal/core": "^8.8.0 || ^9.0"
@@ -6628,8 +6628,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.13",
-                    "datestamp": "1649945847",
+                    "version": "8.x-2.14",
+                    "datestamp": "1658261093",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6652,8 +6652,8 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "gravelpot",
-                    "homepage": "https://www.drupal.org/user/748208"
+                    "name": "Jeff Cardwell",
+                    "homepage": "https://www.drupal.org/user/2913129"
                 },
                 {
                     "name": "lreynaga",
@@ -6662,6 +6662,10 @@
                 {
                     "name": "mark_fullmer",
                     "homepage": "https://www.drupal.org/user/2612816"
+                },
+                {
+                    "name": "mmarler",
+                    "homepage": "https://www.drupal.org/user/500192"
                 },
                 {
                     "name": "ricksta",
@@ -6674,6 +6678,10 @@
                 {
                     "name": "twfahey",
                     "homepage": "https://www.drupal.org/user/3403722"
+                },
+                {
+                    "name": "utexas",
+                    "homepage": "https://www.drupal.org/user/3716409"
                 }
             ],
             "description": "Manage which fields & layouts are available in Layout Builder",
@@ -7195,17 +7203,17 @@
         },
         {
             "name": "drupal/metatag",
-            "version": "1.20.0",
+            "version": "1.21.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/metatag.git",
-                "reference": "8.x-1.20"
+                "reference": "8.x-1.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.20.zip",
-                "reference": "8.x-1.20",
-                "shasum": "f9b0019bad629a734da588f64839abdcb076f3d8"
+                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.21.zip",
+                "reference": "8.x-1.21",
+                "shasum": "677ff7384b557390d4d1a36f335452e8172f741d"
             },
             "require": {
                 "drupal/core": "^9",
@@ -7224,8 +7232,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.20",
-                    "datestamp": "1657810826",
+                    "version": "8.x-1.21",
+                    "datestamp": "1657971667",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7683,8 +7691,8 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "kaushalkishorejaiswal",
-                    "homepage": "https://www.drupal.org/user/2228850"
+                    "name": "Robert Ngo",
+                    "homepage": "https://www.drupal.org/user/610230"
                 }
             ],
             "description": "Track and prune node revisions.",
@@ -7701,26 +7709,26 @@
         },
         {
             "name": "drupal/oembed_providers",
-            "version": "2.0.4",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/oembed_providers.git",
-                "reference": "2.0.4"
+                "reference": "2.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/oembed_providers-2.0.4.zip",
-                "reference": "2.0.4",
-                "shasum": "2da9d6b14b5f9316659b43d2c1f8e339de4d6c8d"
+                "url": "https://ftp.drupal.org/files/projects/oembed_providers-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "5724ce92547ec59adf9f7c67d587201109d0a1eb"
             },
             "require": {
-                "drupal/core": "^9.0"
+                "drupal/core": "^9.0|^10.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.4",
-                    "datestamp": "1651505536",
+                    "version": "2.1.0",
+                    "datestamp": "1657923466",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8756,17 +8764,17 @@
         },
         {
             "name": "drupal/search_api",
-            "version": "1.24.0",
+            "version": "1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api.git",
-                "reference": "8.x-1.24"
+                "reference": "8.x-1.25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.24.zip",
-                "reference": "8.x-1.24",
-                "shasum": "c4e93b8cc5bcdf7c7817bec06470af223f919f6c"
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.25.zip",
+                "reference": "8.x-1.25",
+                "shasum": "823bf5a6010cd08c7d1b287fcd855fbf81140e39"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10.0"
@@ -8787,8 +8795,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.24",
-                    "datestamp": "1657180584",
+                    "version": "8.x-1.25",
+                    "datestamp": "1658149514",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10131,23 +10139,24 @@
         },
         {
             "name": "drupal/xmlsitemap",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/xmlsitemap.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/xmlsitemap-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "528736c96ee5f19abbf798d1f8aefb211bf11b5d"
+                "url": "https://ftp.drupal.org/files/projects/xmlsitemap-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "a2a20c5aab5682cc369d095cd2e21d67fc46df9b"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
+                "drupal/core": "^9",
                 "ext-xmlwriter": "*"
             },
             "require-dev": {
+                "drupal/config_readonly": "^1.0",
                 "drupal/metatag": "^1.0",
                 "drupal/robotstxt": "^1.0"
             },
@@ -10157,8 +10166,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1638486168",
+                    "version": "8.x-1.3",
+                    "datestamp": "1658327425",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10212,7 +10221,7 @@
                     "homepage": "https://www.drupal.org/user/1835276"
                 }
             ],
-            "description": "Creates XML sitemaps for the site",
+            "description": "Creates XML Sitemaps for the site",
             "homepage": "https://www.drupal.org/project/xmlsitemap",
             "support": {
                 "source": "https://git.drupalcode.org/project/xmlsitemap",
@@ -15482,12 +15491,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/react_paragraphs.git",
-                "reference": "27e3d268b9dc78df9ba4334b814599e72c8a7b0e"
+                "reference": "ef5e1e317fc78aca1045cdcf20f5d7a90eebe85b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/react_paragraphs/zipball/27e3d268b9dc78df9ba4334b814599e72c8a7b0e",
-                "reference": "27e3d268b9dc78df9ba4334b814599e72c8a7b0e",
+                "url": "https://api.github.com/repos/SU-SWS/react_paragraphs/zipball/ef5e1e317fc78aca1045cdcf20f5d7a90eebe85b",
+                "reference": "ef5e1e317fc78aca1045cdcf20f5d7a90eebe85b",
                 "shasum": ""
             },
             "require": {
@@ -15510,7 +15519,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/react_paragraphs/tree/8.x"
             },
-            "time": "2022-07-08T20:33:13+00:00"
+            "time": "2022-07-15T20:42:20+00:00"
         },
         {
             "name": "su-sws/sdss_profile",
@@ -15518,12 +15527,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/sdss_profile.git",
-                "reference": "869d81a3408970756504af8b0df180ea6ca75551"
+                "reference": "6180c4244da4b63a67546f54a15c297579dbc726"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/sdss_profile/zipball/869d81a3408970756504af8b0df180ea6ca75551",
-                "reference": "869d81a3408970756504af8b0df180ea6ca75551",
+                "url": "https://api.github.com/repos/SU-SWS/sdss_profile/zipball/6180c4244da4b63a67546f54a15c297579dbc726",
+                "reference": "6180c4244da4b63a67546f54a15c297579dbc726",
                 "shasum": ""
             },
             "require": {
@@ -15683,7 +15692,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/sdss_profile/tree/1.x"
             },
-            "time": "2022-07-18T21:54:20+00:00"
+            "time": "2022-07-20T16:38:41+00:00"
         },
         {
             "name": "su-sws/stanford_actions",
