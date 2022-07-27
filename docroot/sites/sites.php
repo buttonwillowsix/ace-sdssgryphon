@@ -82,7 +82,7 @@ foreach ($sites_settings as $settings_file) {
   $sitename = explode('.', $sitename);
 
   // Use the sitename to point all possible domains to the site directory.
-  foreach (['-dev', '-stage', '-prod'] as $environment) {
+  foreach (['-dev', '-test', '-prod'] as $environment) {
     $environment_sitename = $sitename;
     $environment_sitename[0] .= $environment;
     $sites[implode('.', $environment_sitename) . '.stanford.edu'] = $site_dir;
