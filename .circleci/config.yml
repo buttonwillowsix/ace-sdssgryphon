@@ -76,7 +76,7 @@ sdss_profile_codeception_acceptance: &sdss_profile_codeception_acceptance
         command: |
           dockerize -wait tcp://localhost:3306 -timeout 1m
           apachectl stop && apachectl start
-          drush sql-cli < sdsss.sql
+          drush sql-cli < sdss.sql
           blt tests:codeception --test=sdss --suite=acceptance --no-interaction
     - *save_caches
     - store_test_results:
@@ -94,7 +94,7 @@ sdss_profile_codeception_functional: &sdss_profile_codeception_functional
         command: |
           dockerize -wait tcp://localhost:3306 -timeout 1m
           apachectl stop && apachectl start
-          drush sql-cli < sdsss.sql
+          drush sql-cli < sdss.sql
           blt tests:codeception --test=sdss --suite=functional --no-interaction
     - *save_caches
     - store_test_results:
