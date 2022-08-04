@@ -15382,12 +15382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/sdss_profile.git",
-                "reference": "63e76216dc4b190e00b0450a55fa45e5f1997b4d"
+                "reference": "48354a3d82bfb40ca95a91c5ebe73e706131c0be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/sdss_profile/zipball/63e76216dc4b190e00b0450a55fa45e5f1997b4d",
-                "reference": "63e76216dc4b190e00b0450a55fa45e5f1997b4d",
+                "url": "https://api.github.com/repos/SU-SWS/sdss_profile/zipball/48354a3d82bfb40ca95a91c5ebe73e706131c0be",
+                "reference": "48354a3d82bfb40ca95a91c5ebe73e706131c0be",
                 "shasum": ""
             },
             "require": {
@@ -15547,7 +15547,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/sdss_profile/tree/1.x"
             },
-            "time": "2022-08-03T23:13:50+00:00"
+            "time": "2022-08-04T23:06:03+00:00"
         },
         {
             "name": "su-sws/stanford_actions",
