@@ -438,28 +438,28 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v1.3.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "566febd56ca71e31dd383b014c4e1bec680507bf"
+                "reference": "8b1bcd45971733e8f4224e539cb92838f18c4d06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/566febd56ca71e31dd383b014c4e1bec680507bf",
-                "reference": "566febd56ca71e31dd383b014c4e1bec680507bf",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/8b1bcd45971733e8f4224e539cb92838f18c4d06",
+                "reference": "8b1bcd45971733e8f4224e539cb92838f18c4d06",
                 "shasum": ""
             },
             "require": {
-                "doctrine/collections": "~1.0",
+                "doctrine/collections": "^1.2",
                 "php": ">=7.3"
             },
             "require-dev": {
                 "ext-json": "*",
-                "mikey179/vfsstream": "1.*",
+                "mikey179/vfsstream": "^1.6.10",
                 "phpunit/phpunit": "^9.5",
-                "squizlabs/php_codesniffer": "3.*",
-                "symfony/validator": "^4.4 || ^5.4"
+                "squizlabs/php_codesniffer": "^3.6",
+                "symfony/validator": "^4.4 || ^5.4 || ^6.0"
             },
             "suggest": {
                 "symfony/validator": "to validate addresses"
@@ -496,9 +496,9 @@
             ],
             "support": {
                 "issues": "https://github.com/commerceguys/addressing/issues",
-                "source": "https://github.com/commerceguys/addressing/tree/v1.3.0"
+                "source": "https://github.com/commerceguys/addressing/tree/v1.4.1"
             },
-            "time": "2022-04-08T13:06:51+00:00"
+            "time": "2022-08-09T11:42:51+00:00"
         },
         {
             "name": "composer/installers",
@@ -1988,20 +1988,20 @@
         },
         {
             "name": "drupal/address",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/address.git",
-                "reference": "8.x-1.10"
+                "reference": "8.x-1.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.10.zip",
-                "reference": "8.x-1.10",
-                "shasum": "bbe61eb51da9d9b2a7ab247f90426836eb9b6f25"
+                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.11.zip",
+                "reference": "8.x-1.11",
+                "shasum": "1cb40fb1a43e88041b888ac8fb6aa77a45ac85fb"
             },
             "require": {
-                "commerceguys/addressing": "^1.2.0",
+                "commerceguys/addressing": "^1.4.0",
                 "drupal/core": "^9.2 || ^10",
                 "php": "^7.3 || ^8.0"
             },
@@ -2011,8 +2011,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.10",
-                    "datestamp": "1643715226",
+                    "version": "8.x-1.11",
+                    "datestamp": "1659989858",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2025,12 +2025,12 @@
             ],
             "authors": [
                 {
-                    "name": "Centarro",
-                    "homepage": "https://www.drupal.org/user/3661446"
-                },
-                {
                     "name": "bojanz",
                     "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
                 },
                 {
                     "name": "dww",
@@ -4060,17 +4060,17 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "3.10.0",
+            "version": "3.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ctools.git",
-                "reference": "8.x-3.10"
+                "reference": "8.x-3.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.10.zip",
-                "reference": "8.x-3.10",
-                "shasum": "8b515a3816a47a9eb55e0c4f4df42839ff4f2660"
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.11.zip",
+                "reference": "8.x-3.11",
+                "shasum": "67da670df43155d1e15c80c7b0e326b3049ac5a2"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10"
@@ -4078,8 +4078,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.10",
-                    "datestamp": "1659040378",
+                    "version": "8.x-3.11",
+                    "datestamp": "1660167573",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4153,7 +4153,7 @@
         },
         {
             "name": "drupal/ctools_views",
-            "version": "3.10.0",
+            "version": "3.11.0",
             "require": {
                 "drupal/core": "^9.3 || ^10",
                 "drupal/ctools": "^3"
@@ -4161,8 +4161,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.10",
-                    "datestamp": "1659040378",
+                    "version": "8.x-3.11",
+                    "datestamp": "1660167573",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6440,17 +6440,17 @@
         },
         {
             "name": "drupal/layout_builder_restrictions",
-            "version": "2.14.0",
+            "version": "2.15.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/layout_builder_restrictions.git",
-                "reference": "8.x-2.14"
+                "reference": "8.x-2.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/layout_builder_restrictions-8.x-2.14.zip",
-                "reference": "8.x-2.14",
-                "shasum": "708002260ebe9e6b82c73712633ef6610e710769"
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_restrictions-8.x-2.15.zip",
+                "reference": "8.x-2.15",
+                "shasum": "21e7bb8a00248462108dd3371e6078a8847a8219"
             },
             "require": {
                 "drupal/core": "^8.8.0 || ^9.0"
@@ -6463,8 +6463,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.14",
-                    "datestamp": "1658261093",
+                    "version": "8.x-2.15",
+                    "datestamp": "1660084599",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7930,7 +7930,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.11",
-                    "datestamp": "1659472597",
+                    "datestamp": "1660129564",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9177,26 +9177,26 @@
         },
         {
             "name": "drupal/transliterate_filenames",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/transliterate_filenames.git",
-                "reference": "2.0.0"
+                "reference": "2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/transliterate_filenames-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "e87bad81599a8f53667b137cb722c63ddb31f211"
+                "url": "https://ftp.drupal.org/files/projects/transliterate_filenames-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "bd905924e7b0f2b960267be1a7f65c8830e1e424"
             },
             "require": {
-                "drupal/core": "^9.2"
+                "drupal/core": "^9.3 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1644490338",
+                    "version": "2.0.1",
+                    "datestamp": "1659789907",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9219,8 +9219,8 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "ivnish",
-                    "homepage": "https://www.drupal.org/user/3547706"
+                    "name": "Krzysztof Domański",
+                    "homepage": "https://www.drupal.org/user/3572982"
                 }
             ],
             "description": "Transliteration for all uploading files (includes fields and ckeditor inline upload)",
@@ -15377,12 +15377,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/sdss_profile.git",
-                "reference": "789280f045669e48f318aead4926b6b51d405e00"
+                "reference": "12cf6bf53a4fc7f9ad6d693ed3b81f0d6a8b86d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/sdss_profile/zipball/789280f045669e48f318aead4926b6b51d405e00",
-                "reference": "789280f045669e48f318aead4926b6b51d405e00",
+                "url": "https://api.github.com/repos/SU-SWS/sdss_profile/zipball/12cf6bf53a4fc7f9ad6d693ed3b81f0d6a8b86d7",
+                "reference": "12cf6bf53a4fc7f9ad6d693ed3b81f0d6a8b86d7",
                 "shasum": ""
             },
             "require": {
@@ -15542,7 +15542,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/sdss_profile/tree/1.x"
             },
-            "time": "2022-08-05T20:57:36+00:00"
+            "time": "2022-08-11T23:48:47+00:00"
         },
         {
             "name": "su-sws/stanford_actions",
