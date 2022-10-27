@@ -1,5 +1,20 @@
 # ACE SDSSGryphon
 
+1.0.3
+--------------------------------------------------------------------------------
+_Release Date: 2022-10-27_
+
+- Updated sdss_profile and dependencices.
+- Updated dependencies. (#23)
+- SDSS-285: Provisioned earthsystemscience. (#19)
+- Update dependencies 20221014 (#22)
+- Added conflict for Drupal core to mitigate Acquia issue.
+- Updated ui_patterns patch.
+- Updated dependencies.
+- Added consolidation/site_alias conflict. Updated acquia_connector and sdss_profile constraints.
+- Fixed circleci container image.
+
+
 1.0.2
 --------------------------------------------------------------------------------
 _Release Date: 2022-09-21_
