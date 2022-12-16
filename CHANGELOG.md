@@ -1,5 +1,19 @@
 # ACE SDSSGryphon
 
+1.0.5
+--------------------------------------------------------------------------------
+_Release Date: 2022-12-15_
+
+- Adjusted config_readonly_whitelist_patterns. (#30)
+- Updated dependencies. (#28)
+- Removed resolved conflicts.
+- Updated and locked drupal core to ~9.4.0.
+- Added conflict for real_aes 2.5.
+- Updated acquia_connector to 4.0.
+- Point sustainabilityleadership.stanford.edu to changeleadership site. (#29)
+- Locked drupal/google_tag to 1.5 for this release only; 1.6 came out when cutting this release.
+
+
 1.0.4
 --------------------------------------------------------------------------------
 _Release Date: 2022-11-21_
