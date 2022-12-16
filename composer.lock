@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60ac723b6b185350ba74fbd181bbab88",
+    "content-hash": "f942ebe333e1873e22459125360ecd43",
     "packages": [
         {
             "name": "acquia/blt",
@@ -17914,12 +17914,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/sdss_profile.git",
-                "reference": "faead981ec2f9ea2ea61894776d0efc3b1e8d726"
+                "reference": "a97894dccc0e8d8ebbdac628c95113bf75e7f8b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/sdss_profile/zipball/faead981ec2f9ea2ea61894776d0efc3b1e8d726",
-                "reference": "faead981ec2f9ea2ea61894776d0efc3b1e8d726",
+                "url": "https://api.github.com/repos/SU-SWS/sdss_profile/zipball/a97894dccc0e8d8ebbdac628c95113bf75e7f8b6",
+                "reference": "a97894dccc0e8d8ebbdac628c95113bf75e7f8b6",
                 "shasum": ""
             },
             "require": {
@@ -18061,17 +18061,6 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
-                },
-                "patches": {
-                    "drupal/default_content": {
-                        "https://www.drupal.org/project/default_content/issues/3160146": "https://git.drupalcode.org/project/default_content/-/merge_requests/15.patch"
-                    },
-                    "drupal/jsonapi_extras": {
-                        "https://www.drupal.org/project/jsonapi_extras/issues/3232279": "https://www.drupal.org/files/issues/2021-09-10/fix-output-schema-3232279-3.patch"
-                    },
-                    "drupal/subrequests": {
-                        "Get same results on different request": "https://www.drupal.org/files/issues/2019-07-18/change_request_type-63049395-09.patch"
-                    }
                 }
             },
             "autoload": {
@@ -18087,7 +18076,7 @@
             "support": {
                 "source": "https://github.com/SU-SWS/sdss_profile/tree/1.x"
             },
-            "time": "2022-12-15T00:03:43+00:00"
+            "time": "2022-12-16T00:41:10+00:00"
         },
         {
             "name": "su-sws/stanford_actions",
@@ -27591,12 +27580,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford-caravan.git",
-                "reference": "5f66caf49fe1348adfc396cc7bead95d100ee252"
+                "reference": "3694583d1b5644ee789fd286f0d6c7da4b730f99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford-caravan/zipball/5f66caf49fe1348adfc396cc7bead95d100ee252",
-                "reference": "5f66caf49fe1348adfc396cc7bead95d100ee252",
+                "url": "https://api.github.com/repos/SU-SWS/stanford-caravan/zipball/3694583d1b5644ee789fd286f0d6c7da4b730f99",
+                "reference": "3694583d1b5644ee789fd286f0d6c7da4b730f99",
                 "shasum": ""
             },
             "require": {
@@ -27626,7 +27615,7 @@
                 "issues": "https://github.com/SU-SWS/stanford-caravan/issues",
                 "source": "https://github.com/SU-SWS/stanford-caravan/tree/8.x-2.x"
             },
-            "time": "2022-12-15T22:08:08+00:00"
+            "time": "2022-12-15T23:00:21+00:00"
         },
         {
             "name": "symfony/browser-kit",
