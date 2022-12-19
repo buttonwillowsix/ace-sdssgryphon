@@ -1,5 +1,15 @@
 # ACE SDSSGryphon
 
+1.0.7
+--------------------------------------------------------------------------------
+_Release Date: 2022-12-19_
+
+- SDSS-435: fast 404 page cache query ignore stack (#35)
+- Added fast404 settings.
+- Updated tests.
+- Updated dependencies.
+
+
 1.0.6
 --------------------------------------------------------------------------------
 _Release Date: 2022-12-15_
