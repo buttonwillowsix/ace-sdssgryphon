@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60ac723b6b185350ba74fbd181bbab88",
+    "content-hash": "4cf0a0c753cfeba41e1b65a50a0e59c5",
     "packages": [
         {
             "name": "acquia/blt",
@@ -17976,16 +17976,16 @@
         },
         {
             "name": "su-sws/sdss_profile",
-            "version": "1.x-dev",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/sdss_profile.git",
-                "reference": "b9df5ee76c417d6e6d2f243a3ce6c08ff2c46994"
+                "reference": "66015d321b9bdfcde4f7e80ce0dd4584de3fb1ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/sdss_profile/zipball/b9df5ee76c417d6e6d2f243a3ce6c08ff2c46994",
-                "reference": "b9df5ee76c417d6e6d2f243a3ce6c08ff2c46994",
+                "url": "https://api.github.com/repos/SU-SWS/sdss_profile/zipball/66015d321b9bdfcde4f7e80ce0dd4584de3fb1ee",
+                "reference": "66015d321b9bdfcde4f7e80ce0dd4584de3fb1ee",
                 "shasum": ""
             },
             "require": {
@@ -18121,7 +18121,6 @@
                 "su-sws/stanford_profile_helper": "^9.0",
                 "su-sws/stanford_ssp": "^8.2"
             },
-            "default-branch": true,
             "type": "drupal-custom-profile",
             "extra": {
                 "drush": {
@@ -18141,9 +18140,9 @@
             ],
             "description": "Installation Profile for the Stanford Doerr School of Sustainability.",
             "support": {
-                "source": "https://github.com/SU-SWS/sdss_profile/tree/1.x"
+                "source": "https://github.com/SU-SWS/sdss_profile/tree/1.1.4"
             },
-            "time": "2022-12-19T20:56:46+00:00"
+            "time": "2022-12-19T21:19:12+00:00"
         },
         {
             "name": "su-sws/stanford_actions",
@@ -28096,7 +28095,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/menu_block": 20,
-        "su-sws/sdss_profile": 20,
         "su-sws/blt-sws": 20
     },
     "prefer-stable": true,
