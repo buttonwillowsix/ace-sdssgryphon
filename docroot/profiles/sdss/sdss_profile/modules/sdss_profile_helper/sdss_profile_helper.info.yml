@@ -1,0 +1,5 @@
+name: 'Doerr School of Sustainability Profile Helper'
+type: module
+description: 'Add on module and functionality for Doerr School of Sustainability.'
+core_version_requirement: ^8.8 || ^9
+package: 'sdss'

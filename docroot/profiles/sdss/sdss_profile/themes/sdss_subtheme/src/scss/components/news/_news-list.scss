@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+.su-news-list {
+
+  .su-news-list__headline-dek {
+    a {
+      @include sdss-link--primary;
+
+      text-decoration: none;
+
+      &:hover {
+        >h2 {
+          color: $sdss-color-black;
+        }
+      }
+    }
+  }
+
+  .su-news-list__header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "article-image headline"
+        "article-image date";
+    gap: 25px;
+  }
+
+  .image {
+    .media {
+      margin-left: 0;
+    }
+  }
+
+  .su-news-list__topics {
+    a {
+      font-size: 2rem;
+      color: $sdss-color-grey-60;
+      font-weight: $su-font-regular;
+      text-transform: uppercase;
+    }
+
+    ul {
+      margin-top: 0;
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .su-news-article {
+    border-bottom: none;
+  }
+
+  .su-news-list__source {
+    @include type-f;
+
+    color: $sdss-color-grey-60;
+    padding: 1em 0 1.5em;
+  }
+
+  .su-link--external {
+    &::after {
+      height: 0.8em;
+      width: 0.5em;
+    }
+  }
+}
+
+// turning on the images when there
+// is one or two paragraphs per row.
+.ptype-stanford-lists {
+    &:is([data-react-columns="12"]),
+    &:is([data-react-columns="6"]) {
+    .su-news-list {
+      img {
+        display: unset;
+      }
+    }
+  }
+}
+
+// override to give that image space.
+.ptype-stanford-lists[data-react-columns="6"] {
+  .su-news-list__header {
+    grid-template-columns: unset;
+  }
+}
+
+// News list in responsive size. Having the image appear.
+@include grid-media-max('lg') {
+  .su-news-list {
+    .image {
+      .media {
+        display: unset;
+      }
+    }
+  }
+}
+
+// Changing the layout of the news when xs-med.
+@include grid-media-max('md') {
+  .su-news-list {
+    .su-news-list__header {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-areas: "image" "headline" "date";
+    }
+  }
+}

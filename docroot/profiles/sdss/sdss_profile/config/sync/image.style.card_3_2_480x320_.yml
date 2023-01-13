@@ -1,0 +1,15 @@
+uuid: 5f90952f-dd8f-49a2-8e51-75b9457b5623
+langcode: en
+status: true
+dependencies: {  }
+name: card_3_2_480x320_
+label: 'Card 3:2 (480x320)'
+effects:
+  5c0e3bab-878f-4ea1-82ce-403db90eec1d:
+    uuid: 5c0e3bab-878f-4ea1-82ce-403db90eec1d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 320
+      anchor: center-center

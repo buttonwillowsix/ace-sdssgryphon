@@ -1,0 +1,29 @@
+uuid: 4d5747f1-6dda-4d55-9f3e-21ffcb04935a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.su_sdss_person_focal_areas
+    - node.type.stanford_person
+    - taxonomy.vocabulary.sdss_focal_areas
+id: node.stanford_person.su_sdss_person_focal_areas
+field_name: su_sdss_person_focal_areas
+entity_type: node
+bundle: stanford_person
+label: 'Focal Areas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sdss_focal_areas: sdss_focal_areas
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

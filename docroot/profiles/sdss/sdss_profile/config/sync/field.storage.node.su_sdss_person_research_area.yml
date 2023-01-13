@@ -1,0 +1,20 @@
+uuid: ac5d44da-6cf2-4f00-b910-e58ea9b0553d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.su_sdss_person_research_area
+field_name: su_sdss_person_research_area
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

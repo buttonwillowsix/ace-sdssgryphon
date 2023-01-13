@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+// Override to main style.
+a {
+  color: $sdss-color-palo-alto-dark;
+  font-weight: $su-font-regular;
+
+  &:hover {
+    color: $sdss-color-blue-bright-dark;
+  }
+}
+
+// Moving the focus out to keep out of main navigation
+.block-sdss-subtheme-content,
+footer {
+  .su-link,
+  a {
+    &:focus {
+      color: $sdss-color-grey-dark;
+      outline: 1px solid $sdss-color-palo-alto-dark;
+      background-color: transparent;
+    }
+
+    &.su-button--big {
+      &:focus {
+        padding: 1.5rem 3rem 1.8rem;
+      }
+    }
+
+    &.mailto {
+      svg {
+        fill: $sdss-color-palo-alto-dark;
+      }
+    }
+
+  }
+}
+
+// No focus on social media links.
+.su-local-footer__social-links {
+  .su-link {
+    &:focus {
+      border: none;
+    }
+  }
+}
+
+// Theme details not overrides.
+.su-link {
+  color: $sdss-color-palo-alto-dark;
+  font-weight: $su-font-regular;
+  outline-color: $sdss-color-palo-alto-dark;
+  text-decoration: underline;
+
+  &::after {
+    background-color: $sdss-color-palo-alto-dark;
+  }
+
+  &.mailto {
+    svg {
+      fill: $sdss-color-palo-alto-dark;
+    }
+  }
+
+  &:hover {
+    color: $sdss-color-blue-hover;
+  }
+
+  &:focus {
+    color: $sdss-color-grey-dark;
+    outline: 1px solid $sdss-color-palo-alto-dark;
+  }
+
+  &:active {
+    color: $sdss-color-grey-dark;
+  }
+
+}
+
+.su-link--action {
+  font-weight: $su-font-semi-bold;
+}
+
+.su-link--action,
+.su-link--external {
+  text-decoration: underline;
+
+  &:hover {
+    color: $sdss-color-blue-bright-dark;
+
+    &::after {
+      background-color: $sdss-color-blue-bright-dark;
+    }
+  }
+
+  &::after {
+    background-color: $sdss-color-palo-alto-dark;
+  }
+}
+
+
+// Icon colors
+.content {
+  .right-region {
+    .su-person-links {
+      a {
+        &::after {
+          background-color: $sdss-color-palo-alto-dark;
+        }
+      }
+    }
+  }
+}

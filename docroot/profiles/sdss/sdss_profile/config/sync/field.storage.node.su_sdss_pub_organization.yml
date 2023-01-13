@@ -1,0 +1,20 @@
+uuid: c24ad389-e535-4c73-811d-f61cab1c02f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.su_sdss_pub_organization
+field_name: su_sdss_pub_organization
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

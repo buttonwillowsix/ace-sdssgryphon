@@ -1,0 +1,20 @@
+uuid: 1c8e3513-f6b0-4809-83b2-929bc5e7df1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.su_sdss_person_focal_areas
+field_name: su_sdss_person_focal_areas
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

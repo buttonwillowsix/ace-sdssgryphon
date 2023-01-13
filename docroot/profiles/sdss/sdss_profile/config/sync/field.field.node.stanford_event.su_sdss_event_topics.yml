@@ -1,0 +1,29 @@
+uuid: 504e2417-e52a-4a0f-87fc-674cc0da9bb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.su_sdss_event_topics
+    - node.type.stanford_event
+    - taxonomy.vocabulary.sdss_event_topics
+id: node.stanford_event.su_sdss_event_topics
+field_name: su_sdss_event_topics
+entity_type: node
+bundle: stanford_event
+label: 'Event Topics'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sdss_event_topics: sdss_event_topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

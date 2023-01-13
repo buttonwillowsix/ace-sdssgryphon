@@ -1,0 +1,29 @@
+uuid: 7ed1a050-0374-4331-98db-962f6aac9b15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.su_sdss_news_organization
+    - node.type.stanford_news
+    - taxonomy.vocabulary.sdss_organization
+id: node.stanford_news.su_sdss_news_organization
+field_name: su_sdss_news_organization
+entity_type: node
+bundle: stanford_news
+label: Organization
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sdss_organization: sdss_organization
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+.sdss-banner-wrapper--headline-center {
+  .su-hero__card {
+    margin: 0 auto;
+  }
+}
+
+// Removing margin-bottom for top "page" banner and banner paragraph.
+.main-region {
+  .node-stanford-page-su-page-banner {
+    margin-bottom: 0;
+  }
+}
+.paragraph-item {
+  &.ptype-stanford-banner {
+    margin-bottom: 0;
+  }
+}
+
+.sdss-banner-wrapper--default {
+  //Gradiant on banner image.
+  z-index: 1;
+  position: relative;
+
+  .su-hero__media {
+    background: linear-gradient(180deg, rgba(46, 45, 41, 0) 30%, $sdss-color-black-dark 90%);
+  }
+
+  picture {
+    position: relative;
+    z-index: -1;
+    display: block;
+  }
+ // End Gradiant details.
+
+  .su-hero {
+    justify-content: flex-end;
+
+    .su-hero__card {
+      background: transparent;
+      border: 0;
+      bottom: 0;
+      box-shadow: none;
+      margin-top: unset;
+      margin-bottom: 0;
+      max-width: 94%;
+      top: auto;
+
+      .su-card__contents {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding-bottom: 12px;
+
+        h2 {
+          color: $sdss-color-white;
+          margin-top: 0;
+        }
+
+        .su-card__button {
+          margin-top: unset;
+          margin-bottom: unset;
+        }
+      }
+    }
+  }
+
+// Mobile style
+  @include grid-media-max('sm') {
+    .su-hero {
+      .su-hero__card {
+        background: $sdss-color-black-dark;
+        max-width: 100%;
+
+        .su-card__contents {
+          display: block;
+        }
+      }
+    }
+  }
+}
