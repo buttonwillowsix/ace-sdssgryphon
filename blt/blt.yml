@@ -5,7 +5,7 @@ project:
     name: sdss_profile
   local: {  }
 git:
-  default_branch: 1.x
+  default_branch: 2.x
   remotes:
     - 'stanfordsos@svn-23450.prod.hosting.acquia.com:stanfordsos.git'
 deploy:
