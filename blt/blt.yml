@@ -1,6 +1,6 @@
 project:
   prefix: sdssgryphon
-  human_name: 'Stanford ACE D8 Doerr School of Sustainability'
+  human_name: 'Stanford ACE D9 Doerr School of Sustainability'
   profile:
     name: sdss_profile
   local: {  }
@@ -83,11 +83,11 @@ tests:
     -
       path: '${docroot}'
       config: '${docroot}/core/phpunit.xml'
-      directory: '${docroot}/modules/custom'
+      testsuite: stanford
       bootstrap: '${docroot}/core/tests/bootstrap.php'
       filter: /(Unit|Kernel)/
   codeception:
-    sdss:
+    sdss_profile:
       suites:
         - acceptance
         - functional

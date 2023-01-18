@@ -29,7 +29,7 @@
   -->
   <php>
     <!-- Set error reporting to E_ALL. -->
-    <ini name="error_reporting" value="32767"/>
+    <ini name="error_reporting" value="24575"/>
     <!-- Do not limit the amount of memory tests take to run. -->
     <ini name="memory_limit" value="-1"/>
     <!-- Example SIMPLETEST_BASE_URL value: http://localhost -->
@@ -58,6 +58,10 @@
     <testsuite name="nonfunctional">
       <file>./tests/TestSuites/UnitTestSuite.php</file>
       <file>./tests/TestSuites/KernelTestSuite.php</file>
+    </testsuite>
+    <testsuite name="stanford">
+      <directory>../modules/custom</directory>
+      <directory>../profiles/custom</directory>
     </testsuite>
   </testsuites>
   <listeners>
