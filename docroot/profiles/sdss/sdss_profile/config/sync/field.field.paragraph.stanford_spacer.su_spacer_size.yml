@@ -1,0 +1,23 @@
+uuid: 7834ce5a-9d0a-4cc0-b761-5e1962d09d30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.su_spacer_size
+    - paragraphs.paragraphs_type.stanford_spacer
+  module:
+    - options
+id: paragraph.stanford_spacer.su_spacer_size
+field_name: su_spacer_size
+entity_type: paragraph
+bundle: stanford_spacer
+label: 'Spacer Size'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: sdss_spacer_default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

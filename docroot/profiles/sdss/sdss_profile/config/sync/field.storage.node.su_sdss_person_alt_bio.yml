@@ -1,0 +1,19 @@
+uuid: 0064585f-28fe-46ca-a183-906b4c4e83e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.su_sdss_person_alt_bio
+field_name: su_sdss_person_alt_bio
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

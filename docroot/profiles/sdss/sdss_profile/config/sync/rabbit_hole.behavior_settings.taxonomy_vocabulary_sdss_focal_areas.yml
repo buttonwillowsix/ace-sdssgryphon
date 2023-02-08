@@ -1,0 +1,14 @@
+uuid: 3f0b2dc9-3baf-4221-ac17-b99fe16dbde8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sdss_focal_areas
+id: taxonomy_vocabulary_sdss_focal_areas
+entity_type_id: taxonomy_vocabulary
+entity_id: sdss_focal_areas
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

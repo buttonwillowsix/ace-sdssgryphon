@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+// Combine together with default class for precedence over row background color
+// styles.
+.sdss-card-wrapper--default {
+
+  &.sdss-card-wrapper--white-border {
+    article.su-card {
+      background: white;
+      box-shadow: none;
+    }
+  }
+
+  // Borders
+  &.sdss-card-wrapper--border-none {
+    article.su-card {
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  &.sdss-card-wrapper--white-border {
+    article.su-card {
+      background: white;
+      box-shadow: none;
+    }
+  }
+
+  // Card variants which are for the colored row backgrounds.
+  // Grey backgound with shadow
+  &.sdss-card-wrapper--grey-dropshadow {
+    article.su-card {
+      background-color: $sdss-color-grey-light;
+      border: 1px solid $sdss-color-grey-light;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  // White background with shadow
+  &.sdss-card-wrapper--white-dropshadow {
+    article.su-card {
+      background-color: $sdss-color-white;
+      border: 1px solid $sdss-color-grey-light;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  // White background with border
+  &.sdss-card-wrapper--white-border {
+    article.su-card {
+      background-color: $sdss-color-white;
+      border: 1px solid $sdss-color-grey-light;
+    }
+  }
+
+  &.sdss-card-wrapper--white-border,
+  &.sdss-card-wrapper--white-dropshadow,
+  &.sdss-card-wrapper--grey-dropshadow {
+
+    &.sdss-card-wrapper--title,
+    &.sdss-card-wrapper--topic {
+      article.su-card {
+        .su-card__contents,
+        .su-card__headline {
+          @include responsive-spacing('padding-left', 1);
+
+        }
+      }
+    }
+
+  }
+
+  // Grey backgound with shadow
+  &.sdss-card-wrapper--grey-dropshadow {
+    article.su-card {
+      background-color: $sdss-color-grey-light;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  // White background with shadow
+  &.sdss-card-wrapper--white-dropshadow {
+    article.su-card {
+      background-color: $sdss-color-white;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+}
+
+// Green background row - with cards
+.su-row-bgcolor--green {
+  .su-card {
+    .su-card__headline {
+      color: $su-color-white;
+    }
+  }
+}
+
+

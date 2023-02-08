@@ -1,0 +1,23 @@
+name: Stanford SDSS subtheme
+type: theme
+description: 'Stanford SDSS subtheme'
+package: Stanford
+version: 2.0.0
+core_version_requirement: ^9
+base theme: stanford_basic
+libraries:
+  - sdss_subtheme/sdss
+
+components:
+  namespaces:
+    sdss_subtheme: templates/components
+
+regions:
+  page_top: 'Page top'
+  header: Header
+  search: Search
+  menu: Menu
+  help: Help
+  content: Content
+  footer: Footer
+  page_bottom: 'Page bottom'

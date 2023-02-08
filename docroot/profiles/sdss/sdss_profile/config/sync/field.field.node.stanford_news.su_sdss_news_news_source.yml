@@ -1,0 +1,29 @@
+uuid: f173efd6-a933-491f-90d8-c5815278448b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.su_sdss_news_news_source
+    - node.type.stanford_news
+    - taxonomy.vocabulary.su_sdss_news_source
+id: node.stanford_news.su_sdss_news_news_source
+field_name: su_sdss_news_news_source
+entity_type: node
+bundle: stanford_news
+label: 'News Source'
+description: 'The name of the News source.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      su_sdss_news_source: su_sdss_news_source
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

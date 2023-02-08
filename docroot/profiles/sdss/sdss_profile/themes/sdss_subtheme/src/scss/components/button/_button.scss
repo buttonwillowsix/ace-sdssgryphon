@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+.su-button,
+.su-button.su-link,
+[type=button],
+[type=image],
+[type=reset],
+[type=submit],
+button {
+  @include sdss-button--primary;
+}
+
+div {
+  a.su-button,
+  a.su-button.su-link,
+  a.su-link--external.su-button {
+    @include sdss-button--primary;
+
+  }
+
+  a.su-button--secondary,
+  a.su-link--external.su-button--secondary {
+    @include sdss-button--secondary;
+
+  }
+
+  a.su-button--secondary-neg,
+  a.su-link--external.su-button--secondary-neg {
+    @include sdss-button--secondary-neg;
+
+  }
+
+  a.su-button--big,
+  a.su-button--big.su-link,
+  a.su-link--external.su-button--big {
+    @include sdss-button--big;
+
+  }
+}
+
+.sdss-wrapper--secondary-button {
+  .su-card__button {
+    .su-button {
+      @include sdss-button--secondary;
+
+    }
+  }
+}
+
+.sdss-wrapper--button-green {
+  .su-card__button {
+    .su-button {
+      @include sdss-button--primary;
+
+    }
+  }
+}
+
+// Load more buttons on list pages.
+.js-pager__items {
+  .pager__item {
+    .button {
+      @include sdss-button--primary;
+    }
+  }
+}
+

@@ -1,0 +1,27 @@
+{#
+/**
+ * @file paragraphs_row.html.twig
+ * Default theme implementation to present Paragraphs Row data.
+ *
+ * This template is used when viewing Paragraphs Row pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_paragraphs_row()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# Remove row bg color from display but pull in value as class #}
+{% set row_bg_color = content.su_para_row_bgcolor[0]['#markup'] %}
+{% set rendered_content = content|without('su_para_row_bgcolor') %}
+
+{% if content %}
+  <div class="paragraph_row {{ row_bg_color }}">
+    {{- rendered_content -}}
+  </div>
+{% endif %}

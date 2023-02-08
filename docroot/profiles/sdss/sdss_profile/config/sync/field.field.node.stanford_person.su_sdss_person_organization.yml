@@ -1,0 +1,29 @@
+uuid: 59fa0a21-ee33-48ae-8f4f-04139d8d4953
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.su_sdss_person_organization
+    - node.type.stanford_person
+    - taxonomy.vocabulary.sdss_organization
+id: node.stanford_person.su_sdss_person_organization
+field_name: su_sdss_person_organization
+entity_type: node
+bundle: stanford_person
+label: Organization
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sdss_organization: sdss_organization
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

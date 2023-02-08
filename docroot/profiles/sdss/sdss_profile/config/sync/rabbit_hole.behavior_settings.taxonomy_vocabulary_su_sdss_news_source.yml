@@ -1,0 +1,14 @@
+uuid: 2f9b3a72-2731-48a9-b968-48b229a1f6e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.su_sdss_news_source
+id: taxonomy_vocabulary_su_sdss_news_source
+entity_type_id: taxonomy_vocabulary
+entity_id: su_sdss_news_source
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

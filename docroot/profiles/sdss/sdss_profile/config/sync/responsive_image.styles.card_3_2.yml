@@ -1,0 +1,56 @@
+uuid: 5c472171-b639-4bad-9700-7949ffed2523
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.card_3_2_1200x800_
+    - image.style.card_3_2_1920x1280_
+    - image.style.card_3_2_480x320_
+    - image.style.card_3_2_960x640_
+  module:
+    - stanford_image_styles
+id: card_3_2
+label: 'Card 3:2'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: card_3_2_1200x800_
+    breakpoint_id: stanford_image_styles.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: card_3_2_1920x1280_
+    breakpoint_id: stanford_image_styles.lg
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: card_3_2_960x640_
+    breakpoint_id: stanford_image_styles.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: card_3_2_1920x1280_
+    breakpoint_id: stanford_image_styles.md
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: card_3_2_960x640_
+    breakpoint_id: stanford_image_styles.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: card_3_2_1200x800_
+    breakpoint_id: stanford_image_styles.sm
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: card_3_2_480x320_
+    breakpoint_id: stanford_image_styles.xs
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: card_3_2_960x640_
+    breakpoint_id: stanford_image_styles.xs
+    multiplier: 2x
+breakpoint_group: stanford_image_styles
+fallback_image_style: card_3_2_1920x1280_

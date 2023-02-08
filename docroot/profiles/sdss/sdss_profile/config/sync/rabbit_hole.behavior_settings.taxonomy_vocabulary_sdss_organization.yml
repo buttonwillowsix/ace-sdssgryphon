@@ -1,0 +1,14 @@
+uuid: 65a241ef-d141-4b22-ab84-8e5179982be7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sdss_organization
+id: taxonomy_vocabulary_sdss_organization
+entity_type_id: taxonomy_vocabulary
+entity_id: sdss_organization
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

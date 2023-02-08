@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+// Define typography mixins here
+// Example: All mixin names should be prefaced with your abbreviation (saa, soe, ood, etc)
+
+
+// Intro is the Drupal style = Display is the design language.
+@mixin sdss-display {
+  @include type_c;
+
+  font-weight: $su-font-regular;
+}
+
+// Splash is the Drupal style = Block Quote Big is the design language.
+@mixin sdss-block-quote--big {
+  color: $sdss-color-palo-alto-dark;
+  font-weight: $su-font-regular;
+  letter-spacing: -0.01em;
+
+  @include grid-media-max('sm') {
+    font-size: 1.7em; //32px
+    line-height: 40px;
+  }
+
+  @include grid-media-min('md') {
+    font-size: 2.5em;  //48px
+    line-height: 60px;
+  }
+
+  @include grid-media-min('lg') {
+    font-size: 3.4em;  //64px
+    line-height: 120%;
+  }
+}
+
+// Quote Text is the Drupal style = Block Quote Medium is the design language.
+@mixin sdss-block-quote--med {
+  @include type_b;
+
+  color: $sdss-color-palo-alto-dark;
+  font-weight: $su-font-regular;
+  font-style: italic;
+  letter-spacing: -0.01em;
+}
+
+ // Callout text is the Drupal style = Block Quote Small is the design language.
+@mixin sdss-block-quote--sm {
+  font-weight: $su-font-regular;
+  font-style: italic;
+  letter-spacing: 0.01em;
+
+  @include grid-media-max('sm') {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  @include grid-media-min('md') {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  @include grid-media-min('lg') {
+    font-size: 24px;
+    line-height: 140%;
+  }
+}
+
+
+@mixin sdss-h1 {
+  @include grid-media-max('sm') {
+    font-size: 45px;
+    line-height: 120%;
+  }
+
+  @include grid-media-min('md') {
+      font-size: 48px;
+      line-height: 120%;
+  }
+
+  @include grid-media-min('lg') {
+    font-size: 64px;
+    line-height: 120%;
+  }
+}
+
+@mixin sdss-h2 {
+  @include grid-media-max('sm') {
+    font-size: 37px;
+    line-height: 120%;
+  }
+
+  @include grid-media-min('md') {
+    font-size: 52px;
+    line-height: 120%;
+  }
+
+  @include grid-media-min('lg') {
+    font-size: 52px;
+    line-height: 120%;
+  }
+}
+
+@mixin sdss-h3 {
+  @include grid-media-max('sm') {
+    font-size: 31px;
+    line-height: 120%;
+  }
+
+  @include grid-media-min('md') {
+      font-size: 41px;
+      line-height: 120%;
+  }
+
+  @include grid-media-min('lg') {
+      font-size: 41px;
+      line-height: 120%;
+  }
+}
+
+@mixin sdss-h4 {
+  @include grid-media-max('sm') {
+    font-size: 26px;
+    line-height: 120%;
+  }
+
+  @include grid-media-min('md') {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  @include grid-media-min('lg') {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}
+
+@mixin sdss-h5 {
+  @include grid-media-max('sm') {
+    font-size: 21px;
+    line-height: 130%;
+  }
+
+  @include grid-media-min('md') {
+    font-size: 26px;
+    line-height: 130%;
+  }
+
+  @include grid-media-min('lg') {
+      font-size: 26px;
+      line-height: 130%;
+  }
+}

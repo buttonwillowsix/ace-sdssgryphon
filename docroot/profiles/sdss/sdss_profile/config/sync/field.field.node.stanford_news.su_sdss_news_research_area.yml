@@ -1,0 +1,29 @@
+uuid: d5a16299-0e61-4eca-bd95-95279fcdd36e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.su_sdss_news_research_area
+    - node.type.stanford_news
+    - taxonomy.vocabulary.sdss_research_areas
+id: node.stanford_news.su_sdss_news_research_area
+field_name: su_sdss_news_research_area
+entity_type: node
+bundle: stanford_news
+label: 'Research Areas/Expertise'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sdss_research_areas: sdss_research_areas
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

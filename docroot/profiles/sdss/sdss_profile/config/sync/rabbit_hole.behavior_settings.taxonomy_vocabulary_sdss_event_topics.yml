@@ -1,0 +1,14 @@
+uuid: 286668a8-c720-4bb6-ac2c-15ba373535ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sdss_event_topics
+id: taxonomy_vocabulary_sdss_event_topics
+entity_type_id: taxonomy_vocabulary
+entity_id: sdss_event_topics
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

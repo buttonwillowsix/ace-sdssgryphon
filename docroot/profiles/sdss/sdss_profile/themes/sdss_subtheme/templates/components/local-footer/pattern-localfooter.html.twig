@@ -1,0 +1,48 @@
+{% extends "@jumpstart_ui/components/local-footer/local-footer.html.twig" %}
+
+{# Removing the weblogin in the footer. Better way to do this? #}
+{%- set weblogin_url = "" -%}
+{%- set content_cell_1 = cell1 -%}
+{%- set cell1 = "" -%}
+
+
+{% block contentcell1 %}
+  <div class="sdss-footer--stay-connected">
+    {# Variable for the First Content block  #}
+    {# Content will be the contact or the person #}
+    {{ content_cell_1 }}
+
+  </div>
+
+  {#
+    The address is optional so don't put non-address content in it.
+    Use the `cell1` variable instead.
+  #}
+
+  {% if address|render|striptags|trim is not empty %}
+  <h2 class="su-sr-only-element">Address</h2>
+  <address class="su-local-footer__address">
+    {{ address }}
+  </address>
+  {% endif %}
+  {# Stylized links. See local-footer.json for structure for macro. #}
+  {% if action_links is not empty%}
+  <ul class="su-local-footer__action-links">
+    {% if action_links is iterable %}
+      {{ list_macro.link_list(action_links) }}
+    {% else %}
+      {{ action_links }}
+    {% endif %}
+  </ul>
+  {% endif %}
+  {# Stylized links. See local-footer.json for structure for macro. #}
+  {% if social_links is not empty%}
+  <ul class="su-local-footer__social-links">
+    {% if social_links is iterable %}
+      {{ list_macro.link_list(social_links) }}
+    {% else %}
+      {{ social_links }}
+    {% endif %}
+  </ul>
+  {% endif %}
+{% endblock %}

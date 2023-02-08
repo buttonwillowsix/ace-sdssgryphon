@@ -1,0 +1,26 @@
+uuid: 704576e9-d34c-4aa3-b1bd-f7864fda08fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.su_sdss_news_dek_long
+    - node.type.stanford_news
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - stanford_minimal_html
+id: node.stanford_news.su_sdss_news_dek_long
+field_name: su_sdss_news_dek_long
+entity_type: node
+bundle: stanford_news
+label: 'Dek (Long)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

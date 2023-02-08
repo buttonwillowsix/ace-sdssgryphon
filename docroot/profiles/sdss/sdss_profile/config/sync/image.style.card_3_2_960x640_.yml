@@ -1,0 +1,15 @@
+uuid: d162ea3c-d4ba-4c65-bbcc-656d199a3247
+langcode: en
+status: true
+dependencies: {  }
+name: card_3_2_960x640_
+label: 'Card 3:2 (960x640)'
+effects:
+  4f22b3f5-e90b-4d02-ac63-90b2924415e0:
+    uuid: 4f22b3f5-e90b-4d02-ac63-90b2924415e0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 640
+      anchor: center-center

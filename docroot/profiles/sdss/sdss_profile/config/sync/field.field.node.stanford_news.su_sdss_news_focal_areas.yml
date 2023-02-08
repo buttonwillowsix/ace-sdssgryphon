@@ -1,0 +1,29 @@
+uuid: 121a00c0-a950-4676-a915-bd69e403576a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.su_sdss_news_focal_areas
+    - node.type.stanford_news
+    - taxonomy.vocabulary.sdss_focal_areas
+id: node.stanford_news.su_sdss_news_focal_areas
+field_name: su_sdss_news_focal_areas
+entity_type: node
+bundle: stanford_news
+label: 'Focal Areas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sdss_focal_areas: sdss_focal_areas
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

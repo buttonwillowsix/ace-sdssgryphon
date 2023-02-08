@@ -1,0 +1,15 @@
+uuid: 4adbfb81-f686-4334-b2f9-01dd655f4cf5
+langcode: en
+status: true
+dependencies: {  }
+name: card_3_2_1200x800_
+label: 'Card 3:2 (1200x800)'
+effects:
+  59d6f0b4-0062-4aec-ba94-ef45e0b13249:
+    uuid: 59d6f0b4-0062-4aec-ba94-ef45e0b13249
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 800
+      anchor: center-center

@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+// Define button mixins here
+// Example: All mixin names should be prefaced with your abbreviation (saa, soe, ood, etc)
+
+//@mixin example-button--gray {
+  // button colors here
+
+  /* don't forget to include decanter icon color overrides too;
+  ** if you override a link color, you must also override the :after psuedo element
+  ** so decanter icons correspond to the link color.
+  */
+
+  // Include the correct icon color mixin inside your mixins here
+  //@include example--black-icons
+//}
+
+// Primary hover/focus/active/disabled buttons
+@mixin sdss-button-primary--hover {
+  background: $sdss-color-green-hover;
+  color: $sdss-color-black;
+  cursor: pointer;
+  text-decoration: underline;
+
+  & svg.mailto {
+    fill: $sdss-color-black;
+  }
+}
+
+@mixin sdss-button-primary--focus {
+  outline: 3px solid $sdss-color-palo-alto-dark;
+  background-color: $sdss-color-green-bright;
+  box-shadow: none;
+  color: $sdss-color-palo-alto-dark;
+  text-decoration: underline;
+}
+
+@mixin sdss-button-primary--active {
+  background-color: $sdss-color-green-link;
+  color: $sdss-color-white;
+  box-shadow: none;
+  text-decoration: underline;
+}
+
+// Secondary hover/focus/active/disabled buttons
+@mixin sdss-button-secondary--hover {
+  background: $sdss-color-white;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.14);
+  color: $sdss-color-palo-alto-dark;
+  cursor: pointer;
+  text-decoration: underline;
+
+  & svg.mailto {
+    fill: $sdss-color-black;
+  }
+}
+
+@mixin sdss-button-secondary--focus {
+  outline: 3px solid $sdss-color-palo-alto-dark;
+  background-color: transparent;
+  box-shadow: none;
+  color: $sdss-color-palo-alto-dark;
+  text-decoration: underline;
+}
+
+@mixin sdss-button-secondary--active {
+  background-color: $sdss-color-palo-alto-dark;
+  color: $sdss-color-white;
+  box-shadow: none;
+  text-decoration: underline;
+}
+
+// Secondary Negative (used only on dark bg)
+// hover/focus/active/disabled buttons
+@mixin sdss-button-secondary-neg--hover {
+  background: $sdss-color-green-link;
+  border: 1px solid $sdss-color-green-link;
+  color: $sdss-color-white;
+  cursor: pointer;
+  text-decoration: underline;
+
+  & svg.mailto {
+    fill: $sdss-color-white;
+  }
+}
+
+@mixin sdss-button-secondary-neg--focus {
+  @include padding(.375em .875em);
+  outline: 3px solid $sdss-color-white;
+  background-color: transparent;
+  box-shadow: none;
+  color: $sdss-color-white;
+  text-decoration: underline;
+}
+
+@mixin sdss-button-secondary-neg--active {
+  background-color: $sdss-color-white;
+  color: $sdss-color-palo-alto-dark;
+  box-shadow: none;
+  text-decoration: underline;
+}
+
+// Button details
+@mixin sdss-button--primary {
+  @include button-primary;
+  @include sdss-button-primary--hover-and-focus;
+  @include padding(.375em .875em);
+  background: $sdss-color-green-bright;
+  border-radius: 3rem;
+  color: $sdss-color-black;
+  font-weight: $su-font-regular;
+  line-height: 1.15;
+  margin: 0 .3rem .3rem;
+  text-decoration: none;
+  transition: background-color .25s ease-in-out,color .25s ease-in-out,border-color .25s ease-in-out;
+
+  &::after {
+    background-color: $sdss-color-black;
+  }
+}
+
+@mixin sdss-button--big {
+  @include button-big;
+  @include sdss-button-primary--hover-and-focus;
+
+  background: $sdss-color-green-bright;
+  border-radius: 3.5rem;
+  color: $sdss-color-black;
+  margin: 0 .3rem .3rem;
+  text-decoration: none;
+  transition: background-color .25s ease-in-out,color .25s ease-in-out,border-color .25s ease-in-out;
+
+  &::after {
+    background-color: $sdss-color-black;
+  }
+}
+
+
+@mixin sdss-button--secondary {
+  @include sdss-button-secondary--hover-and-focus;
+  @include padding(.375em .875em);
+
+  box-shadow: none;
+  background: transparent;
+  color: $sdss-color-palo-alto-dark;
+  border: 1px solid $sdss-color-palo-alto-dark;
+  border-radius: 3rem;
+  font-weight: $su-font-regular;
+  line-height: 1.15;
+  margin: 0 .3rem .3rem;
+  text-decoration: none;
+
+  &::after {
+    background-color: $sdss-color-palo-alto-dark;
+  }
+}
+
+@mixin sdss-button--secondary-neg {
+  @include sdss-button-secondary-neg--hover-and-focus;
+  @include padding(.375em .875em);
+
+  box-shadow: none;
+  background: transparent;
+  color: $sdss-color-white;
+  border: 1px solid $sdss-color-white;
+  text-decoration: none;
+  border-radius: 3rem;
+  font-weight: $su-font-regular;
+  line-height: 1.15;
+  margin: 0 .3rem .3rem;
+
+  &::after {
+    background-color: $sdss-color-white;
+  }
+}
+
+
+// Button color mixins
+
+@mixin sdss-button-su-red--primary {
+  @include button-primary;
+  @include padding(.375em .875em);
+
+  background: $su-color-bright-red;
+  border-radius: 3rem;
+  font-weight: $su-font-regular;
+  line-height: 1.15;
+}
+
+@mixin sdss-button-primary--hover-and-focus {
+  &:hover {
+    @include sdss-button-primary--hover;
+
+    &::after {
+      background-color: $sdss-color-black;
+    }
+  }
+
+  &:focus {
+    @include sdss-button-primary--focus;
+
+    &::after {
+      background-color: $sdss-color-palo-alto-dark;
+    }
+  }
+
+  &:active {
+    @include sdss-button-primary--active;
+
+    &::after {
+      background-color: $sdss-color-white;
+    }
+  }
+}
+
+@mixin sdss-button-secondary--hover-and-focus {
+  &:hover {
+    @include sdss-button-secondary--hover;
+
+    &::after {
+      background-color: $sdss-color-black;
+    }
+  }
+
+  &:focus {
+    @include sdss-button-secondary--focus;
+
+    &::after {
+      background-color: $sdss-color-palo-alto-dark;
+    }
+  }
+
+  &:active {
+    @include sdss-button-secondary--active;
+
+    &::after {
+      background-color: $sdss-color-white;
+    }
+  }
+}
+
+@mixin sdss-button-secondary-neg--hover-and-focus {
+  &:hover {
+    @include sdss-button-secondary-neg--hover;
+
+    &::after {
+      background-color: $sdss-color-white;
+    }
+  }
+
+  &:focus {
+    @include sdss-button-secondary-neg--focus;
+
+    &::after {
+      background-color: $sdss-color-white;
+    }
+  }
+
+  &:active {
+    @include sdss-button-secondary-neg--active;
+
+    &::after {
+      background-color: $sdss-color-palo-alto-dark;
+    }
+  }
+}
+
+@mixin sdss-button--white-icons {
+  &::after {
+    background-color: $sdss-color-black;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      background-color: $su-color-white;
+    }
+  }
+
+  & svg.mailto {
+    fill: $sdss-color-black;
+  }
+}

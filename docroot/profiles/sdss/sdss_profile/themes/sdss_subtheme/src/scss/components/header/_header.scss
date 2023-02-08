@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+// SDSS other site header - Green
+// Correcting display of main menu bar.
+.fixed-header {
+  &.su-lockup.su-lockup--option-a {
+    display: unset;
+  }
+
+  &.su-lockup.su-lockup--option-b {
+    display: unset;
+  }
+}
+
+// For all headers.
+.su-brand-bar__container {
+  display: flex;
+
+  .su-brand-bar__logo {
+    width: 10%;
+  }
+}
+
+// Removed line 5 from all displays
+.fixed-header.su-lockup--option-a,
+.fixed-header.su-lockup--option-b {
+  .su-lockup__line5 {
+    display: none;
+  }
+}
+
+
+// SDSS login page
+@include grid-media-min('lg') {
+  .page-user-login {
+    // option a and b
+    .su-masthead>section:last-of-type {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "lockup lockup lockup"
+      "main-nav main-nav search";
+      align-items: flex-end;
+    }
+
+    .su-masthead {
+      padding-bottom: 0;
+    }
+
+    // Logo only option
+    .su-lockup--option-none {
+      section:after {
+        background: transparent;
+      }
+
+      .su-masthead {
+        padding-top: 1em;
+      }
+    }
+
+  }
+}
