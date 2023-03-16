@@ -95,3 +95,71 @@
     }
   }
 }
+
+// News list with Green row variant.
+.su-row-bgcolor--green {
+  h2 {
+    color: $sdss-color-white;
+  }
+
+  .su-news-list {
+    h2 {
+      color: $sdss-color-green-bright;
+    }
+
+    .su-news-list__headline-dek {
+      a {
+        color: $sdss-color-white;
+
+        &::after {
+          background-color: $sdss-color-green-bright;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $sdss-color-white;
+
+          > h2 {
+            color: $sdss-color-white;
+          }
+
+          &::after {
+            background-color: $sdss-color-white;
+          }
+        }
+      }
+    }
+
+    .su-news-list__source {
+      color: $sdss-color-white;
+    }
+  }
+
+  .su-news-vertical-teaser {
+    &.su-card {
+      .su-link,
+      .su-news-vertical-teaser__link {
+        color: $sdss-color-green-bright;
+
+        &::after {
+          background-color: $sdss-color-green-bright;
+        }
+
+        &:focus,
+        &:hover,
+        &:active {
+          color: $sdss-color-white;
+
+          &::after {
+            background-color: $sdss-color-white;
+          }
+        }
+      }
+    }
+
+    .news-vertical-teaser__source {
+      color: $sdss-color-white;
+    }
+  }
+}
