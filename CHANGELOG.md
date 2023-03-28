@@ -1,5 +1,41 @@
 # ACE SDSSGryphon
 
+2.0.1
+--------------------------------------------------------------------------------
+_Release Date: 2023-03-28_
+
+- SDSS-225: Updated text colors on green row variant (#103)
+- SDSS-482: Added Event Topics and Shared Tags to Event List paragraph Arguments (#79)
+- SDSS-428: Adjusted permissions for roles to modify new taxonomy terms (#83)
+- SDSS-000: Updated BLT cron creation command. (#102)
+- SDSS-445: Updated button padding. (#82)
+- SDSS-456: Added scroll-padding-top style to account for sticky header (#84)
+- SDSS-228: Changed focus order for Event card display for improved accessibility (#92)
+- SDSS-84: Updated WYSIWYG style options (#93)
+- SDSS-498: Added view for RSS feed of events (#95)
+- SDSS-512: Updated font size units from px to rem (#94)
+- SDSS-525: Added featured media field to Event content type (#98)
+- SDSS-430: Removed unused logo asset from sdss_subtheme (#52)
+- SDSS-487: Pointed epsci.stanford.edu to gs site in sites.php. (#77)
+- SDSS-527: Updated sdss_subtheme npm packages including Decanter. (#99)
+- SDSS-528: Adjusted github actions workflows and resolved testViewRevisions failure. (#100)
+- SDSS-528: Adjusted dev branch actions workflow pull_request event activity types.
+- SDSS-528: Filled headline field in card for BasicPageParagraphsCest:testViewRevisions test now that field is required.
+- SDSS-423: Updated heading on list paragraphs from h3 to h2 (#85)
+- SDSS-499: Fixed min-height bug on mobile banner (#86)
+- SDSS-234: Updated decanter templates and non-discrimination footer link (#87)
+- SDSS-480: Required headline field on Card paragraph (#97)
+- SDSS-417: Added Focal Area field to Event content type (#80)
+- SDSS-251: Added three new taxonomies for opportunities (#78)
+- Updated dependencies. (#76)
+- SDSS-479: Set the default card type style to the Topic card (#74)
+- SDSS-488: Added page_cache_query_ignore patch to fix event display bug. (#75)
+- SDSS-488: Updated su-sws/drupal-patches to get page_cache_query_ignore patch which fixes metatag bug affecting event list display.
+- SDSS-369: Removed display of shortTitle from person pages (#68)
+- SDSS-474: Added auto deploy and improved test workflow (#58)
+- backtodev-2.0.1
+
+
 2.0.0
 --------------------------------------------------------------------------------
 _Release Date: 2023-03-08_
