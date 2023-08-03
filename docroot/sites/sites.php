@@ -73,8 +73,9 @@ foreach ($sites_settings as $settings_file) {
     continue;
   }
 
-  // Get the site name to use for domains from the directory.
-  // Replace underscores "_" in the directory to dashes "-" in the site name.
+  // Get the site name to use for domains from the directory and replace:
+  // - Underscores "_" with dashes "-".
+  // - Double underscores "__" with dots ".".
   $sitename = str_replace('_', '-', str_replace('__', '.', $site_dir));
   $sites[$sitename] = $site_dir;
   $sites["$sitename.stanford.edu"] = $site_dir;
@@ -97,6 +98,12 @@ $sites['earthsystems.stanford.edu'] = 'esys';
 $sites['epsci.stanford.edu'] = 'gs';
 $sites['energypostdoc.stanford.edu'] = 'sepf';
 $sites['understand-energy.stanford.edu'] = 'understandenergy';
+// Hopkins Marine Station dev, test, and prod URL's currently exist on another
+// ACE stack. We need to point custom aliases to build the site.
+$sites['hms-sdss-dev.stanford.edu'] = 'hopkinsmarinestation';
+$sites['hms-sdss-test.stanford.edu'] = 'hopkinsmarinestation';
+$sites['hms-sdss-prod.stanford.edu'] = 'hopkinsmarinestation';
+
 
 // Include local sites.
 if (file_exists(__DIR__ . '/local.sites.php')) {
