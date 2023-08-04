@@ -1,5 +1,60 @@
 # ACE SDSSGryphon
 
+2.1.0
+--------------------------------------------------------------------------------
+_Release Date: 2023-08-03_
+
+- aba953c SDSS-763: Updated stanford_profile_helper (#201)
+- ed94648 SDSS-793: Added icons for new Sidebar and Callout paragraph types (#198)
+- 305180a SDSS-823: Added bottom margin to News nodes to add space before footer (#199)
+- bbfa616 SDSS-824: Fixed Firefox wrapping bug with caption text (#197)
+- 84269c7 SDSS-613: Adjusted Event and News taxonomy text to accessible colors (#196)
+- e5a5490 SDSS-822: Adjusted spacing for news article top component without byline (#195)
+- 14548e4 SDSS-816: Use serif font for block quote styles, updated decanter. (#194)
+- 8490284 SDSS-780: Ignore the earth_news_importer module and migration configuration. (#192)
+- 7b92799 SDSS-787: Provisioned witw and gfi. (#191)
+- fafbae1 Added path_redirect_import patch fix for migratetools. (#190)
+- 823af82 SDSS-788: Added and configured stage file proxy (#183)
+- 98b6184 SDSS-786: Article page tweaks (#184)
+- d69e84c SDSS-592: Add sidebar component (#172)
+- e2d38de SDSS-591: Add Newsroom Callout component (#170)
+- 7cddff6 SDSS-589: News node top component (#168)
+- cfd1cfc SDSS-784: Point custom hopkinsmarinestation aliases. (#179)
+- eeadfdd SDSS-778: Set article body width for newsroom only (#177)
+- b03600c SDSS-731: Added custom sdss_layout_paragraphs module (#163)
+- 85046a4 Hide all data capture fields in default displays.
+- 305b27c SDSS-731: Layout paragraphs updates (#155)
+- 173aee5 SDSS-600: Changed News components field to layout_paragraphs (#125)
+
+
+2.0.5
+--------------------------------------------------------------------------------
+_Release Date: 2023-06-28_
+
+- SDSS-732: Updated earth_news_importer. (#162)
+  - SDSS-732: Updated earth_news_importer to latest version with new Banner Caption field.
+- SDSS-732: Added new Banner Caption field to News content type (#156)
+- SDSS-730: Maintenance and adding layout paragraphs (#152)
+  - Updated dependencies and configuration.
+  - Upgraded components module to ^3.0.
+  - Updated CI Cache string with current date.
+  - Added and enabled layout_paragraphs.
+  - Added path_alias service to SiteSettingsTest.
+- SDSS-639: Set up gitpod. (#154)
+- SDSS-585: Create generic related content field. (#135)
+  - SDSS-585: Create generic related content field and added to 5 main content types.
+- SDSS-000: Updated earth_news_importer to latest version. (#151)
+- SDSS-632: Allow site editors to use contextual links. (#149)
+- SDSS-599: Added aliases for understandenergy site (#147)
+- SDSS-532: Hid superhead field from editing interface on banner paragraph. (#148)
+- SDSS-638: Added additional fields to the Events XML feed. (#146)
+- SDSS-000: Added safe.directory git config step to github actions. (#145)
+- SDSS-634: Updated events this week RSS feed (#144)
+  - SDSS-634: Swapped description with alt_location field in events this week RSS feed view.
+- SDSS-625: Resolved menu scroll jump bug (#138)
+  - SDSS-625: Swapped scroll-padding-top on the html for scroll-margin-top on the :target to resolve menu scroll jump bug.
+
+
 2.0.4
 --------------------------------------------------------------------------------
 _Release Date: 2023-06-01_
