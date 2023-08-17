@@ -244,6 +244,7 @@
         "drupal/webp": "^1.0@beta",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^11.1",
+        "harvesthq/chosen": "^1.8",
         "onlyextart/colorbox": "dev-master#e58476becbc89dc671093d1bcd9f99b2167fa8f7",
         "sainsburys/guzzle-oauth2-plugin": "^3.0",
         "seboettg/citeproc-php": "2.4.1",
@@ -256,7 +257,7 @@
         "su-sws/stanford_fields": "^8.2",
         "su-sws/stanford_media": "^8.3",
         "su-sws/stanford_migrate": "^8.3",
-        "su-sws/stanford_profile_helper": "9.x-dev#69c50738da7e78cd20544c03d9c7928df0d9204c",
+        "su-sws/stanford_profile_helper": "^9.1",
         "su-sws/stanford_ssp": "^8.2"
     },
     "require-dev": {
