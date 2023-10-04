@@ -56,6 +56,7 @@ dependencies:
     - redirect
     - role_delegation
     - scheduler
+    - sdss_entities
     - sdss_profile
     - stanford_migrate
     - stanford_policy
@@ -109,6 +110,7 @@ permissions:
   - 'create media'
   - 'create new books'
   - 'create policy log'
+  - 'create sdss entity'
   - 'create stanford_course content'
   - 'create stanford_event content'
   - 'create stanford_event_series content'
@@ -169,6 +171,7 @@ permissions:
   - 'delete own stanford_publication content'
   - 'delete own video media'
   - 'delete policy log'
+  - 'delete sdss entity'
   - 'delete stanford_course revisions'
   - 'delete stanford_event revisions'
   - 'delete stanford_event_series revisions'
@@ -229,6 +232,7 @@ permissions:
   - 'edit own stanford_publication content'
   - 'edit own video media'
   - 'edit policy log'
+  - 'edit sdss entity'
   - 'edit stanford_basic_site_settings config page entity'
   - 'edit stanford_courses_importer config page entity'
   - 'edit stanford_events_importer config page entity'

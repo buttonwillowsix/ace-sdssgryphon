@@ -30,6 +30,7 @@ dependencies:
     - paragraphs
     - pathauto
     - scheduler
+    - sdss_entities
     - stanford_policy
     - stanford_publication
     - system
@@ -56,6 +57,7 @@ permissions:
   - 'create image media'
   - 'create media'
   - 'create policy log'
+  - 'create sdss entity'
   - 'create stanford_course content'
   - 'create stanford_event content'
   - 'create stanford_event_series content'
@@ -108,6 +110,7 @@ permissions:
   - 'edit own stanford_publication content'
   - 'edit own video media'
   - 'edit policy log'
+  - 'edit sdss entity'
   - 'mark as hidden in editoria11y'
   - 'mark as ok in editoria11y'
   - 'notify of path changes'
