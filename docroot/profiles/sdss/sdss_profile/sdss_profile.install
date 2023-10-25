@@ -193,8 +193,9 @@ function sdss_profile_update_9005(&$sandbox) {
         ->getString());
 
       $bg_color = $row_entity->get('su_para_row_bgcolor')->getString();
-      $bg_color = array_pop(explode('--', $bg_color));
-      if(!$bg_color) $bg_color = 'none';
+      $bg_color = explode('--', $bg_color);
+      $bg_color = array_pop($bg_color);
+      if (!$bg_color) $bg_color = 'none';
 
       $delete_entities[] = $row_entity;
       $number_of_items = min($row_entity->get('su_page_components')->count(), 3);
@@ -718,8 +719,7 @@ function _sdss_profile_reset_node_changed_time(NodeInterface $node, int $changed
 /**
  * Install SamlAuth
  */
-function sdss_profile_update_9501()
-{
+function sdss_profile_update_9501() {
   $config_ignore = \Drupal::configFactory()
     ->getEditable('config_ignore.settings');
   $ignored = $config_ignore->get('ignored_config_entities');
