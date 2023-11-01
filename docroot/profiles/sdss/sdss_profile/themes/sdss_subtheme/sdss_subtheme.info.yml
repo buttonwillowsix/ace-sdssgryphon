@@ -2,7 +2,7 @@ name: Stanford SDSS subtheme
 type: theme
 description: 'Stanford SDSS subtheme'
 package: Stanford
-version: 3.0.0-dev
+version: 3.0.0
 core_version_requirement: ^9
 base theme: stanford_basic
 libraries:
