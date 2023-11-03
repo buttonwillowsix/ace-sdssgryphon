@@ -16,6 +16,7 @@ const config = {
 
 var webpackConfig = {
   entry: {
+    "ckeditor": path.resolve("src/scss/ckeditor.scss"),
     "sdss_subtheme": path.resolve("src/scss/config/index.scss"),
     "../js/scripts": path.resolve("src/js/sdss_subtheme.behaviors.js"),
   },
