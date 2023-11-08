@@ -1,5 +1,20 @@
 # ACE SDSSGryphon
 
+4.0.0
+--------------------------------------------------------------------------------
+_Release Date: 2023-11-08_
+
+- 6f23a79 SDSS-000: Point understand-energy dev and test domains (#300)
+- 1242c3d SDSS-994: D10 | Gitpod support for 4.x (#299)
+- 1e14218 Merge pull request #298 from SU-SWS/SDSS-994--d10-upgrade
+- 582474b SDSS-995: D10 updates (#297)
+- 454ddb6 SDSS-1073: D10 | Automated test updates (#296)
+- 788049e CKEditor CSS fix.
+- beffa65 SDSS-1069: UPSTREAM | Pull stanford_profile 11.0.8 (#295)
+- 777fc28 Merge pull request #293 from SU-SWS/backtodev-3.0.1
+- 630042e backtodev-3.0.1
+
+
 3.0.0
 --------------------------------------------------------------------------------
 _Release Date: 2023-11-01_
