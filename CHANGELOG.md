@@ -1,5 +1,26 @@
 # ACE SDSSGryphon
 
+4.3.0
+--------------------------------------------------------------------------------
+_Release Date: 2024-03-07_
+
+- 20a6a944 SDSS-000: Updated blt-sws for parallel deploy fix (#382)
+- e5638725 SDSS-1233: Add parallel deployment (#381)
+- 684cae6d SDSS-1222: Added Newsroom menu label field and alter hook (#378)
+- d5cab0ef SDSS-1080 | @jdwjdwjdw | Add threads social media icon to local footer, update social icon colors on hover (#375)
+- 63826e10 SDSS-1226: no js available for newsroom menu (#374)
+- b06ab72e Update list load more button margin-top (#380)
+- 40f4f28d SDSS-1221: News list Views display without Media Mentions and with Load More (#377)
+- 0cbbf7e7 SDSS-1225: Removed version from all libraries in sdss_profile themes (#379)
+- bdd590bb SDSS-1125: fix to the red link in a dek (#376)
+- c2ccdf78 SDSS-1223: Fix contextual menu button issue (#373)
+- 42fdad4a SDSS-1216: Disabled page_cache_query_ignore (#371)
+- 86efd19b SDSS-1202 | @jdwjdwjdw | Fixup news teasers (#367)
+- 3ce13142 SDSS-1200: Removed the extra space on empty div (#365)
+- f5f7b337 SDSS-1156: adding button state to newsroom school news menu (#368)
+- 21c16e2c SDSS-1128: PHP 8.2 Upgrade and Dependency Updates (#339)
+
+
 4.2.0
 --------------------------------------------------------------------------------
 _Release Date: 2024-02-21_
