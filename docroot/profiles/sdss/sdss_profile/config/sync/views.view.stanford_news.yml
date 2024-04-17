@@ -871,7 +871,6 @@ display:
           validate_options: {  }
           depth: '3'
           vocabularies:
-            sdss_magazine_topics: sdss_magazine_topics
             stanford_news_topics: stanford_news_topics
           break_phrase: 1
           use_taxonomy_term_path: false
@@ -2490,7 +2489,6 @@ display:
           validate_options: {  }
           depth: '3'
           vocabularies:
-            sdss_magazine_topics: sdss_magazine_topics
             stanford_news_topics: stanford_news_topics
           break_phrase: 1
           use_taxonomy_term_path: false
@@ -2875,7 +2873,6 @@ display:
           validate_options: {  }
           depth: '1'
           vocabularies:
-            sdss_magazine_topics: sdss_magazine_topics
             stanford_news_topics: stanford_news_topics
           break_phrase: 1
           use_taxonomy_term_path: false
@@ -3116,7 +3113,6 @@ display:
           validate_options: {  }
           depth: '1'
           vocabularies:
-            sdss_magazine_topics: sdss_magazine_topics
             stanford_news_topics: stanford_news_topics
           break_phrase: 1
           use_taxonomy_term_path: false
@@ -3357,7 +3353,6 @@ display:
           validate_options: {  }
           depth: '1'
           vocabularies:
-            sdss_magazine_topics: sdss_magazine_topics
             stanford_news_topics: stanford_news_topics
           break_phrase: 1
           use_taxonomy_term_path: false
